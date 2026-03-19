@@ -1,23 +1,27 @@
-# ✨ Welcome to My Portal of Light ✨
+# ✨ Building the Future of Game Studio Infrastructure ✨
 
-I'm **Rev. Dr. Jessica Simmonds**, a spiritual technologist, ZK app creator, and visionary life guide.  
-Here, I'm building a bridge between **blockchain and higher consciousness**.
+I'm **Rev. Dr. Jessica Simmonds**, CEO of **Aspire Agency Global**  
+Building embedded PODS for modern game studios 🎮  
 
-## 💻 Current Creation
-🔒 [`goodvibesonly.aleo`](https://github.com/jessgoodvibesonly/goodvibesonly.aleo)  
-A zero-knowledge application radiating light, privacy, and intention — built with Leo on the Aleo blockchain.
+I work at the intersection of **infrastructure, systems, and human-first technology**.
 
-## 🌱 My Mission
-To create tools that empower, heal, and protect — digitally and spiritually.
+## 🚧 Current Work
+🔗 [goodvibesonly.aleo](https://github.com/jessgoodvibesonly/goodvibesonly.aleo)  
+Zero-knowledge application focused on privacy, intention, and digital sovereignty.
 
-## 🧠 Tech + Spirit Stack
-- 🔮 Leo (Aleo’s ZK language)
-- 💫 Git, GitHub
-- ☀️ Energy Healing, NLP, Hypnotherapy
-- 📿 Ministerial Leadership & Metaphysical Studies
+## 🧩 Aspire PODS
+Production • Operations • Development • Support  
 
-## 📬 Connect
-- 💜 [aspiritualwarriorspath.com](https://aspiritualwarriorspath.com)
-- 📖 Author of *A Spiritual Warrior's Path to Re-Enlightening*
+Embedded teams that integrate directly into studios  
+Scaling Live Ops, QA, and player experience globally
 
-> *“Code is a sacred language. Every line is a vibration — write with purpose.”*
+## 🌱 Focus
+- Game studio infrastructure
+- ZK / blockchain systems
+- Scalable operations
+- Human-first tech
+
+## 🔗 Connect
+💜 https://aspiritualwarriorspath.com  
+
+> Where people matter.

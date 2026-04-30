@@ -51,17 +51,20 @@ export default function Home() {
         <p className="eyebrow">Personal Brand Homepage</p>
         <h1>Rev. Dr. Jessica Simmonds</h1>
         <p className="lead">
-          Multidisciplinary builder across game production, human performance,
-          and immersive experiences.
+          Visionary Entrepreneur. Systems Builder. Clinical Hypnotherapist. Published Author.
+        </p>
+        <p>
+          20+ years building high-performance systems, people, and experiences across technology, education, and human transformation.
         </p>
       </section>
 
       <section className="section">
-        <h2>What I Build</h2>
-        <p>
-          Real-world systems, immersive experiences, and environments where
-          people learn, create, and evolve.
-        </p>
+        <h2>Core Commitments</h2>
+        <ul className="statement-list">
+          <li>We build systems that work.</li>
+          <li>We build people up.</li>
+          <li>We build what’s next.</li>
+        </ul>
       </section>
 
       <section className="section">

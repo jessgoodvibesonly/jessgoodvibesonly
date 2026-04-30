@@ -84,6 +84,36 @@ h3 { font-size: clamp(1.4rem, 3vw, 2.1rem); margin: 0 0 .7rem; }
 .center { text-align: center; }
 .formula { font-size: 1.1rem; color: var(--neon-yellow); font-weight: 800; text-shadow: 0 0 16px rgba(255,230,0,.5); }
 .two-col { display: grid; gap: 1rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.resume-section p { line-height: 1.6; }
+.resume-grid { margin-top: 1rem; display: grid; gap: .9rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.resume-card {
+  padding: 1rem;
+  border-radius: 18px;
+  background: linear-gradient(140deg, rgba(123,44,255,.3), rgba(255,20,147,.18));
+  border: 1px solid rgba(0,234,255,.55);
+  box-shadow: 0 0 0 1px rgba(255,230,0,.35) inset, 0 0 22px rgba(255,138,0,.35);
+}
+.resume-card h4 {
+  margin-top: 0;
+  color: var(--neon-yellow);
+  text-shadow: 0 0 12px rgba(255,230,0,.35);
+}
+.credential-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.credential-badges li {
+  padding: .45rem .7rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(255,20,147,.35), rgba(123,44,255,.45));
+  border: 1px solid rgba(255,230,0,.55);
+  box-shadow: 0 0 12px rgba(0,234,255,.35);
+  font-size: .9rem;
+}
 .quote { text-align: center; font-size: clamp(1.4rem, 4vw, 2.4rem); font-weight: 800; margin: 1.2rem 0; color: var(--soft-white); text-shadow: 0 0 18px rgba(255,43,214,.9); }
 .final-cta { padding-bottom: 2rem; }
 @media (max-width: 900px) {

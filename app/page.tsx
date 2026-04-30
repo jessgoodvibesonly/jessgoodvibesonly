@@ -54,6 +54,42 @@ const speakingTopics = [
   "Building People-First Systems",
 ];
 
+const entrepreneurialExperience = [
+  "Founder and CEO of Aspire Agency Global",
+  "Founder of Paramita Academy of Makeup",
+  "Built and led education-based businesses for over two decades",
+  "Trained and certified makeup artists since 2002",
+  "Background in film, television, editorial, bridal, and professional makeup artistry",
+  "Built global-facing brands connected to education, creativity, talent, wellness, and human development",
+];
+
+const publishedAuthor = [
+  "Author of A Spiritual Warrior’s Path to Re-Enlightening",
+  "Writer of Earth School: A Temporary Human Experience",
+  "Creator of transformational frameworks exploring consciousness, spiritual growth, awareness, boundaries, and the human experience",
+];
+
+const credentials = [
+  "Clinical Hypnotherapist",
+  "Past Life Regression Therapy",
+  "Between Lives Regression Therapy",
+  "Spiritual Life Coach",
+  "Spiritual Interfaith Minister",
+  "Shamanic Healing Energy",
+  "Akashic Records",
+  "Holistic Health Practitioner",
+  "Advanced Meditation Certification",
+  "Cognitive Behavioral Therapist",
+  "Death Guide",
+  "Reiki Level 2",
+  "How to Rewire Your Brain: Neuroplasticity",
+  "Doctor of Philosophy in Metaphysics",
+  "Doctor of Philosophy in Spiritual Counseling",
+  "Performance Psychology Practitioner",
+  "Leadership & Human Potential",
+  "Public Speaker",
+];
+
 export default function Home() {
   return (
     <main className="landing">
@@ -171,30 +207,59 @@ export default function Home() {
         <p>Building systems that work. Building people up. Building what’s next.</p>
       </section>
 
-      <section className="glass section two-col">
-        <div>
-          <h3>Rev. Dr. Jessica Simmonds</h3>
-          <p className="sub">Multidisciplinary Entrepreneur | Visionary Builder</p>
-          <ul>
-            <li>CEO, Aspire Agency Global</li>
-            <li>Founder, Aspire Game Academy</li>
-            <li>Creator, EARTH SCHOOL</li>
-            <li>Founder, Aspire Global Foundation</li>
-            <li>Creator, Love Storm Retreats</li>
-            <li>Public Speaker</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Credentials</h4>
-          <ul>
-            <li>Clinical Hypnotherapist</li>
-            <li>Performance Psychology Practitioner</li>
-            <li>Spiritual Life Coach</li>
-            <li>Interfaith Minister</li>
-            <li>Doctorates in Philosophy of Metaphysics and Spiritual Counseling</li>
-            <li>Author of A Spiritual Warrior’s Path to Re-Enlightening</li>
-            <li>Writer of Earth School: A Temporary Human Experience</li>
-          </ul>
+      <section className="glass section resume-section">
+        <h3>Global Experience, Credentials & Human Development Work</h3>
+        <p>
+          Rev. Dr. Jessica Simmonds brings 20+ years of entrepreneurial experience across
+          education, beauty, media, spiritual development, coaching, hypnotherapy, game industry
+          infrastructure, immersive technology, and global impact work. Her work connects
+          technology with the human mind, human potential, creativity, compassion, and real-world
+          transformation.
+        </p>
+        <div className="resume-grid">
+          <article className="resume-card">
+            <h4>20+ Years Entrepreneurial Experience</h4>
+            <ul className="credential-badges">
+              {entrepreneurialExperience.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </article>
+          <article className="resume-card">
+            <h4>Published Author</h4>
+            <ul className="credential-badges">
+              {publishedAuthor.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </article>
+          <article className="resume-card">
+            <h4>Credentials & Certifications</h4>
+            <ul className="credential-badges">
+              {credentials.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </article>
+          <article className="resume-card">
+            <h4>Global Vision</h4>
+            <p>
+              Jessica’s work is global in scope, connecting Canadian-built studio infrastructure,
+              international education, immersive wellness, spiritual development, retreats, and
+              technology-driven compassion projects.
+            </p>
+            <ul className="credential-badges">
+              <li>Aspire P.O.D.S. serves game studios globally.</li>
+              <li>Aspire Game Academy is designed for global pop-up education.</li>
+              <li>EARTH SCHOOL is designed as a VR/AR human development experience.</li>
+              <li>
+                Aspire Global Foundation uses technology and compassion for real-world impact.
+              </li>
+              <li>
+                Love Storm Retreats supports neurodivergent-affirming healing and connection.
+              </li>
+            </ul>
+          </article>
         </div>
       </section>
 

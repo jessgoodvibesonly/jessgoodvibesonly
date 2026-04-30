@@ -1,3 +1,6 @@
+import Image from "next/image";
+import jessImage from "../jessmysticalimage.png";
+
 const podBadges = [
   "Production",
   "Live Ops",
@@ -89,7 +92,13 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-image-wrap">
-          <img src="/jessica-mystical.jpg" alt="Rev. Dr. Jessica Simmonds mystical portrait" className="hero-image" />
+          <Image
+            src={jessImage}
+            alt="Rev. Dr. Jessica Simmonds"
+            className="hero-image rounded-2xl object-cover"
+            sizes="(max-width: 900px) 100vw, 40vw"
+            priority
+          />
         </div>
       </section>
 

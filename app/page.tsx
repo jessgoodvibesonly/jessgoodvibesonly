@@ -52,8 +52,7 @@ const speakingTopics = [
 const entrepreneurialExperience = [
   "CEO & Founder, Aspire Agency Global Inc.",
   "Founder, Paramita Academy of Makeup (international education brand)",
-  "Makeup artist trained and working in London, England",
-  "Experience across film, television, editorial, bridal, and professional artistry",
+  "Makeup artist trained in London, England (since 1999) with professional experience across film, television, editorial, bridal, and artistry",
   "Built and led education-based businesses for over two decades",
   "Training and certifying makeup artists globally since 2002",
 ];

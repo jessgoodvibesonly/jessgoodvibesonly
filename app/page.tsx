@@ -284,9 +284,9 @@ export default function Home() {
           My talks are designed to shift perspective, spark innovation, and leave people seeing their work, their lives, and what&apos;s possible differently.
         </p>
         <p className="speaking-topics-intro">Core Topics:</p>
-        <div className="topic-grid">
+        <div className="topicGrid">
           {speakingTopics.map((topic) => (
-            <span key={topic} className="topic-badge">
+            <span key={topic} className="topicPill">
               {topic}
             </span>
           ))}

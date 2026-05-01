@@ -57,7 +57,7 @@ const speakingTopics = [
 
 const entrepreneurialExperience = [
   "CEO, Aspire Agency Global Inc.",
-  "Founder of Paramita Academy of Makeup",
+  "Founder of Paramita Academy of Makeup (global education brand)",
   "Built and led education-based businesses for over two decades",
   "Trained and certified makeup artists since 2002",
   "Background in film, television, editorial, bridal, and professional makeup artistry",
@@ -94,10 +94,11 @@ export default function Home() {
         <div className="hero-copy">
           <h1>Rev. Dr. Jessica Simmonds</h1>
           <h2>Technology × Consciousness × Creativity</h2>
-          <p>CEO, Aspire Agency Global Inc. | Founder, Paramita Academy of Makeup</p>
+          <p>CEO, Aspire Agency Global Inc. | Founder | Public Speaker | Author</p>
           <p>
             Visionary builder, interfaith minister, and published author creating never-been-done-before
-            ideas across immersive technology, games, wellness, and global impact.
+            ideas across immersive technology, games, wellness, and global impact as a tech + AI +
+            human potential leader and global ecosystem creator.
           </p>
           <p>
             I combine AI, immersive technology, game development, and the human mind to build

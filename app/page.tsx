@@ -37,16 +37,16 @@ const ecosystemCards = [
 
 const speakingTopics = [
   "AI, Consciousness, and the Future of Human Development",
-  "From Game Dev to Human Development",
   "Technology and the Human Mind",
+  "The Future of VR/AR Human Development Experiences",
   "The Future of Immersive Wellness",
+  "From Game Development to Human Development",
   "Games as Consciousness-Shifting Experiences",
+  "Global Game Development Infrastructure",
   "Building Systems that Scale People and Studios",
+  "Building People-First Systems",
   "Technology, Compassion, and Global Impact",
   "Neurodivergent-Affirming Leadership and Human Development",
-  "The Future of VR/AR Human Development Experiences",
-  "Global Game Development Infrastructure",
-  "Building People-First Systems",
 ];
 
 const entrepreneurialExperience = [
@@ -275,8 +275,15 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className="glass section">
+      <section className="glass section speaking-topics-section">
         <h3>Speaking Topics</h3>
+        <p>
+          I speak at the intersection of technology, consciousness, human potential, and global systems — helping audiences rethink how we build, create, and experience the future.
+        </p>
+        <p>
+          My talks are designed to shift perspective, spark innovation, and leave people seeing their work, their lives, and what&apos;s possible differently.
+        </p>
+        <p className="speaking-topics-intro">Core Topics:</p>
         <div className="topic-grid">
           {speakingTopics.map((topic) => (
             <span key={topic} className="topic-badge">
@@ -284,6 +291,7 @@ export default function Home() {
             </span>
           ))}
         </div>
+        <p className="speaking-topics-highlight">&ldquo;These are not just talks. They are perspective-shifting experiences.&rdquo;</p>
       </section>
 
       <section className="quote">The future is human. Let’s build it together.</section>

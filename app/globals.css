@@ -584,3 +584,57 @@ p {
     border-radius: 14px;
   }
 }
+
+.final-cta-prompt {
+  margin-bottom: 0.9rem;
+}
+
+.final-cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.9rem;
+}
+
+.final-cta-primary {
+  color: #2d003f;
+  background: linear-gradient(90deg, #ffe600, #fff9a8);
+  box-shadow: 0 0 24px rgba(255, 230, 0, 0.58), 0 0 14px rgba(255, 249, 168, 0.5);
+  padding: 0.95rem 1.5rem;
+  font-size: clamp(0.98rem, 1.9vw, 1.06rem);
+}
+
+.final-cta-primary:hover {
+  box-shadow: 0 0 30px rgba(255, 230, 0, 0.8), 0 0 18px rgba(255, 249, 168, 0.72);
+}
+
+.final-cta-secondary {
+  color: var(--soft-white);
+  background: transparent;
+  border: 1px solid rgba(255, 43, 214, 0.8);
+  box-shadow: 0 0 16px rgba(255, 43, 214, 0.45), inset 0 0 10px rgba(123, 44, 255, 0.25);
+}
+
+.final-cta-secondary:hover {
+  transform: none;
+  background: rgba(123, 44, 255, 0.2);
+  border-color: rgba(255, 123, 224, 0.95);
+  box-shadow: 0 0 20px rgba(255, 43, 214, 0.6), inset 0 0 14px rgba(123, 44, 255, 0.35);
+}
+
+.final-cta-note {
+  margin-top: 0.95rem;
+  font-size: 0.95rem;
+  color: rgba(255, 247, 255, 0.78);
+}
+
+@media (max-width: 639px) {
+  .final-cta-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .final-cta-buttons .btn {
+    width: 100%;
+  }
+}

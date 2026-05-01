@@ -286,7 +286,7 @@ export default function Home() {
         <p className="speaking-topics-intro">Core Topics:</p>
         <div className="topic-grid">
           {speakingTopics.map((topic) => (
-            <span key={topic} className="topic-badge">
+            <span key={topic} className="rounded-xl bg-purple-700/60 border border-purple-400/30 px-5 py-3 text-white text-sm md:text-base shadow-[0_0_14px_rgba(255,43,214,0.26)] transition-colors duration-200 hover:bg-purple-700/80 hover:border-purple-300/60">
               {topic}
             </span>
           ))}

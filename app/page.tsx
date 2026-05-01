@@ -42,6 +42,7 @@ const ecosystemCards = [
 ];
 
 const speakingTopics = [
+  "AI, Consciousness, and the Future of Human Development",
   "From Game Dev to Human Development",
   "Technology and the Human Mind",
   "The Future of Immersive Wellness",
@@ -98,14 +99,16 @@ export default function Home() {
             Visionary builder, interfaith minister, and published author creating never-been-done-before
             ideas across immersive technology, games, wellness, and global impact.
           </p>
+          <p>
+            I combine AI, immersive technology, game development, and the human mind to build
+            systems that scale studios and experiences that elevate people.
+          </p>
           <p className="hero-highlight">
             Why the next generation of games will change how we experience reality.
           </p>
           <p className="strip">Games | Human Potential | Technology | Compassion | Global Impact</p>
           <p className="authority">
-            Wife and mother of five • Neurodivergent thinker • Multimedia artist • Singer • Makeup artist
-            • Interfaith minister • Published author • Clinical hypnotherapist • Spiritual life coach •
-            20+ year entrepreneur
+            AI • Technology • Human Potential • Public Speaker • Founder • Author
           </p>
           <div className="cta-row">
             <a className="btn primary" href="#ecosystem">
@@ -139,10 +142,12 @@ export default function Home() {
           potential, game development, education, compassion, and immersive experiences connect.
         </p>
         <p>
-          Aspire P.O.D.S. supports studios. Aspire Game Academy trains future talent. EARTH SCHOOL
-          creates immersive VR/AR human development experiences. Aspire Global Foundation turns
-          technology into compassion and real-world impact. Love Storm Retreats supports healing,
-          connection, and neurodivergent-affirming transformation.
+          Aspire P.O.D.S. uses AI-aware workflows to support modern studio operations. Aspire Game
+          Academy prepares talent for the future of AI-supported game production. EARTH SCHOOL
+          explores AI-guided awareness, choice-based progression, and immersive human development.
+          Aspire Global Foundation uses technology and compassion to create scalable impact. Love
+          Storm Retreats brings human connection, nervous system support, and
+          neurodivergent-affirming transformation.
         </p>
         <p>
           Together, they form one connected global vision: systems for studios, education for
@@ -264,7 +269,7 @@ export default function Home() {
       </section>
 
       <section className="glass section">
-        <h3>Building what has never been done before.</h3>
+        <h3>My Unique Edge</h3>
         <p>
           I build experiences that merge immersive technology, human consciousness, creativity,
           compassion, wellness, games, and global impact for partners including Meta, Mindvalley,
@@ -272,15 +277,25 @@ export default function Home() {
         </p>
         <p>From production pipelines to consciousness design, my work bridges:</p>
         <ul className="edge-list">
-          <li>Game development</li>
-          <li>Neuroscience-inspired awareness</li>
-          <li>Immersive environments</li>
-          <li>Human transformation</li>
-          <li>Compassion-driven technology</li>
-          <li>Public speaking and thought leadership</li>
-          <li>Global studio infrastructure</li>
-          <li>Education and talent development</li>
+          <li>AI-assisted creativity</li>
+          <li>AI-supported human development</li>
+          <li>AI-powered systems and workflows</li>
+          <li>Human-centered technology</li>
         </ul>
+      </section>
+
+      <section className="glass section">
+        <h3>AI + Human Potential</h3>
+        <p>
+          AI is not replacing the human experience. Used with intention, it can help us understand
+          patterns, build better systems, support creativity, improve access, and expand what is
+          possible for people and organizations.
+        </p>
+        <p>
+          My work explores how AI, immersive technology, game development, hypnotherapy-inspired
+          design, and consciousness-based frameworks can come together to support human growth,
+          education, studio infrastructure, and real-world impact.
+        </p>
       </section>
 
       <section className="glass section">

@@ -335,6 +335,10 @@ export default function Home() {
           </a>
         </div>
         <p className="final-cta-note">For partnerships, speaking, media, or aligned collaboration.</p>
+        <p className="final-cta-signoff">
+          <img src="/peacefavicon.png" alt="Peace symbol" className="final-cta-peace" />
+          Jess ☮️
+        </p>
       </section>
     </main>
   );

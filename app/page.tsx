@@ -36,7 +36,7 @@ const ecosystemCards = [
   {
     title: "LOVE STORM RETREATS",
     description:
-      "Neurodivergent-affirming spiritual retreats for healing, connection, nervous system support, awareness, and empowered living.",
+      "Neurodivergent-affirming retreats for healing, connection, nervous system support, and empowered living.",
     tagline: "Heal. Connect. Rise.",
   },
 ];
@@ -49,7 +49,7 @@ const speakingTopics = [
   "Games as Consciousness-Shifting Experiences",
   "Building Systems that Scale People and Studios",
   "Technology, Compassion, and Global Impact",
-  "Neurodivergent-Affirming Leadership and Retreat Design",
+  "Neurodivergent-Affirming Leadership and Human Development",
   "The Future of VR/AR Human Development Experiences",
   "Global Game Development Infrastructure",
   "Building People-First Systems",
@@ -102,7 +102,8 @@ export default function Home() {
           </p>
           <p>
             I combine AI, immersive technology, game development, and the human mind to build
-            systems that scale studios and experiences that elevate people.
+            systems and experiences that support human potential, including neurodivergent thinkers
+            and creators.
           </p>
           <p className="hero-highlight">
             Why the next generation of games will change how we experience reality.
@@ -205,6 +206,25 @@ export default function Home() {
         </p>
         <p className="formula">Technology + Awareness + Compassion = A Better Future</p>
         <p>Building systems that work. Building people up. Building what’s next.</p>
+      </section>
+
+      <section className="glass section">
+        <h3>Neurodivergent-Affirming Work</h3>
+        <p>
+          My work is designed to support neurodivergent individuals, including those with ADHD,
+          autism, sensory sensitivity, and nonlinear thinking styles.
+        </p>
+        <p>
+          I create environments, systems, and experiences that prioritize clarity, reduced
+          overwhelm, nervous system support, and authentic self-expression.
+        </p>
+        <p>This includes:</p>
+        <ul className="edge-list">
+          <li>neurodivergent-affirming retreat experiences (Love Storm Retreats)</li>
+          <li>human-centered design in immersive environments</li>
+          <li>supportive, awareness-based approaches to personal growth</li>
+          <li>creating systems that work with how people actually think and feel</li>
+        </ul>
       </section>
 
       <section className="glass section resume-section">

@@ -50,32 +50,45 @@ const speakingTopics = [
 ];
 
 const entrepreneurialExperience = [
-  "CEO, Aspire Agency Global Inc.",
-  "Founder of Paramita Academy of Makeup (global education brand)",
+  "CEO & Founder, Aspire Agency Global Inc.",
+  "Founder, Paramita Academy of Makeup (international education brand)",
+  "Makeup artist trained and working in London, England",
+  "Experience across film, television, editorial, bridal, and professional artistry",
   "Built and led education-based businesses for over two decades",
-  "Trained and certified makeup artists since 2002",
-  "Background in film, television, editorial, bridal, and professional makeup artistry",
-  "Built global-facing brands connected to education, creativity, talent, wellness, and human development",
+  "Training and certifying makeup artists globally since 2002",
 ];
 
-const publishedAuthor = [
-  "Author of A Spiritual Warrior’s Path to Re-Enlightening",
-  "Writer of Earth School: A Temporary Human Experience",
-  "Creator of transformational frameworks exploring consciousness, spiritual growth, awareness, boundaries, and the human experience",
+const creativeArtisticWork = ["Multimedia Artist (published & exhibiting)", "Singer", "Poet"];
+
+const credibilityAffiliations = [
+  "Psychology Today Profile",
+  "Women in Games Ambassador",
+  "IGDA Member",
+  "Published Author of A Spiritual Warrior’s Path to Re-Enlightening",
+  "Author of Earth School: A Temporary Human Experience",
 ];
 
 const credentials = [
-  "Clinical Hypnotherapy",
+  "Doctorate in Philosophy of Metaphysics",
+  "Doctorate in Philosophy of Spiritual Counselling",
+  "Clinical Hypnotherapist",
+  "Cognitive Behavioral Therapy (CBT) Practitioner",
+  "Neuro-Linguistic Programming (NLP) Practitioner",
+  "Life Between Lives Therapy Practitioner",
+  "Past Life Regression Practitioner",
+  "Spiritual Life Coach",
+  "Interfaith Minister",
+  "Spiritual Minister",
+  "Shamanic Practitioner",
+  "Akashic Records Practitioner",
+  "Reiki Level 2",
+  "Death Doula / Death Guide",
   "Advanced Meditation Practitioner",
   "HeartMath Practitioner",
-  "NLP",
-  "CBT Life Coaching",
-  "Reiki Level 2",
-  "Akashic Records",
-  "Past Life Regression",
-  "Life Between Lives Therapy",
-  "Shamanic Practices",
-  "Joe Dispenza Progressive Course",
+  "Holistic Health Practitioner",
+  "Joe Dispenza Progressive Course Graduate",
+  "Eckhart Tolle — A New Earth Course",
+  "Millionaire Mind Intensive Graduate",
 ];
 
 const getPillClassName = (text: string) =>
@@ -188,11 +201,9 @@ export default function Home() {
       <section className="glass section resume-section">
         <h3>Global Experience, Credibility & Human Development Work</h3>
         <p>
-          Rev. Dr. Jessica Simmonds brings 20+ years of entrepreneurial experience across
-          education, beauty, media, spiritual development, coaching, hypnotherapy, game industry
-          infrastructure, immersive technology, and global impact work. Her work connects
-          technology with the human mind, human potential, creativity, compassion, and real-world
-          transformation.
+          Rev. Dr. Jessica Simmonds brings over 20+ years of entrepreneurial experience across
+          global education, media, beauty, immersive technology, and human development. Her work
+          bridges technology, consciousness, creativity, and real-world transformation.
         </p>
         <div className="resume-grid">
           <article className="resume-card">
@@ -204,11 +215,17 @@ export default function Home() {
             </ul>
           </article>
           <article className="resume-card">
+            <h4>Creative & Artistic Work</h4>
+            <ul className="credential-badges">
+              {creativeArtisticWork.map((item) => (
+                <li key={item} className={getPillClassName(item)}>{item}</li>
+              ))}
+            </ul>
+          </article>
+          <article className="resume-card">
             <h4>Credibility & Affiliations</h4>
             <ul className="credential-badges">
-              <li className={getPillClassName("Women in Games Ambassador")}>Women in Games Ambassador</li>
-              <li className={getPillClassName("IGDA member")}>IGDA member</li>
-              {publishedAuthor.map((item) => (
+              {credibilityAffiliations.map((item) => (
                 <li key={item} className={getPillClassName(item)}>{item}</li>
               ))}
             </ul>
@@ -219,29 +236,6 @@ export default function Home() {
               {credentials.map((item) => (
                 <li key={item} className={getPillClassName(item)}>{item}</li>
               ))}
-            </ul>
-          </article>
-          <article className="resume-card">
-            <h4>Global Vision</h4>
-            <p>
-              Jessica’s work is global in scope, connecting Canadian-built studio infrastructure,
-              international education, immersive wellness, spiritual development, retreats, and
-              technology-driven compassion projects.
-            </p>
-            <ul className="credential-badges">
-              <li className={getPillClassName("Aspire P.O.D.S. serves game studios globally.")}>Aspire P.O.D.S. serves game studios globally.</li>
-              <li className={getPillClassName("Aspire Game Academy is designed for global pop-up education.")}>Aspire Game Academy is designed for global pop-up education.</li>
-              <li className={getPillClassName("EARTH SCHOOL is designed as a VR/AR human development experience.")}>EARTH SCHOOL is designed as a VR/AR human development experience.</li>
-              <li
-                className={getPillClassName("Aspire Global Foundation uses technology and compassion for real-world impact.")}
-              >
-                Aspire Global Foundation uses technology and compassion for real-world impact.
-              </li>
-              <li
-                className={getPillClassName("Love Storm Retreats supports neurodivergent-affirming healing and connection.")}
-              >
-                Love Storm Retreats supports neurodivergent-affirming healing and connection.
-              </li>
             </ul>
           </article>
         </div>

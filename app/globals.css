@@ -374,7 +374,7 @@ p {
   margin-top: 1rem;
   display: grid;
   gap: 0.95rem;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .resume-card {
@@ -497,6 +497,18 @@ p {
   }
 }
 
+
+@media (max-width: 1180px) {
+  .resume-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 639px) {
+  .resume-grid {
+    grid-template-columns: 1fr;
+  }
+}
 @media (min-width: 1200px) {
   .topic-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));

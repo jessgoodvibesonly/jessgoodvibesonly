@@ -113,9 +113,6 @@ export default function Home() {
             AI • Technology • Human Potential • Public Speaker • Founder • Author
           </p>
           <div className="cta-row">
-            <a className="btn primary" href="#ecosystem">
-              Explore the Ecosystem
-            </a>
             <a
               className="btn secondary"
               href="https://calendly.com/aspiritualwarriorspath/synergy-call-aspire-x-earth-school-x-partnerships"
@@ -139,21 +136,33 @@ export default function Home() {
 
       <section id="ecosystem" className="glass section">
         <h3>One Global Ecosystem for Studios, Talent, Transformation, and Impact</h3>
-        <p>
+        <p className="ecosystem-copy">
           Rev. Dr. Jessica Simmonds is building a global ecosystem where technology, human
-          potential, game development, education, compassion, and immersive experiences connect.
+          potential, game development, education, and compassion come together.
         </p>
-        <p>
-          Aspire P.O.D.S. uses AI-aware workflows to support modern studio operations. Aspire Game
-          Academy prepares talent for the future of AI-supported game production. EARTH SCHOOL
-          explores AI-guided awareness, choice-based progression, and immersive human development.
-          Aspire Global Foundation uses technology and compassion to create scalable impact. Love
-          Storm Retreats brings human connection, nervous system support, and
-          neurodivergent-affirming transformation.
+        <p className="ecosystem-copy">
+          Aspire P.O.D.S. delivers embedded, AI-aware production, operations, development, and
+          support for modern game studios.
         </p>
-        <p>
-          Together, they form one connected global vision: systems for studios, education for
-          talent, experiences for people, and compassion for the world.
+        <p className="ecosystem-copy">
+          Aspire Game Academy prepares talent for the future of game development and AI-supported
+          production.
+        </p>
+        <p className="ecosystem-copy">
+          EARTH SCHOOL explores awareness, choice-based progression, and immersive human
+          development through interactive experiences.
+        </p>
+        <p className="ecosystem-copy">
+          Aspire Global Foundation uses technology and compassion to create scalable real-world
+          impact.
+        </p>
+        <p className="ecosystem-copy">
+          Love Storm Retreats offers neurodivergent-affirming spaces for connection, nervous
+          system support, and transformation.
+        </p>
+        <p className="ecosystem-copy ecosystem-summary">
+          Together, these form one connected global vision: systems for studios, education for
+          talent, experiences for people, and impact for the world.
         </p>
       </section>
 

@@ -147,6 +147,18 @@ p {
   gap: clamp(0.7rem, 1.7vw, 1rem);
 }
 
+.peaceHero {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(0 0 12px rgba(255, 0, 200, 0.6))
+    drop-shadow(0 0 20px rgba(0, 200, 255, 0.5));
+  opacity: 0.9;
+}
+
 .hero p {
   color: #fff5ff;
 }

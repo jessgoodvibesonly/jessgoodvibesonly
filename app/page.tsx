@@ -98,6 +98,7 @@ export default function Home() {
     <main className="landing">
       <section className="hero glass">
         <div className="hero-copy">
+          <img src="/peacefavicon.png" alt="Peace Symbol" className="peaceHero" />
           <h1>Rev. Dr. Jessica Simmonds</h1>
           <h2>Technology × Consciousness × Creativity</h2>
           <p>CEO, Aspire Agency Global Inc. | Founder | Public Speaker | Author</p>

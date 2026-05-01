@@ -339,15 +339,15 @@ export default function Home() {
             Instagram: @aspiritualwarriorspath
           </a>
         </div>
+        <div className="final-cta-divider" aria-hidden="true" />
+        <p className="final-cta-note">For partnerships, speaking, media, or aligned collaboration, let&apos;s connect.</p>
+        <p className="final-cta-signoff">
+          Jess <span className="peaceGlow">☮️</span>
+        </p>
+        <div className="final-cta-divider" aria-hidden="true" />
         <p className="creator-credit">
           All videos, websites, and creative content featured here were concepted, designed, and
           created by Jessica Simmonds.
-          <span>Jess ☮️</span>
-        </p>
-        <p className="final-cta-note">For partnerships, speaking, media, or aligned collaboration.</p>
-        <p className="final-cta-signoff">
-          <img src="/peacefavicon.png" alt="Peace symbol" className="final-cta-peace" />
-          Jess ☮️
         </p>
       </section>
     </main>

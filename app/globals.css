@@ -674,38 +674,30 @@ p {
   box-shadow: 0 0 20px rgba(255, 43, 214, 0.6), inset 0 0 14px rgba(123, 44, 255, 0.35);
 }
 
+.final-cta-divider {
+  width: min(680px, 86%);
+  height: 1px;
+  margin: 1.1rem auto;
+  background: linear-gradient(90deg, rgba(255, 43, 214, 0.18), rgba(255, 230, 0, 0.45), rgba(255, 43, 214, 0.18));
+}
+
 .final-cta-signoff {
-  margin-top: 1rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
+  margin-top: 0.5rem;
   font-size: 1rem;
   color: rgba(255, 247, 255, 0.9);
 }
 
-.final-cta-peace {
-  width: 18px;
-  height: 18px;
-  opacity: 0.92;
-  filter: drop-shadow(0 0 8px rgba(255, 43, 214, 0.55));
-}
-
-
 .creator-credit {
-  margin: 1.2rem auto 0.8rem;
+  margin: 1.15rem auto 0;
   max-width: 68ch;
-  font-size: clamp(0.88rem, 1.6vw, 0.96rem);
-  line-height: 1.7;
-  color: rgba(255, 247, 255, 0.72);
-  text-shadow: 0 0 12px rgba(255, 43, 214, 0.26);
+  font-size: clamp(0.78rem, 1.35vw, 0.86rem);
+  line-height: 1.65;
+  color: rgba(255, 247, 255, 0.58);
+  text-shadow: 0 0 12px rgba(255, 43, 214, 0.2);
 }
 
-.creator-credit span {
-  display: block;
-  margin-top: 0.45rem;
-}
 .final-cta-note {
-  margin-top: 0.95rem;
+  margin-top: 0.15rem;
   font-size: 0.95rem;
   color: rgba(255, 247, 255, 0.78);
 }

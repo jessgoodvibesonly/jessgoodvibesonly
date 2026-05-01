@@ -690,6 +690,20 @@ p {
   filter: drop-shadow(0 0 8px rgba(255, 43, 214, 0.55));
 }
 
+
+.creator-credit {
+  margin: 1.2rem auto 0.8rem;
+  max-width: 68ch;
+  font-size: clamp(0.88rem, 1.6vw, 0.96rem);
+  line-height: 1.7;
+  color: rgba(255, 247, 255, 0.72);
+  text-shadow: 0 0 12px rgba(255, 43, 214, 0.26);
+}
+
+.creator-credit span {
+  display: block;
+  margin-top: 0.45rem;
+}
 .final-cta-note {
   margin-top: 0.95rem;
   font-size: 0.95rem;

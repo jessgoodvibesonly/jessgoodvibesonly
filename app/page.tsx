@@ -90,6 +90,9 @@ const credentials = [
   "Public Speaker",
 ];
 
+const getPillClassName = (text: string) =>
+  text.length > 110 ? "pill long-pill" : "pill";
+
 export default function Home() {
   return (
     <main className="landing">
@@ -221,7 +224,7 @@ export default function Home() {
             <h4>20+ Years Entrepreneurial Experience</h4>
             <ul className="credential-badges">
               {entrepreneurialExperience.map((item) => (
-                <li key={item}>{item}</li>
+                <li key={item} className={getPillClassName(item)}>{item}</li>
               ))}
             </ul>
           </article>
@@ -229,7 +232,7 @@ export default function Home() {
             <h4>Published Author</h4>
             <ul className="credential-badges">
               {publishedAuthor.map((item) => (
-                <li key={item}>{item}</li>
+                <li key={item} className={getPillClassName(item)}>{item}</li>
               ))}
             </ul>
           </article>
@@ -237,7 +240,7 @@ export default function Home() {
             <h4>Credentials & Certifications</h4>
             <ul className="credential-badges">
               {credentials.map((item) => (
-                <li key={item}>{item}</li>
+                <li key={item} className={getPillClassName(item)}>{item}</li>
               ))}
             </ul>
           </article>
@@ -249,13 +252,17 @@ export default function Home() {
               technology-driven compassion projects.
             </p>
             <ul className="credential-badges">
-              <li>Aspire P.O.D.S. serves game studios globally.</li>
-              <li>Aspire Game Academy is designed for global pop-up education.</li>
-              <li>EARTH SCHOOL is designed as a VR/AR human development experience.</li>
-              <li>
+              <li className={getPillClassName("Aspire P.O.D.S. serves game studios globally.")}>Aspire P.O.D.S. serves game studios globally.</li>
+              <li className={getPillClassName("Aspire Game Academy is designed for global pop-up education.")}>Aspire Game Academy is designed for global pop-up education.</li>
+              <li className={getPillClassName("EARTH SCHOOL is designed as a VR/AR human development experience.")}>EARTH SCHOOL is designed as a VR/AR human development experience.</li>
+              <li
+                className={getPillClassName("Aspire Global Foundation uses technology and compassion for real-world impact.")}
+              >
                 Aspire Global Foundation uses technology and compassion for real-world impact.
               </li>
-              <li>
+              <li
+                className={getPillClassName("Love Storm Retreats supports neurodivergent-affirming healing and connection.")}
+              >
                 Love Storm Retreats supports neurodivergent-affirming healing and connection.
               </li>
             </ul>

@@ -312,6 +312,18 @@ p {
   background: rgba(123, 44, 255, 0.32);
 }
 
+.edge-section p {
+  max-width: 62ch;
+}
+
+.edge-section p + p {
+  margin-top: 0.6rem;
+}
+
+.edge-section .edge-list {
+  margin-top: 0.65rem;
+}
+
 .flow {
   color: var(--neon-yellow);
   font-weight: 700;

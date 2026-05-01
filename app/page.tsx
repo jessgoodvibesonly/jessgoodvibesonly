@@ -305,15 +305,30 @@ export default function Home() {
 
       <section className="glass section center final-cta">
         <h3>Gaming. Human Performance. Consciousness. Impact.</h3>
-        <p>All converging.</p>
-        <a
-          className="btn primary"
-          href="https://calendly.com/aspiritualwarriorspath/synergy-call-aspire-x-earth-school-x-partnerships"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Book a Synergy Call
-        </a>
+        <p className="final-cta-prompt">Where do you want to start?</p>
+        <div className="final-cta-buttons" role="group" aria-label="Explore Jessica’s ecosystem">
+          <a
+            className="btn final-cta-primary"
+            href="https://calendly.com/aspiritualwarriorspath/synergy-call-aspire-x-earth-school-x-partnerships"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Book a Synergy Call
+          </a>
+          <a className="btn final-cta-secondary" href="https://earth-school-five.vercel.app" target="_blank" rel="noreferrer">
+            Explore Earth School
+          </a>
+          <a className="btn final-cta-secondary" href="https://aspire-game-academy.vercel.app" target="_blank" rel="noreferrer">
+            Aspire Game Academy
+          </a>
+          <a className="btn final-cta-secondary" href="https://aspire-pods.vercel.app" target="_blank" rel="noreferrer">
+            Aspire P.O.D.S.
+          </a>
+          <a className="btn final-cta-secondary" href="https://www.aspiritualwarriorspath.com" target="_blank" rel="noreferrer">
+            Spiritual Work & Writings
+          </a>
+        </div>
+        <p className="final-cta-note">For partnerships, speaking, media, or aligned collaboration.</p>
       </section>
     </main>
   );

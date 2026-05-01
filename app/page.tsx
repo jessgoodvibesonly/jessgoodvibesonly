@@ -1,20 +1,14 @@
 import Image from "next/image";
 import jessImage from "../jessmysticalimage.png";
 
-const podBadges = [
-  "Production",
-  "Live Ops",
-  "QA",
-  "DevQA",
-  "Player Support",
-  "Community",
-  "Localization",
-  "Monetization",
-  "Analytics Ops",
-  "Release Stability",
-];
-
 const ecosystemCards = [
+  {
+    title: "ASPIRE P.O.D.S.",
+    description:
+      "Embedded production, operations, development, and support infrastructure for modern game studios.",
+    tagline:
+      "AI-aware, customizable, and integrated directly into studio pipelines. Structured. Secure. Scalable. Built from Canada. Serving studios globally.",
+  },
   {
     title: "ASPIRE GAME ACADEMY",
     description:
@@ -166,35 +160,15 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="pods-feature">
-        <span className="badge">Global Studio Infrastructure</span>
-        <h3>ASPIRE P.O.D.S.</h3>
-        <h4>Production • Operations • Development • Support</h4>
-        <p>Customizable embedded Canadian production and Live Ops pods built for game studios globally.</p>
-        <p>
-          Aspire P.O.D.S. integrates directly into studio pipelines to support production, QA,
-          DevQA, Live Ops, player support, community, localization, monetization, analytics
-          operations, and release stability.
-        </p>
-        <p>
-          Embedded infrastructure, not traditional outsourcing. Structured. Secure. Scalable. Built
-          from Canada. Serving studios globally.
-        </p>
-        <div className="badge-row">
-          {podBadges.map((badge) => (
-            <span key={badge}>{badge}</span>
-          ))}
-        </div>
-      </section>
-
       <section className="glass section">
         <p className="flow">
           Aspire P.O.D.S. → Aspire Game Academy → EARTH SCHOOL → Aspire Global Foundation → Love Storm Retreats
         </p>
         <p className="clarity">
-          This is not a collection of random projects. This is one global ecosystem combining
-          technology with the human mind, global game development, education, immersive wellness,
-          compassion, and real-world impact.
+          This is not a collection of separate projects. This is one connected global ecosystem where technology, human potential, game development, education, immersive experiences, and compassion come together.
+        </p>
+        <p className="clarity">
+          Aspire P.O.D.S. forms the foundation — embedded infrastructure supporting studios. From there, the ecosystem expands into education, immersive experiences, and human transformation.
         </p>
         <div className="cards">
           {ecosystemCards.map((card) => (

@@ -292,6 +292,9 @@ export default function Home() {
           ))}
         </div>
         <p className="speaking-topics-highlight">&ldquo;These are not just talks. They are perspective-shifting experiences.&rdquo;</p>
+        <p className="text-center text-sm md:text-base font-medium mt-6 opacity-90">
+          Jess <span className="peaceGlow">☮️</span>
+        </p>
       </section>
 
       <section className="quote">The future is human. Let’s build it together.</section>

@@ -311,6 +311,13 @@ export default function Home() {
 
       <section className="quote">The future is human. Let’s build it together.</section>
 
+      <section className="quote-section" aria-label="Frida Kahlo quote">
+        <p className="quote-section-main">&ldquo;I have painted my own reality.&rdquo; — Frida Kahlo</p>
+        <p className="quote-section-support">
+          You can curate your experience. You can shape your reality.
+        </p>
+      </section>
+
       <section className="glass section center final-cta">
         <h3>Gaming. Human Performance. Consciousness. Impact.</h3>
         <p>All converging.</p>

@@ -95,15 +95,15 @@ export default function Home() {
           <h1>Rev. Dr. Jessica Simmonds</h1>
           <h2>Technology × Consciousness × Creativity</h2>
           <p>CEO, Aspire Agency Global Inc. | Founder | Public Speaker | Author</p>
-          <p>
-            Visionary builder, interfaith minister, and published author creating never-been-done-before
-            ideas across immersive technology, games, wellness, and global impact as a tech + AI +
-            human potential leader and global ecosystem creator.
+          <p className="hero-lede">
+            Visionary founder, public speaker, interfaith minister, author, and global ecosystem
+            builder creating new models across AI, immersive technology, games, wellness,
+            education, and human development.
           </p>
-          <p>
-            I combine AI, immersive technology, game development, and the human mind to build
-            systems and experiences that support human potential, including neurodivergent thinkers
-            and creators.
+          <p className="hero-lede">
+            I combine AI, game development, immersive technology, and the human mind to build
+            systems that support studios, creators, neurodivergent thinkers, and people seeking
+            meaningful transformation.
           </p>
           <p className="hero-highlight">
             Why the next generation of games will change how we experience reality.

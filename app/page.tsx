@@ -284,9 +284,39 @@ export default function Home() {
           My talks are designed to shift perspective, spark innovation, and leave people seeing their work, their lives, and what&apos;s possible differently.
         </p>
         <p className="speaking-topics-intro">Core Topics:</p>
-        <div className="topic-grid">
+        <div
+          className="
+            flex flex-wrap
+            gap-2 md:gap-3
+          "
+        >
           {speakingTopics.map((topic) => (
-            <span key={topic} className="topic-badge">
+            <span
+              key={topic}
+              className="
+                inline-block
+                rounded-full
+                px-5 py-3
+                mb-3
+                mr-3
+
+                bg-purple-600/40
+                border border-purple-400/40
+
+                text-white
+                text-sm md:text-base
+                font-medium
+
+                backdrop-blur-sm
+
+                transition-colors duration-200
+                hover:bg-purple-600/60
+                hover:border-purple-300/60
+              "
+              style={{
+                boxShadow: "0 0 12px rgba(168, 85, 247, 0.25)",
+              }}
+            >
               {topic}
             </span>
           ))}

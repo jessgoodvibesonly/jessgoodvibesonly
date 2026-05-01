@@ -165,19 +165,23 @@ export default function Home() {
       <section className="glass section">
         <h3>Neurodivergent-Affirming Work</h3>
         <p>
-          My work is designed to support neurodivergent individuals, including those with ADHD,
-          autism, sensory sensitivity, and nonlinear thinking styles.
+          My work is intentionally designed to support neurodivergent individuals, including those
+          with ADHD, autism, sensory sensitivity, and nonlinear ways of thinking.
         </p>
         <p>
-          I create environments, systems, and experiences that prioritize clarity, reduced
-          overwhelm, nervous system support, and authentic self-expression.
+          Rather than expecting people to fit into rigid systems, I design environments and
+          experiences that adapt to how people naturally think, feel, and process the world.
+        </p>
+        <p>
+          This includes creating spaces that reduce overwhelm, support the nervous system, and
+          encourage clarity, creativity, and authentic self-expression.
         </p>
         <p>This includes:</p>
         <ul className="edge-list">
           <li>neurodivergent-affirming retreat experiences (Love Storm Retreats)</li>
-          <li>human-centered design in immersive environments</li>
-          <li>supportive, awareness-based approaches to personal growth</li>
-          <li>creating systems that work with how people actually think and feel</li>
+          <li>immersive environments designed for clarity and ease</li>
+          <li>awareness-based approaches to growth and transformation</li>
+          <li>systems that align with real human behavior, not forced structure</li>
         </ul>
       </section>
 

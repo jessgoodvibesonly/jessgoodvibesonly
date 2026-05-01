@@ -128,47 +128,18 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="ecosystem" className="glass section">
-        <h3>One Global Ecosystem for Studios, Talent, Transformation, and Impact</h3>
-        <p className="ecosystem-copy">
-          Rev. Dr. Jessica Simmonds is building a global ecosystem where technology, human
-          potential, game development, education, and compassion come together.
-        </p>
-        <p className="ecosystem-copy">
-          Aspire P.O.D.S. delivers embedded, AI-aware production, operations, development, and
-          support for modern game studios.
-        </p>
-        <p className="ecosystem-copy">
-          Aspire Game Academy prepares talent for the future of game development and AI-supported
-          production.
-        </p>
-        <p className="ecosystem-copy">
-          EARTH SCHOOL explores awareness, choice-based progression, and immersive human
-          development through interactive experiences.
-        </p>
-        <p className="ecosystem-copy">
-          Aspire Global Foundation uses technology and compassion to create scalable real-world
-          impact.
-        </p>
-        <p className="ecosystem-copy">
-          Love Storm Retreats offers neurodivergent-affirming spaces for connection, nervous
-          system support, and transformation.
-        </p>
-        <p className="ecosystem-copy ecosystem-summary">
-          Together, these form one connected global vision: systems for studios, education for
-          talent, experiences for people, and impact for the world.
-        </p>
-      </section>
-
       <section className="glass section">
         <p className="flow">
           Aspire P.O.D.S. → Aspire Game Academy → EARTH SCHOOL → Aspire Global Foundation → Love Storm Retreats
         </p>
         <p className="clarity">
-          This is not a collection of separate projects. This is one connected global ecosystem where technology, human potential, game development, education, immersive experiences, and compassion come together.
+          This is not a collection of separate projects. This is one connected global ecosystem where technology, AI, human potential, game development, education, immersive experiences, and compassion come together.
         </p>
         <p className="clarity">
           Aspire P.O.D.S. forms the foundation — embedded infrastructure supporting studios. From there, the ecosystem expands into education, immersive experiences, and human transformation.
+        </p>
+        <p className="clarity">
+          Together, this creates a unified system: infrastructure for studios, education for talent, experiences for people, and impact for the world.
         </p>
         <div className="cards">
           {ecosystemCards.map((card) => (

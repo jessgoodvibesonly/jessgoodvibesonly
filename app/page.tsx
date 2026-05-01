@@ -50,36 +50,64 @@ const speakingTopics = [
 ];
 
 const entrepreneurialExperience = [
-  "CEO, Aspire Agency Global Inc.",
-  "Founder of Paramita Academy of Makeup (global education brand)",
+  "CEO & Founder, Aspire Agency Global Inc.",
+  "Founder, Paramita Academy of Makeup (international education brand)",
+  "Makeup artist trained and working in London, England",
+  "Experience across film, television, editorial, bridal, and professional artistry",
   "Built and led education-based businesses for over two decades",
-  "Trained and certified makeup artists since 2002",
-  "Background in film, television, editorial, bridal, and professional makeup artistry",
-  "Built global-facing brands connected to education, creativity, talent, wellness, and human development",
+  "Training and certifying makeup artists globally since 2002",
+  "Built global-facing brands across education, creativity, talent, wellness, and human development",
 ];
 
-const publishedAuthor = [
-  "Author of A Spiritual Warrior’s Path to Re-Enlightening",
-  "Writer of Earth School: A Temporary Human Experience",
-  "Creator of transformational frameworks exploring consciousness, spiritual growth, awareness, boundaries, and the human experience",
+const credibilityAffiliations = [
+  "Psychology Today Profile",
+  "Women in Games Ambassador",
+  "IGDA Member",
+  "Published Author of A Spiritual Warrior’s Path to Re-Enlightening",
+  "Author of Earth School: A Temporary Human Experience",
+  "Multimedia Artist (published & exhibiting)",
+  "Creator of transformational frameworks exploring consciousness, awareness, boundaries, and human experience",
 ];
 
-const credentials = [
-  "Clinical Hypnotherapy",
+const clinicalTherapeuticCredentials = [
+  "Clinical Hypnotherapist",
+  "Cognitive Behavioral Therapy (CBT) Practitioner",
+  "Neuro-Linguistic Programming (NLP) Practitioner",
+  "Life Between Lives Therapy Practitioner",
+  "Past Life Regression Practitioner",
+];
+
+const spiritualEnergyCredentials = [
+  "Spiritual Life Coach",
+  "Interfaith Minister",
+  "Spiritual Minister",
+  "Shamanic Practitioner",
+  "Akashic Records Practitioner",
+  "Reiki Level 2",
+  "Death Doula / Death Guide",
+];
+
+const wellnessPerformanceCredentials = [
   "Advanced Meditation Practitioner",
   "HeartMath Practitioner",
-  "NLP",
-  "CBT Life Coaching",
-  "Reiki Level 2",
-  "Akashic Records",
-  "Past Life Regression",
-  "Life Between Lives Therapy",
-  "Shamanic Practices",
-  "Joe Dispenza Progressive Course",
+  "Holistic Health Practitioner",
+  "Joe Dispenza Progressive Course Graduate",
 ];
 
-const getPillClassName = (text: string) =>
-  text.length > 110 ? "pill long-pill" : "pill";
+const academicDoctorates = [
+  "Doctorate in Philosophy of Metaphysics",
+  "Doctorate in Philosophy of Spiritual Counseling",
+];
+
+const globalVision = [
+  "Aspire P.O.D.S. supports game studios globally with embedded infrastructure",
+  "Aspire Game Academy develops global talent through AAA-led training",
+  "EARTH SCHOOL redefines human development through immersive experiences",
+  "Aspire Global Foundation creates scalable impact through technology and compassion",
+  "Love Storm Retreats supports neurodivergent individuals through connection, healing, and awareness",
+];
+
+const getPillClassName = (_text: string) => "pill";
 
 export default function Home() {
   return (
@@ -188,11 +216,9 @@ export default function Home() {
       <section className="glass section resume-section">
         <h3>Global Experience, Credibility & Human Development Work</h3>
         <p>
-          Rev. Dr. Jessica Simmonds brings 20+ years of entrepreneurial experience across
-          education, beauty, media, spiritual development, coaching, hypnotherapy, game industry
-          infrastructure, immersive technology, and global impact work. Her work connects
-          technology with the human mind, human potential, creativity, compassion, and real-world
-          transformation.
+          Rev. Dr. Jessica Simmonds brings over 20+ years of entrepreneurial experience across
+          global education, media, beauty, immersive technology, and human development. Her work
+          bridges technology, consciousness, creativity, and real-world transformation.
         </p>
         <div className="resume-grid">
           <article className="resume-card">
@@ -206,17 +232,39 @@ export default function Home() {
           <article className="resume-card">
             <h4>Credibility & Affiliations</h4>
             <ul className="credential-badges">
-              <li className={getPillClassName("Women in Games Ambassador")}>Women in Games Ambassador</li>
-              <li className={getPillClassName("IGDA member")}>IGDA member</li>
-              {publishedAuthor.map((item) => (
+              {credibilityAffiliations.map((item) => (
                 <li key={item} className={getPillClassName(item)}>{item}</li>
               ))}
             </ul>
           </article>
           <article className="resume-card">
-            <h4>Credentials & Certifications</h4>
+            <h4>Clinical / Therapeutic Credentials</h4>
             <ul className="credential-badges">
-              {credentials.map((item) => (
+              {clinicalTherapeuticCredentials.map((item) => (
+                <li key={item} className={getPillClassName(item)}>{item}</li>
+              ))}
+            </ul>
+          </article>
+          <article className="resume-card">
+            <h4>Spiritual / Energy Credentials</h4>
+            <ul className="credential-badges">
+              {spiritualEnergyCredentials.map((item) => (
+                <li key={item} className={getPillClassName(item)}>{item}</li>
+              ))}
+            </ul>
+          </article>
+          <article className="resume-card">
+            <h4>Wellness / Performance Credentials</h4>
+            <ul className="credential-badges">
+              {wellnessPerformanceCredentials.map((item) => (
+                <li key={item} className={getPillClassName(item)}>{item}</li>
+              ))}
+            </ul>
+          </article>
+          <article className="resume-card">
+            <h4>Academic / Doctorates</h4>
+            <ul className="credential-badges">
+              {academicDoctorates.map((item) => (
                 <li key={item} className={getPillClassName(item)}>{item}</li>
               ))}
             </ul>
@@ -224,24 +272,13 @@ export default function Home() {
           <article className="resume-card">
             <h4>Global Vision</h4>
             <p>
-              Jessica’s work is global in scope, connecting Canadian-built studio infrastructure,
-              international education, immersive wellness, spiritual development, retreats, and
-              technology-driven compassion projects.
+              Jessica’s work is global in scope, combining Canadian-built studio infrastructure,
+              international education, immersive technology, and human transformation.
             </p>
             <ul className="credential-badges">
-              <li className={getPillClassName("Aspire P.O.D.S. serves game studios globally.")}>Aspire P.O.D.S. serves game studios globally.</li>
-              <li className={getPillClassName("Aspire Game Academy is designed for global pop-up education.")}>Aspire Game Academy is designed for global pop-up education.</li>
-              <li className={getPillClassName("EARTH SCHOOL is designed as a VR/AR human development experience.")}>EARTH SCHOOL is designed as a VR/AR human development experience.</li>
-              <li
-                className={getPillClassName("Aspire Global Foundation uses technology and compassion for real-world impact.")}
-              >
-                Aspire Global Foundation uses technology and compassion for real-world impact.
-              </li>
-              <li
-                className={getPillClassName("Love Storm Retreats supports neurodivergent-affirming healing and connection.")}
-              >
-                Love Storm Retreats supports neurodivergent-affirming healing and connection.
-              </li>
+              {globalVision.map((item) => (
+                <li key={item} className={getPillClassName(item)}>{item}</li>
+              ))}
             </ul>
           </article>
         </div>

@@ -240,14 +240,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="glass section">
+      <section className="glass section edge-section">
         <h3>My Unique Edge</h3>
         <p>
-          I build experiences that merge immersive technology, human consciousness, creativity,
-          compassion, wellness, games, and global impact for partners including Meta, Mindvalley,
-          Shepherd’s Studio, game studios, wellness leaders, media, investors, and collaborators.
+          I build experiences at the intersection of immersive technology, human consciousness,
+          creativity, wellness, games, and global impact.
         </p>
-        <p>From production pipelines to consciousness design, my work bridges:</p>
+        <p>From studio infrastructure to human transformation, my work connects systems, people, and possibility.</p>
+        <p>This includes:</p>
         <ul className="edge-list">
           <li>AI-assisted creativity</li>
           <li>AI-supported human development</li>
@@ -256,18 +256,23 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className="glass section">
+      <section className="glass section edge-section">
         <h3>AI + Human Potential</h3>
         <p>
-          AI is not replacing the human experience. Used with intention, it can help us understand
-          patterns, build better systems, support creativity, improve access, and expand what is
-          possible for people and organizations.
+          AI does not replace the human experience. It expands it.
         </p>
         <p>
-          My work explores how AI, immersive technology, game development, hypnotherapy-inspired
-          design, and consciousness-based frameworks can come together to support human growth,
-          education, studio infrastructure, and real-world impact.
+          Used with intention, it helps us recognize patterns, build better systems, and support creativity, access, and growth.
         </p>
+        <p>
+          My work brings together AI, immersive technology, game development, and consciousness-based design to support:
+        </p>
+        <ul className="edge-list">
+          <li>Human potential</li>
+          <li>Education and talent development</li>
+          <li>Studio infrastructure</li>
+          <li>Real-world impact</li>
+        </ul>
       </section>
 
       <section className="glass section">

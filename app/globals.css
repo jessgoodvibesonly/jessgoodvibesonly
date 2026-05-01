@@ -147,6 +147,28 @@ p {
   gap: clamp(0.7rem, 1.7vw, 1rem);
 }
 
+.heroHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.peaceHeroLeft {
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin-left: 0;
+  margin-bottom: 16px;
+  filter: drop-shadow(0 0 12px rgba(255, 0, 200, 0.6))
+    drop-shadow(0 0 20px rgba(0, 200, 255, 0.5));
+  opacity: 0.9;
+}
+
+.heroTextContainer {
+  text-align: left;
+  align-items: flex-start;
+}
+
 .hero p {
   color: #fff5ff;
 }

@@ -97,8 +97,11 @@ export default function Home() {
   return (
     <main className="landing">
       <section className="hero glass">
-        <div className="hero-copy">
-          <h1>Rev. Dr. Jessica Simmonds</h1>
+        <div className="hero-copy heroTextContainer">
+          <div className="heroHeader">
+            <img src="/peacefavicon.png" className="peaceHeroLeft" alt="Peace icon" />
+            <h1>Rev. Dr. Jessica Simmonds</h1>
+          </div>
           <h2>Technology × Consciousness × Creativity</h2>
           <p>CEO, Aspire Agency Global Inc. | Founder | Public Speaker | Author</p>
           <p className="hero-lede">

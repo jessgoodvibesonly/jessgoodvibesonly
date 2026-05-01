@@ -55,7 +55,7 @@ const speakingTopics = [
 ];
 
 const entrepreneurialExperience = [
-  "Founder and CEO of Aspire Agency Global",
+  "CEO, Aspire Agency Global Inc.",
   "Founder of Paramita Academy of Makeup",
   "Built and led education-based businesses for over two decades",
   "Trained and certified makeup artists since 2002",
@@ -70,24 +70,17 @@ const publishedAuthor = [
 ];
 
 const credentials = [
-  "Clinical Hypnotherapist",
-  "Past Life Regression Therapy",
-  "Between Lives Regression Therapy",
-  "Spiritual Life Coach",
-  "Spiritual Interfaith Minister",
-  "Shamanic Healing Energy",
-  "Akashic Records",
-  "Holistic Health Practitioner",
-  "Advanced Meditation Certification",
-  "Cognitive Behavioral Therapist",
-  "Death Guide",
+  "Clinical Hypnotherapy",
+  "Advanced Meditation Practitioner",
+  "HeartMath Practitioner",
+  "NLP",
+  "CBT Life Coaching",
   "Reiki Level 2",
-  "How to Rewire Your Brain: Neuroplasticity",
-  "Doctor of Philosophy in Metaphysics",
-  "Doctor of Philosophy in Spiritual Counseling",
-  "Performance Psychology Practitioner",
-  "Leadership & Human Potential",
-  "Public Speaker",
+  "Akashic Records",
+  "Past Life Regression",
+  "Life Between Lives Therapy",
+  "Shamanic Practices",
+  "Joe Dispenza Progressive Course",
 ];
 
 const getPillClassName = (text: string) =>
@@ -99,22 +92,20 @@ export default function Home() {
       <section className="hero glass">
         <div className="hero-copy">
           <h1>Rev. Dr. Jessica Simmonds</h1>
-          <h2>Bridging Technology, Consciousness, and Human Potential</h2>
+          <h2>Technology × Consciousness × Creativity</h2>
+          <p>CEO, Aspire Agency Global Inc. | Founder, Paramita Academy of Makeup</p>
           <p>
-            Public Speaker, Founder, and Creator of immersive systems at the intersection of game
-            development, awareness, and real-world transformation.
-          </p>
-          <p>
-            I combine technology with the human mind, building systems that scale studios and
-            experiences that transform how people think, feel, and live.
+            Visionary builder, interfaith minister, and published author creating never-been-done-before
+            ideas across immersive technology, games, wellness, and global impact.
           </p>
           <p className="hero-highlight">
             Why the next generation of games will change how we experience reality.
           </p>
           <p className="strip">Games | Human Potential | Technology | Compassion | Global Impact</p>
           <p className="authority">
-            20+ Years Experience • Clinical Hypnotherapist • Performance Psychology • Doctorates in
-            Metaphysics & Spiritual Counseling • Author • Founder • Public Speaker
+            Wife and mother of five • Neurodivergent thinker • Multimedia artist • Singer • Makeup artist
+            • Interfaith minister • Published author • Clinical hypnotherapist • Spiritual life coach •
+            20+ year entrepreneur
           </p>
           <div className="cta-row">
             <a className="btn primary" href="#ecosystem">
@@ -211,7 +202,7 @@ export default function Home() {
       </section>
 
       <section className="glass section resume-section">
-        <h3>Global Experience, Credentials & Human Development Work</h3>
+        <h3>Global Experience, Credibility & Human Development Work</h3>
         <p>
           Rev. Dr. Jessica Simmonds brings 20+ years of entrepreneurial experience across
           education, beauty, media, spiritual development, coaching, hypnotherapy, game industry
@@ -229,8 +220,10 @@ export default function Home() {
             </ul>
           </article>
           <article className="resume-card">
-            <h4>Published Author</h4>
+            <h4>Credibility & Affiliations</h4>
             <ul className="credential-badges">
+              <li className={getPillClassName("Women in Games Ambassador")}>Women in Games Ambassador</li>
+              <li className={getPillClassName("IGDA member")}>IGDA member</li>
               {publishedAuthor.map((item) => (
                 <li key={item} className={getPillClassName(item)}>{item}</li>
               ))}
@@ -271,7 +264,12 @@ export default function Home() {
       </section>
 
       <section className="glass section">
-        <h3>I combine technology with the human mind.</h3>
+        <h3>Building what has never been done before.</h3>
+        <p>
+          I build experiences that merge immersive technology, human consciousness, creativity,
+          compassion, wellness, games, and global impact for partners including Meta, Mindvalley,
+          Shepherd’s Studio, game studios, wellness leaders, media, investors, and collaborators.
+        </p>
         <p>From production pipelines to consciousness design, my work bridges:</p>
         <ul className="edge-list">
           <li>Game development</li>

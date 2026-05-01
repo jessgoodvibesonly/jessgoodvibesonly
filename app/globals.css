@@ -642,6 +642,10 @@ p {
   gap: 0.9rem;
 }
 
+.final-cta-buttons .btn:hover {
+  transform: none;
+}
+
 .final-cta-primary {
   color: #2d003f;
   background: linear-gradient(90deg, #ffe600, #fff9a8);
@@ -651,7 +655,9 @@ p {
 }
 
 .final-cta-primary:hover {
-  box-shadow: 0 0 30px rgba(255, 230, 0, 0.8), 0 0 18px rgba(255, 249, 168, 0.72);
+  filter: brightness(1.06);
+  background: linear-gradient(90deg, #fff06a, #fffbd0);
+  box-shadow: 0 0 34px rgba(255, 230, 0, 0.9), 0 0 20px rgba(255, 249, 168, 0.78);
 }
 
 .final-cta-secondary {
@@ -666,6 +672,22 @@ p {
   background: rgba(123, 44, 255, 0.2);
   border-color: rgba(255, 123, 224, 0.95);
   box-shadow: 0 0 20px rgba(255, 43, 214, 0.6), inset 0 0 14px rgba(123, 44, 255, 0.35);
+}
+
+.final-cta-signoff {
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: rgba(255, 247, 255, 0.9);
+}
+
+.final-cta-peace {
+  width: 18px;
+  height: 18px;
+  opacity: 0.92;
+  filter: drop-shadow(0 0 8px rgba(255, 43, 214, 0.55));
 }
 
 .final-cta-note {

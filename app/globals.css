@@ -306,7 +306,7 @@ p {
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: 0.8rem;
   padding: clamp(1rem, 2.2vw, 1.25rem);
   border-radius: 16px;
   transition: transform 0.22s ease, box-shadow 0.22s ease;
@@ -316,6 +316,7 @@ p {
   background: rgba(255, 255, 255, 0.025);
   border: 1px solid rgba(255, 43, 214, 0.4);
   box-shadow: 0 0 20px rgba(255, 43, 214, 0.3);
+  max-width: 500px;
 }
 
 .card:hover,
@@ -368,13 +369,26 @@ p {
   margin: 0;
 }
 
-.credential-badges li {
-  padding: 0.45rem 0.7rem;
+.pill {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 1rem 1.2rem;
   border-radius: 999px;
-  background: linear-gradient(90deg, rgba(255, 20, 147, 0.3), rgba(123, 44, 255, 0.35));
-  border: 1px solid rgba(255, 230, 0, 0.55);
+  background: linear-gradient(135deg, #5a2a8a, #3a1f5c);
+  border: 1px solid rgba(255, 230, 0, 0.5);
   box-shadow: 0 0 12px rgba(0, 234, 255, 0.35);
   font-size: 0.9rem;
+
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.4;
+}
+
+.long-pill {
+  border-radius: 20px;
+  padding: 1rem 1.2rem;
 }
 
 .topic-grid {

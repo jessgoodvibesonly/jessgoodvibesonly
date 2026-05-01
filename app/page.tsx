@@ -335,7 +335,15 @@ export default function Home() {
           <a className="btn final-cta-secondary" href="https://www.aspiritualwarriorspath.com" target="_blank" rel="noreferrer">
             Spiritual Work & Writings
           </a>
+          <a className="btn final-cta-secondary" href="https://www.instagram.com/aspiritualwarriorspath" target="_blank" rel="noreferrer">
+            Instagram: @aspiritualwarriorspath
+          </a>
         </div>
+        <p className="creator-credit">
+          All videos, websites, and creative content featured here were concepted, designed, and
+          created by Jessica Simmonds.
+          <span>Jess ☮️</span>
+        </p>
         <p className="final-cta-note">For partnerships, speaking, media, or aligned collaboration.</p>
         <p className="final-cta-signoff">
           <img src="/peacefavicon.png" alt="Peace symbol" className="final-cta-peace" />

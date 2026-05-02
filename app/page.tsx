@@ -57,7 +57,24 @@ const entrepreneurialExperience = [
   "Training and certifying makeup artists globally since 2002",
 ];
 
-const creativeArtisticWork = ["Multimedia Artist (published & exhibiting)", "Singer", "Poet"];
+const creativeArtisticWork = [
+  "Traveled to 23 countries",
+  "Completed the Scotiabank Half Marathon (Toronto)",
+  "Daily meditation practice (5+ years)",
+  "Lived in Toronto and Mexico",
+  "Self-taught Spanish speaker",
+  "Based on the East Coast of Canada",
+  "Married to her final soulmate and high school crush",
+  "Married by Elvis Presley in Las Vegas",
+  "Loves humour and positivity",
+  "Identical twin",
+  "Mother of 4 with a beautifully unconventional family story",
+  "Focus areas: neuroscience and homesteading",
+  "Gardening and cooking enthusiast",
+  "Her AI is named NOVA",
+  "Near-death experience survivor",
+  "Mi’kmaq roots",
+];
 
 const credibilityAffiliations = [
   "Psychology Today Profile",
@@ -219,7 +236,7 @@ export default function Home() {
             </ul>
           </article>
           <article className="resume-card">
-            <h4>Creative & Artistic Work</h4>
+            <h4>A Spiritual Being Having a Human Experience Since 1979</h4>
             <ul className="credential-badges">
               {creativeArtisticWork.map((item) => (
                 <li key={item} className={getPillClassName(item)}>{item}</li>

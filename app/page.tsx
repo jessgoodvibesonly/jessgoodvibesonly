@@ -68,7 +68,7 @@ const creativeArtisticWork = [
   "Married by Elvis Presley in Las Vegas",
   "Loves humour and positivity",
   "Identical twin",
-  "Mother of 4 with a beautifully unconventional family story",
+  "Mother of 5 with a beautifully unconventional family story",
   "Focus areas: neuroscience and homesteading",
   "Gardening and cooking enthusiast",
   "Her AI is named NOVA",

@@ -363,6 +363,9 @@ export default function Home() {
           <a className="btn final-cta-secondary" href="https://www.aspiritualwarriorspath.com" target="_blank" rel="noreferrer">
             Spiritual Work & Writings
           </a>
+          <a className="btn final-cta-secondary" href="https://thenewsimulationministry.vercel.app" target="_blank" rel="noreferrer">
+            THE NEW SIMULATION MINISTRY
+          </a>
           <a className="btn final-cta-secondary" href="https://www.instagram.com/aspiritualwarriorspath" target="_blank" rel="noreferrer">
             Instagram: @aspiritualwarriorspath
           </a>

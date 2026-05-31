@@ -35,6 +35,9 @@ const ecosystemCards = [
   },
 ];
 
+const earthSchoolCard = ecosystemCards.find((card) => card.title === "EARTH SCHOOL")!;
+const ecosystemOverviewCards = ecosystemCards.filter((card) => card.title !== "EARTH SCHOOL");
+
 const speakingTopics = [
   "AI, Consciousness, and the Future of Human Development",
   "Technology and the Human Mind",
@@ -118,7 +121,7 @@ export default function Home() {
       <section className="hero glass">
         <div className="hero-copy heroTextContainer">
           <div className="heroHeader">
-            <img src="/peacefavicon.png" className="peaceHeroLeft" alt="Peace icon" />
+            <img src="/peacesymbolgold.png" className="peaceHeroLeft" alt="Peace icon" />
             <h1>Rev. Dr. Jessica Simmonds</h1>
           </div>
           <h2>Technology × Consciousness × Creativity</h2>
@@ -162,6 +165,14 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="glass section earth-school-feature">
+        <article className="earth-school-card">
+          <h3>{earthSchoolCard.title}</h3>
+          <p>{earthSchoolCard.description}</p>
+          <strong>{earthSchoolCard.tagline}</strong>
+        </article>
+      </section>
+
       <section className="glass section">
         <p className="flow">
           Aspire P.O.D.S. → Aspire Game Academy → EARTH SCHOOL → Aspire Global Foundation → Love Storm Retreats
@@ -176,7 +187,7 @@ export default function Home() {
           Together, this creates a unified system: infrastructure for studios, education for talent, experiences for people, and impact for the world.
         </p>
         <div className="cards">
-          {ecosystemCards.map((card) => (
+          {ecosystemOverviewCards.map((card) => (
             <article key={card.title} className="card">
               <h4>{card.title}</h4>
               <p>{card.description}</p>
@@ -315,7 +326,7 @@ export default function Home() {
         </div>
         <p className="speaking-topics-highlight">&ldquo;These are not just talks. They are perspective-shifting experiences.&rdquo;</p>
         <p className="text-center text-sm md:text-base font-medium mt-6 opacity-90">
-          Jess <span className="peaceGlow">☮️</span>
+          Jess <img src="/peacesymbolgold.png" className="peaceSignoff" alt="Peace icon" />
         </p>
       </section>
 
@@ -359,7 +370,7 @@ export default function Home() {
         <div className="final-cta-divider" aria-hidden="true" />
         <p className="final-cta-note">For partnerships, speaking, media, or aligned collaboration, let&apos;s connect.</p>
         <p className="final-cta-signoff">
-          Jess <span className="peaceGlow">☮️</span>
+          Jess <img src="/peacesymbolgold.png" className="peaceSignoff" alt="Peace icon" />
         </p>
         <div className="final-cta-divider" aria-hidden="true" />
         <p className="creator-credit">

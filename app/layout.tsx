@@ -5,9 +5,9 @@ export const metadata: Metadata = {
   title: "Rev. Dr. Jessica Simmonds",
   description: "Bridging Technology, Consciousness, and Human Potential",
   icons: {
-    icon: "/peacefavicon.png",
-    shortcut: "/peacefavicon.png",
-    apple: "/peacefavicon.png",
+    icon: "/peacesymbolgold.png",
+    shortcut: "/peacesymbolgold.png",
+    apple: "/peacesymbolgold.png",
   },
 };
 

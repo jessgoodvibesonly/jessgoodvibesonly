@@ -641,23 +641,45 @@ button.btn:not(:disabled):hover {
 }
 
 .final-cta-buttons {
+  align-items: stretch;
   justify-content: center;
 }
 
-.final-cta-primary {
+.final-cta-buttons .btn {
+  flex: 1 1 250px;
+  min-height: 52px;
+}
+
+.final-cta-primary,
+.final-cta-secondary {
   border-color: var(--gold-bright);
   color: #17130b;
   background: linear-gradient(135deg, #e6cb87, #b9904d);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22), 0 0 18px rgba(201, 165, 97, 0.14);
 }
 
-.btn[href].final-cta-primary:hover {
+.btn[href].final-cta-primary:hover,
+.btn[href].final-cta-secondary:hover {
+  border-color: var(--gold-bright);
   color: #0e0c08;
   background: linear-gradient(135deg, #f0d995, #c9a561);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28), 0 0 24px rgba(201, 165, 97, 0.2);
+  transform: translateY(-2px);
 }
 
-.final-cta-secondary {
-  border-color: rgba(201, 165, 97, 0.56);
+.btn[href].final-cta-primary:active,
+.btn[href].final-cta-secondary:active {
+  color: #17130b;
+  background: linear-gradient(135deg, #d9bd78, #aa8141);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.24), 0 0 14px rgba(201, 165, 97, 0.14);
+  transform: translateY(0);
+}
+
+.btn[href].final-cta-primary:focus-visible,
+.btn[href].final-cta-secondary:focus-visible {
+  outline: 2px solid #fff2bd;
+  outline-offset: 3px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22), 0 0 0 4px rgba(201, 165, 97, 0.24), 0 0 22px rgba(201, 165, 97, 0.18);
 }
 
 .final-cta-divider {
@@ -781,5 +803,9 @@ button.btn:not(:disabled):hover {
 
   .final-cta-buttons {
     flex-direction: column;
+  }
+
+  .final-cta-buttons .btn {
+    flex-basis: auto;
   }
 }

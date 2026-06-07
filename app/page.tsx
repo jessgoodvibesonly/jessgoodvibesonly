@@ -35,6 +35,7 @@ const ecosystemCards = [
   },
 ];
 
+const earthSchoolUrl = "https://earth-school-five.vercel.app";
 const earthSchoolCard = ecosystemCards.find((card) => card.title === "EARTH SCHOOL")!;
 const ecosystemOverviewCards = ecosystemCards.filter((card) => card.title !== "EARTH SCHOOL");
 
@@ -167,9 +168,16 @@ export default function Home() {
 
       <section className="glass section earth-school-feature">
         <article className="earth-school-card">
-          <h3>{earthSchoolCard.title}</h3>
+          <h3>
+            <a className="earth-school-title-link" href={earthSchoolUrl} target="_blank" rel="noreferrer">
+              {earthSchoolCard.title}
+            </a>
+          </h3>
           <p>{earthSchoolCard.description}</p>
           <strong>{earthSchoolCard.tagline}</strong>
+          <a className="btn earth-school-button" href={earthSchoolUrl} target="_blank" rel="noreferrer">
+            ENTER EARTH SCHOOL
+          </a>
         </article>
       </section>
 
@@ -351,7 +359,7 @@ export default function Home() {
           >
             Book a Synergy Call
           </a>
-          <a className="btn final-cta-secondary" href="https://earth-school-five.vercel.app" target="_blank" rel="noreferrer">
+          <a className="btn final-cta-secondary" href={earthSchoolUrl} target="_blank" rel="noreferrer">
             Explore Earth School
           </a>
           <a className="btn final-cta-secondary" href="https://aspire-game-academy.vercel.app" target="_blank" rel="noreferrer">

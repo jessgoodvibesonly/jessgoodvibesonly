@@ -328,6 +328,12 @@ button.btn:not(:disabled):hover {
 .earth-school-card {
   max-width: 900px;
   padding: clamp(0.3rem, 1vw, 0.7rem) 0;
+  text-align: center;
+}
+
+.earth-school-card > * {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .earth-school-card h3 {
@@ -356,6 +362,22 @@ button.btn:not(:disabled):hover {
   font-size: clamp(1rem, 1.7vw, 1.13rem);
 }
 
+.earth-school-ready {
+  margin-top: 1.35rem;
+  margin-bottom: 0.55rem;
+  color: var(--gold-bright);
+  font-family: var(--serif);
+  font-size: clamp(1.18rem, 2.2vw, 1.55rem);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.earth-school-card .earth-school-expanded {
+  max-width: 70ch;
+  margin-bottom: 1.25rem;
+  color: var(--ivory-muted);
+}
+
 .earth-school-card strong {
   display: block;
   color: var(--gold-bright);
@@ -366,16 +388,22 @@ button.btn:not(:disabled):hover {
 }
 
 .earth-school-button {
-  margin-top: 1.15rem;
-  border-color: var(--gold-bright);
-  color: #17130b;
-  background: linear-gradient(135deg, #e6cb87, #b9904d);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24), 0 0 18px rgba(201, 165, 97, 0.14);
+  width: min(100%, 360px);
+  min-height: 58px;
+  margin-top: 0.4rem;
+  border: 1px solid var(--gold-bright);
+  border-radius: 12px;
+  color: var(--ivory);
+  background: linear-gradient(145deg, rgba(17, 15, 11, 0.96), rgba(5, 5, 5, 0.98));
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28), 0 0 22px rgba(201, 165, 97, 0.16), inset 0 1px 0 rgba(255, 248, 224, 0.08);
+  font-size: clamp(0.82rem, 2.4vw, 0.94rem);
 }
 
 .btn[href].earth-school-button:hover {
-  color: #0e0c08;
-  background: linear-gradient(135deg, #f0d995, #c9a561);
+  border-color: #f1d993;
+  color: #fff8df;
+  background: linear-gradient(145deg, rgba(36, 29, 18, 0.98), rgba(9, 9, 8, 0.99));
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.32), 0 0 30px rgba(229, 201, 130, 0.34), inset 0 1px 0 rgba(255, 248, 224, 0.12);
 }
 
 .flow {

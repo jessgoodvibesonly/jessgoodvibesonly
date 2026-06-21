@@ -175,8 +175,14 @@ export default function Home() {
           </h3>
           <p>{earthSchoolCard.description}</p>
           <strong>{earthSchoolCard.tagline}</strong>
+          <p className="earth-school-ready">Ready to explore the experience?</p>
+          <p className="earth-school-expanded">
+            EARTH SCHOOL • a temporary human experience • is an evolving multiplayer world where
+            awareness, AI, psychology, spirituality, creativity, and meaningful choices shape the
+            journey.
+          </p>
           <a className="btn earth-school-button" href={earthSchoolUrl} target="_blank" rel="noreferrer">
-            ENTER EARTH SCHOOL
+            🎮 Explore EARTH SCHOOL
           </a>
         </article>
       </section>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import jessImage from "../public/thehighpriestjess.png";
+import jessImage from "../public/THE HIGH PRIESTjESS.png";
 
 const ecosystemCards = [
   {

@@ -389,6 +389,20 @@ export default function Home() {
         </div>
         <div className="final-cta-divider" aria-hidden="true" />
         <p className="final-cta-note">For partnerships, speaking, media, or aligned collaboration, let&apos;s connect.</p>
+        <div className="contact-section" aria-label="Contact details">
+          <div className="contact-item">
+            <span className="contact-label">Email</span>
+            <a href="mailto:jessgoodvibesonly@gmail.com">jessgoodvibesonly@gmail.com</a>
+          </div>
+          <div className="contact-item">
+            <span className="contact-label">Business Email</span>
+            <a href="mailto:jessica@aspireagencyglobal.com">jessica@aspireagencyglobal.com</a>
+          </div>
+          <div className="contact-item">
+            <span className="contact-label">WhatsApp</span>
+            <a href="https://wa.me/19029405818" target="_blank" rel="noreferrer">+1 (902) 940-5818</a>
+          </div>
+        </div>
         <p className="final-cta-signoff">
           Jess <img src="/peacesymbolgold.png" className="peaceSignoff" alt="Peace icon" />
         </p>

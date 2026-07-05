@@ -722,6 +722,26 @@ button.btn:not(:disabled):hover {
   color: var(--ivory-muted);
 }
 
+.contact-info {
+  margin-top: 18px;
+  color: var(--ivory-muted);
+  text-align: center;
+}
+
+.contact-info p {
+  margin: 6px 0;
+}
+
+.contact-info a {
+  color: var(--gold-bright, #d4af37);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-info a:hover {
+  color: #f0d995;
+}
+
 .creator-credit {
   max-width: 68ch;
   margin: 1.15rem auto 0;

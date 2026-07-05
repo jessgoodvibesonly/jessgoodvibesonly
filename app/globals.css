@@ -722,6 +722,55 @@ button.btn:not(:disabled):hover {
   color: var(--ivory-muted);
 }
 
+.contact-section {
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+  margin: clamp(1.45rem, 3vw, 2rem) auto 0;
+  text-align: center;
+}
+
+.contact-item {
+  display: grid;
+  gap: 0.18rem;
+  justify-items: center;
+}
+
+.contact-label {
+  color: var(--ivory-soft);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.contact-item a {
+  color: var(--ivory);
+  font-family: var(--serif);
+  font-size: clamp(1.02rem, 2vw, 1.22rem);
+  letter-spacing: 0.01em;
+  line-height: 1.35;
+  text-decoration: none;
+  transition: color 180ms ease, text-shadow 180ms ease;
+  overflow-wrap: anywhere;
+}
+
+.contact-item a:hover,
+.contact-item a:focus-visible {
+  color: var(--gold-bright);
+  text-shadow: 0 0 18px rgba(201, 165, 97, 0.2);
+}
+
+.contact-item a:focus-visible {
+  outline: 1px solid var(--gold-bright);
+  outline-offset: 4px;
+}
+
+.contact-section + .final-cta-signoff {
+  margin-top: 1.35rem;
+}
+
 .creator-credit {
   max-width: 68ch;
   margin: 1.15rem auto 0;

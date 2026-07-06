@@ -85,13 +85,13 @@ const credibilityAffiliations = [
   "Women in Games Ambassador",
   "IGDA Member",
   "Published Author of A Spiritual Warrior’s Path to Re-Enlightening",
-  "Author of Earth School: A Temporary Human Experience",
+  "Creator of EARTH SCHOOL™\nAn Original Open-World Multiplayer Experience",
 ];
 
 const credentials = [
   "Doctorate in Philosophy of Metaphysics",
   "Doctorate in Philosophy of Spiritual Counselling",
-  "Clinical Hypnotherapist",
+  "Clinical Hypnotherapist (Since 2006)",
   "Cognitive Behavioral Therapy (CBT) Practitioner",
   "Neuro-Linguistic Programming (NLP) Practitioner",
   "Life Between Lives Therapy Practitioner",
@@ -103,7 +103,7 @@ const credentials = [
   "Shamanic Healing Energy Practitioner",
   "Akashic Records Practitioner",
   "Reiki Level 2",
-  "Death Doula / Death Guide",
+  "Death Guide",
   "Advanced Meditation Practitioner",
   "HeartMath Practitioner",
   "Holistic Health Practitioner",

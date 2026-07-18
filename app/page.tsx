@@ -36,6 +36,7 @@ const ecosystemCards = [
 ];
 
 const earthSchoolUrl = "https://earth-school-five.vercel.app";
+const earthSchoolInvestorPdfUrl = "/EARTH-SCHOOL-INVESTOR-OVERVIEW.pdf";
 const earthSchoolCard = ecosystemCards.find((card) => card.title === "EARTH SCHOOL")!;
 const ecosystemOverviewCards = ecosystemCards.filter((card) => card.title !== "EARTH SCHOOL");
 
@@ -175,6 +176,17 @@ export default function Home() {
           </h3>
           <p>{earthSchoolCard.description}</p>
           <strong>{earthSchoolCard.tagline}</strong>
+          <div className="earth-school-investor-cta" aria-label="Earth School investor overview">
+            <p className="earth-school-investor-label">EARTH SCHOOL — INVESTOR OVERVIEW</p>
+            <a
+              className="btn earth-school-investor-button"
+              href={earthSchoolInvestorPdfUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              VIEW INVESTOR PDF
+            </a>
+          </div>
           <p className="earth-school-ready">Ready to explore the experience?</p>
           <p className="earth-school-expanded">
             EARTH SCHOOL • a temporary human experience • is an evolving multiplayer world where

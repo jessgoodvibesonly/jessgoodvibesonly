@@ -1,5 +1,4 @@
 import Image from "next/image";
-import jessImage from "../public/julyhighpriestjess.png";
 
 const ecosystemCards = [
   {
@@ -158,7 +157,7 @@ export default function Home() {
         </div>
         <div className="hero-image-wrap">
           <Image
-            src={jessImage}
+            src="/me.png"
             alt="Rev. Dr. Jessica Simmonds"
             className="hero-image rounded-2xl object-cover"
             sizes="(max-width: 900px) 100vw, 40vw"

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import jessImage from "../public/me.png";
+import jessImage from "../public/Jess4Life.jpg";
 
 const ecosystemCards = [
   {

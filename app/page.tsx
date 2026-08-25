@@ -2,44 +2,48 @@ import Image from "next/image";
 import jessImage from "../public/Jess4Life.jpg";
 import { bookingUrl, PrivateSessions } from "./components/PrivateSessions";
 
-const ecosystemCards = [
+const supportingInitiatives = [
   {
     title: "ASPIRE P.O.D.S.",
     description:
-      "Embedded production, operations, development, and support infrastructure for modern game studios.",
-    tagline:
-      "AI-aware, customizable, and integrated directly into studio pipelines. Structured. Secure. Scalable. Built from Canada. Serving studios globally.",
-  },
-  {
-    title: "ASPIRE GAME ACADEMY",
-    description:
-      "Pop-up, AAA-led training experiences preparing the next generation of game industry leaders.",
-    tagline: "Learn. Build. Lead the future.",
-  },
-  {
-    title: "EARTH SCHOOL",
-    description:
-      "VR/AR wellness experiences that blend technology, awareness, consciousness, hypnotherapy-inspired experiences, frequencies, choice-based gameplay, evolution, devolution, and human growth.",
-    tagline: "Experience. Grow. Transform.",
+      "Production, development and operational infrastructure supporting ambitious creative work.",
   },
   {
     title: "ASPIRE GLOBAL FOUNDATION",
     description:
-      "Vending Hope. Combining technology with compassion to create real-world impact.",
-    tagline: "Tech with heart. Impact that matters.",
+      "Technology and compassion working together to create meaningful real-world impact.",
   },
   {
     title: "LOVE STORM RETREATS",
     description:
-      "Neurodivergent-affirming retreats for healing, connection, nervous system support, and empowered living.",
-    tagline: "Heal. Connect. Rise.",
+      "In-person experiences centred on connection, healing, creativity and conscious living.",
   },
 ];
 
 const earthSchoolUrl = "https://earth-school-five.vercel.app";
 const earthSchoolInvestorPdfUrl = "/EARTH-SCHOOL-INVESTOR-OVERVIEW.pdf";
-const earthSchoolCard = ecosystemCards.find((card) => card.title === "EARTH SCHOOL")!;
-const ecosystemOverviewCards = ecosystemCards.filter((card) => card.title !== "EARTH SCHOOL");
+const earthSchoolHighlights = [
+  {
+    title: "ECHO POINT ISLAND",
+    description:
+      "A mysterious 1980s East Coast world filled with retro locations, hidden stories, memorable characters and layers of reality waiting to be discovered.",
+  },
+  {
+    title: "THE SANCTUARY VEHICLE",
+    description:
+      "Your private space for reflection, meditation, breathwork, journaling, consciousness tools and conversations with your AI companion.",
+  },
+  {
+    title: "DREAM STATE DINER",
+    description:
+      "The social heart of Echo Point Island—a place to meet, talk, collaborate, connect and discover new quests.",
+  },
+  {
+    title: "THE LIGHT SYSTEM",
+    description:
+      "Choices, courage, creativity, connection and awareness generate light. As your light grows, the world responds.",
+  },
+];
 
 const speakingTopics = [
   "AI, Consciousness, and the Future of Human Development",
@@ -70,11 +74,9 @@ const creativeArtisticWork = [
   "Lived in Toronto and Mexico",
   "Self-taught Spanish speaker",
   "Based on the East Coast of Canada",
-  "Married to her final soulmate and high school crush",
-  "Married by Elvis Presley in Las Vegas",
   "Loves humour and positivity",
   "Identical twin",
-  "Mother of 5 with a beautifully unconventional family story",
+  "Mother of four",
   "Focus areas: neuroscience and homesteading",
   "Gardening and cooking enthusiast",
   "Her AI is named NOVA",
@@ -128,6 +130,7 @@ export default function Home() {
             <span>Jess Good Vibes Only</span>
           </a>
           <div className="desktop-nav">
+            <a className="nav-link" href="#earth-school">EARTH SCHOOL</a>
             <a className="nav-link" href="#private-sessions">Private Sessions</a>
             <a
               className="btn nav-booking-button"
@@ -142,6 +145,7 @@ export default function Home() {
           <details className="mobile-nav">
             <summary aria-label="Open navigation menu"><span aria-hidden="true" /></summary>
             <div className="mobile-nav-panel">
+              <a href="#earth-school">EARTH SCHOOL</a>
               <a href="#private-sessions">Private Sessions</a>
               <a
                 className="btn nav-booking-button"
@@ -204,63 +208,65 @@ export default function Home() {
         </div>
       </section>
 
-      <PrivateSessions />
-
-      <section className="glass section earth-school-feature">
-        <article className="earth-school-card">
-          <h3>
-            <a className="earth-school-title-link" href={earthSchoolUrl} target="_blank" rel="noreferrer">
-              {earthSchoolCard.title}
+      <section id="earth-school" className="earth-school-feature" aria-labelledby="earth-school-title">
+        <div className="earth-school-atmosphere" aria-hidden="true" />
+        <div className="earth-school-content">
+          <p className="earth-school-kicker">An original narrative game · 1980s East Coast · consciousness · simulation theory</p>
+          <h2 id="earth-school-title">EARTH SCHOOL</h2>
+          <p className="earth-school-subtitle">A Temporary Human Experience</p>
+          <h3>What if being human is the game—and remembering who you are is how you learn to play it?</h3>
+          <div className="earth-school-story">
+            <p>
+              EARTH SCHOOL is an original narrative game and immersive world set on Echo Point
+              Island—a mysterious East Coast community frozen in the 1980s.
+            </p>
+            <p>
+              Players create an avatar, explore the island, meet its characters and move through
+              quests shaped by choice, attention, creativity, connection and awareness. Your
+              choices generate light. As your awareness grows, the avatar evolves and the world
+              responds—revealing new paths, synchronicities, abilities and hidden layers of reality.
+            </p>
+            <p>Most games ask how powerful your character can become.</p>
+            <p>EARTH SCHOOL asks who you can become through playing.</p>
+          </div>
+          <p className="earth-school-differentiator">The avatar evolves because the player does.</p>
+          <div className="earth-school-highlights">
+            {earthSchoolHighlights.map((highlight, index) => (
+              <article key={highlight.title} className="earth-school-highlight">
+                <span aria-hidden="true">0{index + 1}</span>
+                <h4>{highlight.title}</h4>
+                <p>{highlight.description}</p>
+              </article>
+            ))}
+          </div>
+          <div className="earth-school-actions">
+            <a className="btn earth-school-button" href={earthSchoolUrl} target="_blank" rel="noreferrer">
+              Explore EARTH SCHOOL
             </a>
-          </h3>
-          <p>{earthSchoolCard.description}</p>
-          <strong>{earthSchoolCard.tagline}</strong>
-          <div className="earth-school-investor-cta" aria-label="Earth School investor overview">
-            <p className="earth-school-investor-label">EARTH SCHOOL — INVESTOR OVERVIEW</p>
-            <a
-              className="btn earth-school-investor-button"
-              href={earthSchoolInvestorPdfUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              VIEW INVESTOR PDF
+            <a className="earth-school-investor-link" href={earthSchoolInvestorPdfUrl} target="_blank" rel="noopener noreferrer">
+              View investor overview ↗
             </a>
           </div>
-          <p className="earth-school-ready">Ready to explore the experience?</p>
-          <p className="earth-school-expanded">
-            EARTH SCHOOL • a temporary human experience • is an evolving multiplayer world where
-            awareness, AI, psychology, spirituality, creativity, and meaningful choices shape the
-            journey.
-          </p>
-          <a className="btn earth-school-button" href={earthSchoolUrl} target="_blank" rel="noreferrer">
-            🎮 Explore EARTH SCHOOL
-          </a>
-        </article>
+        </div>
       </section>
 
-      <section className="glass section">
-        <p className="flow">
-          Aspire P.O.D.S. → Aspire Game Academy → EARTH SCHOOL → Aspire Global Foundation → Love Storm Retreats
-        </p>
-        <p className="clarity">
-          This is not a collection of separate projects. This is one connected global ecosystem where technology, AI, human potential, game development, education, immersive experiences, and compassion come together.
-        </p>
-        <p className="clarity">
-          Aspire P.O.D.S. forms the foundation — embedded infrastructure supporting studios. From there, the ecosystem expands into education, immersive experiences, and human transformation.
-        </p>
-        <p className="clarity">
-          Together, this creates a unified system: infrastructure for studios, education for talent, experiences for people, and impact for the world.
-        </p>
-        <div className="cards">
-          {ecosystemOverviewCards.map((card) => (
-            <article key={card.title} className="card">
+      <section className="supporting-initiatives" aria-labelledby="supporting-title">
+        <div className="supporting-heading">
+          <p>Connected initiatives</p>
+          <h3 id="supporting-title">Supporting the Wider Vision</h3>
+          <p>EARTH SCHOOL sits at the centre. These initiatives support its development, community and real-world impact.</p>
+        </div>
+        <div className="supporting-cards">
+          {supportingInitiatives.map((card) => (
+            <article key={card.title} className="supporting-card">
               <h4>{card.title}</h4>
               <p>{card.description}</p>
-              <strong>{card.tagline}</strong>
             </article>
           ))}
         </div>
       </section>
+
+      <PrivateSessions />
 
       <section className="glass section center">
         <h3>I build systems for studios and experiences for people.</h3>
@@ -298,13 +304,15 @@ export default function Home() {
       <section className="glass section resume-section">
         <h3>Global Experience, Credibility & Human Development Work</h3>
         <p>
-          Rev. Dr. Jessica Simmonds brings over 20+ years of entrepreneurial experience across
-          global education, media, beauty, immersive technology, and human development. Her work
-          bridges technology, consciousness, creativity, and real-world transformation.
+          Rev. Dr. Jessica Simmonds is a lifelong entrepreneur with almost three decades of
+          experience, an author, educator and teacher, an ordained Spiritual-Interfaith Minister,
+          the creator of EARTH SCHOOL, and a mother of four. She holds a doctorate in philosophy
+          of metaphysics. Her work bridges technology, consciousness, creativity and real-world
+          transformation.
         </p>
         <div className="resume-grid">
           <article className="resume-card">
-            <h4>20+ Years Entrepreneurial Experience</h4>
+            <h4>Almost Three Decades of Entrepreneurial Experience</h4>
             <ul className="credential-badges">
               {entrepreneurialExperience.map((item) => (
                 <li key={item} className={getPillClassName(item)}>{item}</li>
@@ -419,17 +427,11 @@ export default function Home() {
           <a className="btn final-cta-secondary" href={earthSchoolUrl} target="_blank" rel="noreferrer">
             Explore Earth School
           </a>
-          <a className="btn final-cta-secondary" href="https://aspire-game-academy.vercel.app" target="_blank" rel="noreferrer">
-            Aspire Game Academy
-          </a>
           <a className="btn final-cta-secondary" href="https://aspire-pods.vercel.app" target="_blank" rel="noreferrer">
             Aspire P.O.D.S.
           </a>
           <a className="btn final-cta-secondary" href="https://www.aspiritualwarriorspath.com" target="_blank" rel="noreferrer">
             Spiritual Work & Writings
-          </a>
-          <a className="btn final-cta-secondary" href="https://thenewsimulationministry.vercel.app" target="_blank" rel="noreferrer">
-            THE NEW SIMULATION MINISTRY
           </a>
           <a className="btn final-cta-secondary" href="https://www.linkedin.com/in/jessica-simmonds-aspire4/" target="_blank" rel="noreferrer">
             LinkedIn

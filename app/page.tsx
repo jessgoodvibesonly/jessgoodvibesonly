@@ -1,5 +1,6 @@
 import Image from "next/image";
 import jessImage from "../public/Jess4Life.jpg";
+import { bookingUrl, PrivateSessions } from "./components/PrivateSessions";
 
 const ecosystemCards = [
   {
@@ -119,7 +120,43 @@ const getPillClassName = (text: string) =>
 
 export default function Home() {
   return (
-    <main className="landing">
+    <>
+      <header className="site-header">
+        <nav className="site-nav" aria-label="Primary navigation">
+          <a className="site-mark" href="#top" aria-label="Rev. Dr. Jessica Simmonds — home">
+            <img src="/peacesymbolgold.png" alt="" aria-hidden="true" />
+            <span>Jess Good Vibes Only</span>
+          </a>
+          <div className="desktop-nav">
+            <a className="nav-link" href="#private-sessions">Private Sessions</a>
+            <a
+              className="btn nav-booking-button"
+              href={bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Book a Reading on Calendly (opens in a new tab)"
+            >
+              Book a Reading
+            </a>
+          </div>
+          <details className="mobile-nav">
+            <summary aria-label="Open navigation menu"><span aria-hidden="true" /></summary>
+            <div className="mobile-nav-panel">
+              <a href="#private-sessions">Private Sessions</a>
+              <a
+                className="btn nav-booking-button"
+                href={bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Book a Reading on Calendly (opens in a new tab)"
+              >
+                Book a Reading
+              </a>
+            </div>
+          </details>
+        </nav>
+      </header>
+      <main id="top" className="landing">
       <section className="hero glass">
         <div className="hero-copy heroTextContainer">
           <div className="heroHeader">
@@ -166,6 +203,8 @@ export default function Home() {
           />
         </div>
       </section>
+
+      <PrivateSessions />
 
       <section className="glass section earth-school-feature">
         <article className="earth-school-card">
@@ -426,6 +465,7 @@ export default function Home() {
           created by Jessica Simmonds.
         </p>
       </section>
-    </main>
+      </main>
+    </>
   );
 }

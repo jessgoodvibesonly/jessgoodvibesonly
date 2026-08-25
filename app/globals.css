@@ -600,124 +600,214 @@ button.btn:not(:disabled):hover {
 }
 
 .earth-school-feature {
-  border-color: rgba(229, 201, 130, 0.64);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  margin-top: clamp(1rem, 2vw, 1.5rem);
+  padding: clamp(2rem, 6vw, 5.5rem);
+  border: 1px solid rgba(229, 201, 130, 0.7);
+  border-radius: 26px;
   background:
-    linear-gradient(105deg, rgba(43, 36, 25, 0.94), rgba(12, 12, 10, 0.98) 72%);
-  box-shadow: 0 20px 46px rgba(0, 0, 0, 0.34), inset 0 1px 0 rgba(255, 248, 224, 0.08);
+    radial-gradient(circle at 82% 12%, rgba(92, 74, 169, 0.35), transparent 32%),
+    radial-gradient(circle at 15% 70%, rgba(21, 70, 102, 0.32), transparent 34%),
+    linear-gradient(135deg, #161127 0%, #080b16 52%, #17100b 100%);
+  box-shadow: 0 34px 90px rgba(0, 0, 0, 0.62), inset 0 1px 0 rgba(255, 239, 188, 0.16);
 }
 
-.earth-school-card {
-  max-width: 900px;
-  padding: clamp(0.3rem, 1vw, 0.7rem) 0;
+.earth-school-feature::before {
+  position: absolute;
+  inset: 12px;
+  z-index: -1;
+  border: 1px solid rgba(229, 201, 130, 0.18);
+  border-radius: 18px;
+  content: "";
+}
+
+.earth-school-atmosphere {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  opacity: 0.28;
+  background-image: linear-gradient(rgba(229, 201, 130, 0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(229, 201, 130, 0.06) 1px, transparent 1px);
+  background-size: 82px 82px;
+  mask-image: linear-gradient(135deg, black, transparent 80%);
+}
+
+.earth-school-content {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.earth-school-kicker,
+.supporting-heading > p:first-child {
+  color: var(--gold-bright);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.earth-school-content > h2 {
+  margin: 0;
+  color: #fff5d3;
+  font-family: var(--serif);
+  font-size: clamp(4rem, 11vw, 8.5rem);
+  font-weight: 500;
+  letter-spacing: -0.065em;
+  line-height: 0.82;
+  text-transform: none;
+  text-shadow: 0 0 38px rgba(229, 201, 130, 0.22);
+}
+
+.earth-school-subtitle {
+  margin: 1.2rem 0 clamp(2rem, 5vw, 3.5rem);
+  color: var(--gold-bright);
+  font-family: var(--serif);
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  letter-spacing: 0.08em;
+}
+
+.earth-school-content > h3 {
+  max-width: 19ch;
+  font-size: clamp(2rem, 5vw, 4.4rem);
+  line-height: 1.02;
+}
+
+.earth-school-story {
+  max-width: 780px;
+  margin-top: clamp(1.5rem, 4vw, 3rem);
+}
+
+.earth-school-story p {
+  color: rgba(247, 242, 232, 0.84);
+  font-size: clamp(1rem, 1.7vw, 1.15rem);
+}
+
+.earth-school-story p:nth-last-child(-n + 2) {
+  margin-bottom: 0.25rem;
+  color: var(--ivory);
+  font-family: var(--serif);
+  font-size: clamp(1.15rem, 2.1vw, 1.5rem);
+}
+
+.earth-school-differentiator {
+  margin: clamp(2.3rem, 6vw, 4.5rem) 0;
+  padding: clamp(1.3rem, 3vw, 2rem);
+  border-top: 1px solid rgba(229, 201, 130, 0.48);
+  border-bottom: 1px solid rgba(229, 201, 130, 0.48);
+  color: #ffe7a3;
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 4.5vw, 3.6rem);
+  font-style: italic;
+  line-height: 1.15;
   text-align: center;
 }
 
-.earth-school-card > * {
-  margin-right: auto;
-  margin-left: auto;
+.earth-school-highlights {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
 }
 
-.earth-school-card h3 {
-  margin-bottom: 0.7rem;
-  color: var(--gold-bright);
-  letter-spacing: 0.08em;
+.earth-school-highlight {
+  min-height: 230px;
+  padding: clamp(1.2rem, 3vw, 2rem);
+  border: 1px solid rgba(229, 201, 130, 0.25);
+  border-radius: 12px;
+  background: linear-gradient(145deg, rgba(62, 51, 102, 0.3), rgba(5, 7, 14, 0.68));
 }
 
-.earth-school-title-link {
-  color: inherit;
-  text-decoration-color: rgba(229, 201, 130, 0.42);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.16em;
-  cursor: pointer;
-  transition: color 180ms ease, text-decoration-color 180ms ease;
+.earth-school-highlight span {
+  color: rgba(229, 201, 130, 0.6);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
 }
 
-.earth-school-title-link:hover {
-  color: #fff5d0;
-  text-decoration-color: var(--gold-bright);
+.earth-school-highlight h4 {
+  margin-top: 1.2rem;
 }
 
-.earth-school-card p {
-  max-width: 78ch;
-  color: var(--ivory);
-  font-size: clamp(1rem, 1.7vw, 1.13rem);
+.earth-school-highlight p {
+  margin-bottom: 0;
+  font-size: 0.91rem;
 }
 
-
-.earth-school-investor-cta {
-  width: min(100%, 440px);
-  margin-top: 1.35rem;
-  margin-bottom: 1.45rem;
-  padding: 1rem;
-  border: 1px solid rgba(229, 201, 130, 0.42);
-  border-radius: 16px;
-  background: linear-gradient(145deg, rgba(201, 165, 97, 0.16), rgba(8, 8, 7, 0.72));
-  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.26), inset 0 1px 0 rgba(255, 248, 224, 0.1);
-}
-
-.earth-school-card .earth-school-investor-label {
-  margin-bottom: 0.7rem;
-  color: var(--gold-bright);
-  font-size: clamp(0.72rem, 2vw, 0.82rem);
-  font-weight: 800;
-  letter-spacing: 0.16em;
-  line-height: 1.45;
-  text-transform: uppercase;
-}
-
-.earth-school-investor-button {
-  width: 100%;
-  min-height: 62px;
-  border-color: var(--gold-bright);
-  border-radius: 999px;
-  color: #17130b;
-  background: linear-gradient(135deg, #f0d995, #c9a561 54%, #a97f3f);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3), 0 0 28px rgba(229, 201, 130, 0.28), inset 0 1px 0 rgba(255, 250, 230, 0.62);
-  font-size: clamp(0.84rem, 2.8vw, 0.98rem);
-}
-
-.btn[href].earth-school-investor-button:hover {
-  border-color: #fff0b8;
-  color: #0d0b07;
-  background: linear-gradient(135deg, #fff0b8, #d5ad66 54%, #b98e49);
-  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.34), 0 0 34px rgba(229, 201, 130, 0.42), inset 0 1px 0 rgba(255, 252, 238, 0.7);
-}
-
-.earth-school-ready {
-  margin-top: 1.35rem;
-  margin-bottom: 0.55rem;
-  color: var(--gold-bright);
-  font-family: var(--serif);
-  font-size: clamp(1.18rem, 2.2vw, 1.55rem);
-  font-weight: 600;
-  letter-spacing: 0.02em;
-}
-
-.earth-school-card .earth-school-expanded {
-  max-width: 70ch;
-  margin-bottom: 1.25rem;
-  color: var(--ivory-muted);
-}
-
-.earth-school-card strong {
-  display: block;
-  color: var(--gold-bright);
-  font-size: 0.94rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+.earth-school-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  margin-top: clamp(2rem, 5vw, 3.5rem);
 }
 
 .earth-school-button {
-  width: min(100%, 360px);
-  min-height: 58px;
-  margin-top: 0.4rem;
+  min-width: min(100%, 360px);
+  min-height: 64px;
   border: 1px solid var(--gold-bright);
   border-radius: 12px;
   color: var(--ivory);
   background: linear-gradient(145deg, rgba(17, 15, 11, 0.96), rgba(5, 5, 5, 0.98));
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28), 0 0 22px rgba(201, 165, 97, 0.16), inset 0 1px 0 rgba(255, 248, 224, 0.08);
   font-size: clamp(0.82rem, 2.4vw, 0.94rem);
+}
+
+.earth-school-investor-link {
+  color: var(--gold-bright);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-underline-offset: 0.3em;
+}
+
+.supporting-initiatives {
+  margin-top: clamp(1.5rem, 4vw, 2.75rem);
+  padding: clamp(1.25rem, 3vw, 2.25rem);
+  border-top: 1px solid rgba(201, 165, 97, 0.3);
+}
+
+.supporting-heading {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  gap: 0 2rem;
+  align-items: end;
+}
+
+.supporting-heading > p:first-child {
+  grid-column: 1 / -1;
+}
+
+.supporting-heading h3 {
+  font-size: clamp(1.65rem, 3vw, 2.45rem);
+}
+
+.supporting-heading > p:last-child {
+  font-size: 0.9rem;
+}
+
+.supporting-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.supporting-card {
+  min-height: 150px;
+  padding: 1rem;
+  border: 1px solid rgba(201, 165, 97, 0.18);
+  border-radius: 8px;
+  background: rgba(18, 16, 21, 0.56);
+}
+
+.supporting-card h4 {
+  font-size: 0.93rem;
+}
+
+.supporting-card p {
+  margin-bottom: 0;
+  color: var(--ivory-soft);
+  font-size: 0.8rem;
+  line-height: 1.55;
 }
 
 .btn[href].earth-school-button:hover {
@@ -1082,6 +1172,10 @@ button.btn:not(:disabled):hover {
 }
 
 @media (max-width: 900px) {
+  .supporting-heading {
+    grid-template-columns: 1fr;
+  }
+
   .private-sessions-grid {
     grid-template-columns: 1fr;
     gap: 2.25rem;
@@ -1208,8 +1302,41 @@ button.btn:not(:disabled):hover {
 
   .hero,
   .section,
-  .private-sessions {
+  .private-sessions,
+  .earth-school-feature {
     border-radius: 15px;
+  }
+
+  .earth-school-feature {
+    padding: 2.4rem 1.25rem;
+  }
+
+  .earth-school-feature::before {
+    inset: 6px;
+    border-radius: 10px;
+  }
+
+  .earth-school-content > h2 {
+    font-size: clamp(3.4rem, 18vw, 5rem);
+  }
+
+  .earth-school-highlights,
+  .supporting-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .earth-school-highlight {
+    min-height: auto;
+  }
+
+  .earth-school-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .earth-school-investor-link {
+    padding: 0.5rem;
+    text-align: center;
   }
 
   .private-sessions {

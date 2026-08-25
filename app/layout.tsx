@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Rev. Dr. Jessica Simmonds",
-  description: "Bridging Technology, Consciousness, and Human Potential",
+  title: "EARTH SCHOOL | Rev. Dr. Jessica Simmonds",
+  description:
+    "Explore EARTH SCHOOL, the original narrative game and immersive world created by Rev. Dr. Jessica Simmonds.",
   icons: {
     icon: "/peacesymbolgold.png",
     shortcut: "/peacesymbolgold.png",

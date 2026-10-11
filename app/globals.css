@@ -1443,3 +1443,14 @@ button.btn:not(:disabled):hover {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Typography-led event advertisement, matching the men’s day page. */
+.mens-day-ad {padding:clamp(2rem,6vw,4rem);border-color:#d8af68;background:radial-gradient(ellipse at 90% 0%,#bd6a292b,transparent 65%),linear-gradient(135deg,#211b15,#0b0d12);}
+.mens-day-ad .authority {color:#f2d7a2;}
+.mens-day-ad-edition {color:#f2d7a2;font-size:.7rem;font-weight:800;letter-spacing:.2em;}
+.mens-day-ad h3 {max-width:850px;color:#f6edda;font-family:var(--sans);font-size:clamp(1.3rem,3vw,2rem);font-weight:700;line-height:1.3;}
+.mens-day-ad h3 span {display:block;margin:0 0 1.2rem;padding-right:.3em;color:#f1b35d;font-family:Impact,'Arial Black',sans-serif;font-size:clamp(2.7rem,8vw,6rem);font-weight:900;letter-spacing:-.025em;line-height:1;transform:skew(-6deg);text-shadow:2px 2px 0 #a84423;}
+.mens-day-ad > p {max-width:68ch;color:#f6edda;}
+.mens-day-ad .cta-row {margin-top:1.5rem;}
+.mens-day-ad .btn {min-height:52px;color:#152c35;background:#f2d7a2;border-color:#f2d7a2;}
+.mens-day-ad .btn:hover {color:#152c35;background:#fff0ce;}

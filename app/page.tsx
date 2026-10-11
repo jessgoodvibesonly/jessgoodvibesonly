@@ -271,9 +271,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="glass section" aria-labelledby="mens-day-title">
+      <section className="glass section mens-day-ad" aria-labelledby="mens-day-title">
         <p className="authority">IN PERSON · CHARLOTTETOWN · SATURDAY, NOVEMBER 28, 2026</p>
-        <h3 id="mens-day-title">EARTH SCHOOL — A Spiritual Warrior’s Day for Men</h3>
+        <p className="mens-day-ad-edition">THE FIRST MEN’S DAY</p>
+        <h3 id="mens-day-title"><span>EARTH SCHOOL</span>A Spiritual Warrior’s Day for Men</h3>
         <p>A day of hypnotherapy, meditation, grounding, intuitive exploration, art and connection with Rev. Dr. Jess.</p>
         <p><strong>10 AM–7 PM · $333 CAD per person · 10 places</strong><br />Food and refreshments included. Venue details to follow.</p>
         <div className="cta-row"><a className="btn" href="/earth-school-mens-day">Explore the men’s day ↗</a></div>

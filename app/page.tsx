@@ -131,6 +131,7 @@ export default function Home() {
           </a>
           <div className="desktop-nav">
             <a className="nav-link" href="#earth-school">EARTH SCHOOL</a>
+            <a className="nav-link" href="/earth-school-mens-day">Men’s Day</a>
             <a className="nav-link" href="#private-sessions">Private Sessions</a>
             <a
               className="btn nav-booking-button"
@@ -146,6 +147,7 @@ export default function Home() {
             <summary aria-label="Open navigation menu"><span aria-hidden="true" /></summary>
             <div className="mobile-nav-panel">
               <a href="#earth-school">EARTH SCHOOL</a>
+              <a href="/earth-school-mens-day">Men’s Day · November 28</a>
               <a href="#private-sessions">Private Sessions</a>
               <a
                 className="btn nav-booking-button"
@@ -211,14 +213,15 @@ export default function Home() {
       <section id="earth-school" className="earth-school-feature" aria-labelledby="earth-school-title">
         <div className="earth-school-atmosphere" aria-hidden="true" />
         <div className="earth-school-content">
-          <p className="earth-school-kicker">An original narrative game · 1980s East Coast · consciousness · simulation theory</p>
+          <p className="earth-school-kicker">In development in UEFN / Fortnite · 1980s East Coast · consciousness</p>
           <h2 id="earth-school-title">EARTH SCHOOL</h2>
           <p className="earth-school-subtitle">A Temporary Human Experience</p>
           <h3>What if being human is the game—and remembering who you are is how you learn to play it?</h3>
           <div className="earth-school-story">
             <p>
               EARTH SCHOOL is an original narrative game and immersive world set on Echo Point
-              Island—a mysterious East Coast community frozen in the 1980s.
+              Island—a mysterious East Coast community frozen in the 1980s. The current prototype
+              is being built inside Fortnite using Unreal Editor for Fortnite (UEFN).
             </p>
             <p>
               Players create an avatar, explore the island, meet its characters and move through
@@ -226,6 +229,8 @@ export default function Home() {
               choices generate light. As your awareness grows, the avatar evolves and the world
               responds—revealing new paths, synchronicities, abilities and hidden layers of reality.
             </p>
+            <p>Guest transmissions are planned as recorded messages discovered on retro answering
+              machines, payphones and the island’s drive-in screen.</p>
             <p>Most games ask how powerful your character can become.</p>
             <p>EARTH SCHOOL asks who you can become through playing.</p>
           </div>
@@ -264,6 +269,14 @@ export default function Home() {
             </article>
           ))}
         </div>
+      </section>
+
+      <section className="glass section" aria-labelledby="mens-day-title">
+        <p className="authority">IN PERSON · CHARLOTTETOWN · SATURDAY, NOVEMBER 28, 2026</p>
+        <h3 id="mens-day-title">EARTH SCHOOL — A Spiritual Warrior’s Day for Men</h3>
+        <p>A day of hypnotherapy, meditation, grounding, intuitive exploration, art and connection with Rev. Dr. Jess.</p>
+        <p><strong>10 AM–7 PM · $333 CAD per person · 10 places</strong><br />Food and refreshments included. Venue details to follow.</p>
+        <div className="cta-row"><a className="btn" href="/earth-school-mens-day">Explore the men’s day ↗</a></div>
       </section>
 
       <PrivateSessions />

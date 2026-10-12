@@ -123,6 +123,7 @@ const getPillClassName = (text: string) =>
 export default function Home() {
   return (
     <>
+      <a className="skip-link" href="#top">Skip to content</a>
       <header className="site-header">
         <nav className="site-nav" aria-label="Primary navigation">
           <a className="site-mark" href="#top" aria-label="Rev. Dr. Jessica Simmonds — home">
@@ -131,10 +132,10 @@ export default function Home() {
           </a>
           <div className="desktop-nav">
             <a className="nav-link" href="#earth-school">EARTH SCHOOL</a>
-            <a className="nav-link" href="/earth-school-mens-day">Men’s Day</a>
-            <a className="nav-link" href="/earth-school-womens-day">Women’s Day</a>
+            <a className="nav-link" href="#mens-day-title">Events</a>
             <a className="nav-link" href="#private-sessions">Private Sessions</a>
             <a className="nav-link" href="#podcast">Podcasts</a>
+            <a className="nav-link" href="#about">About Jess</a>
             <a
               className="btn nav-booking-button"
               href={bookingUrl}
@@ -153,6 +154,7 @@ export default function Home() {
               <a href="/earth-school-womens-day">Women’s Day · December 5</a>
               <a href="#private-sessions">Private Sessions</a>
               <a href="#podcast">Podcasts</a>
+              <a href="#about">About Jess</a>
               <a
                 className="btn nav-booking-button"
                 href={bookingUrl}
@@ -167,31 +169,20 @@ export default function Home() {
         </nav>
       </header>
       <main id="top" className="landing">
-      <section className="hero glass">
+      <section className="hero glass" aria-label="Meet Jess">
         <div className="hero-copy heroTextContainer">
           <div className="heroHeader">
             <img src="/peacesymbolgold.png" className="peaceHeroLeft" alt="Peace icon" />
-            <h1>Rev. Dr. Jessica Simmonds</h1>
+            <div><p className="hero-name">Rev. Dr. Jessica Simmonds</p><h1>Jess Good<br />Vibes Only<span className="hero-period">.</span></h1></div>
           </div>
           <h2>Technology × Consciousness × Creativity</h2>
           <p>CEO, Aspire Agency Global Inc. | Founder | Public Speaker | Author</p>
-          <p className="hero-lede">
-            Visionary founder, public speaker, interfaith minister, author, and global ecosystem
-            builder creating new models across AI, immersive technology, games, wellness,
-            education, and human development.
-          </p>
-          <p className="hero-lede">
-            I combine AI, game development, immersive technology, and the human mind to build
-            systems that support studios, creators, neurodivergent thinkers, and people seeking
-            meaningful transformation.
-          </p>
+          <p className="hero-lede">Creating at the intersection of technology, consciousness and the human experience.</p>
           <p className="hero-highlight">
             Why the next generation of games will change how we experience reality.
           </p>
-          <p className="strip">Games | Human Potential | Technology | Compassion | Global Impact</p>
-          <p className="authority">
-            AI • Technology • Human Potential • Public Speaker • Founder • Author
-          </p>
+
+
           <div className="cta-row">
             <a
               className="btn secondary"
@@ -199,8 +190,9 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
             >
-              Book a Synergy Call
+              Book a Synergy Call ↗
             </a>
+            <a className="hero-text-link" href="#earth-school">Discover EARTH SCHOOL ↓</a>
           </div>
         </div>
         <div className="hero-image-wrap">
@@ -213,6 +205,18 @@ export default function Home() {
           />
         </div>
       </section>
+      <div className="identity-strip"><span>Games</span><span>Human Potential</span><span>Technology</span><span>Compassion</span><span>Global Impact</span></div>
+      <section className="vision-intro" aria-labelledby="vision-title"><p className="chapter-label">01 / THE VISION</p><h2 id="vision-title">Big ideas.<br /><em>Human at heart.</em></h2><div>          <p className="hero-lede">
+            Visionary founder, public speaker, interfaith minister, author, and global ecosystem
+            builder creating new models across AI, immersive technology, games, wellness,
+            education, and human development.
+          </p>
+          <p className="hero-lede">
+            I combine AI, game development, immersive technology, and the human mind to build
+            systems that support studios, creators, neurodivergent thinkers, and people seeking
+            meaningful transformation.
+          </p>
+<p className="authority">AI • Technology • Human Potential • Public Speaker • Founder • Author</p></div></section>
 
       <section id="earth-school" className="earth-school-feature" aria-labelledby="earth-school-title">
         <div className="earth-school-atmosphere" aria-hidden="true" />
@@ -275,6 +279,8 @@ export default function Home() {
         </div>
       </section>
 
+      <div className="events-heading"><p className="chapter-label">02 / COME TOGETHER</p><h2>Bring the experience<br /><em>into real life.</em></h2></div>
+      <div className="event-pair">
       <section className="glass section mens-day-ad" aria-labelledby="mens-day-title">
         <p className="authority">IN PERSON · CHARLOTTETOWN · SATURDAY, NOVEMBER 28, 2026</p>
         <p className="mens-day-ad-edition">THE FIRST MEN’S DAY</p>
@@ -293,9 +299,10 @@ export default function Home() {
         <div className="cta-row"><a className="btn" href="/earth-school-womens-day">Explore the women’s day ↗</a></div>
       </section>
 
+      </div>
       <PrivateSessions />
 
-      <section className="glass section center">
+      <section className="glass section center manifesto">
         <h3>I build systems for studios and experiences for people.</h3>
         <p>
           My work brings together game development, immersive technology, human potential,
@@ -328,7 +335,7 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className="glass section resume-section">
+      <section id="about" className="glass section resume-section"><p className="chapter-label">03 / MEET THE HUMAN</p>
         <h3>Global Experience, Credibility & Human Development Work</h3>
         <p>
           Rev. Dr. Jessica Simmonds is a lifelong entrepreneur with almost three decades of
@@ -338,41 +345,42 @@ export default function Home() {
           transformation.
         </p>
         <div className="resume-grid">
-          <article className="resume-card">
-            <h4>Almost Three Decades of Entrepreneurial Experience</h4>
+          <details className="resume-card">
+            <summary>Almost Three Decades of Entrepreneurial Experience</summary>
             <ul className="credential-badges">
               {entrepreneurialExperience.map((item) => (
                 <li key={item} className={getPillClassName(item)}>{item}</li>
               ))}
             </ul>
-          </article>
-          <article className="resume-card">
-            <h4>A Spiritual Being Having a Human Experience Since 1979</h4>
+          </details>
+          <details className="resume-card">
+            <summary>A Spiritual Being Having a Human Experience Since 1979</summary>
             <ul className="credential-badges">
               {creativeArtisticWork.map((item) => (
                 <li key={item} className={getPillClassName(item)}>{item}</li>
               ))}
             </ul>
-          </article>
-          <article className="resume-card">
-            <h4>Credibility & Affiliations</h4>
+          </details>
+          <details className="resume-card">
+            <summary>Credibility & Affiliations</summary>
             <ul className="credential-badges">
               {credibilityAffiliations.map((item) => (
                 <li key={item} className={getPillClassName(item)}>{item}</li>
               ))}
             </ul>
-          </article>
-          <article className="resume-card">
-            <h4>Credentials & Certifications</h4>
+          </details>
+          <details className="resume-card">
+            <summary>Credentials & Certifications</summary>
             <ul className="credential-badges">
               {credentials.map((item) => (
                 <li key={item} className={getPillClassName(item)}>{item}</li>
               ))}
             </ul>
-          </article>
+          </details>
         </div>
       </section>
 
+      <div className="perspective-pair">
       <section className="glass section edge-section">
         <h3>My Unique Edge</h3>
         <p>
@@ -408,7 +416,8 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className="glass section speaking-topics-section">
+      </div>
+      <section className="glass section speaking-topics-section"><p className="chapter-label">04 / IDEAS WORTH SHARING</p>
         <h3>Speaking Topics</h3>
         <p>
           I speak at the intersection of technology, consciousness, human potential, and global systems — helping audiences rethink how we build, create, and experience the future.
@@ -430,7 +439,8 @@ export default function Home() {
         </p>
       </section>
 
-      <section id="podcast" className="private-sessions" aria-labelledby="podcast-title" style={{ background: "radial-gradient(ellipse at 90% 0%, rgba(54, 193, 181, .22), transparent 55%), linear-gradient(135deg, #071e28, #16132c 65%, #332038)" }}>
+      <section id="podcast" className="private-sessions podcast-feature" aria-labelledby="podcast-title">
+        <div className="podcast-wave" aria-hidden="true">{[22,45,70,35,95,55,80,40,100,62,28,73,48,90,30,65,40,85,52,25].map((height, i) => <span key={i} style={{ height: `${height}%` }} />)}</div>
         <div className="private-sessions-grid">
           <div className="private-sessions-copy">
             <p className="private-eyebrow">ON AIR · PODCASTS &amp; CONVERSATIONS</p>

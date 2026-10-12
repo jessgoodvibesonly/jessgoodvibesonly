@@ -1,5 +1,5 @@
 import Image from "next/image";
-import jessImage from "../public/Jess4Life.jpg";
+import jessImage from "../public/earth-school-jess.webp";
 import { bookingUrl, PrivateSessions } from "./components/PrivateSessions";
 
 const supportingInitiatives = [

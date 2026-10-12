@@ -132,6 +132,7 @@ export default function Home() {
           <div className="desktop-nav">
             <a className="nav-link" href="#earth-school">EARTH SCHOOL</a>
             <a className="nav-link" href="/earth-school-mens-day">Men’s Day</a>
+            <a className="nav-link" href="/earth-school-womens-day">Women’s Day</a>
             <a className="nav-link" href="#private-sessions">Private Sessions</a>
             <a
               className="btn nav-booking-button"
@@ -148,6 +149,7 @@ export default function Home() {
             <div className="mobile-nav-panel">
               <a href="#earth-school">EARTH SCHOOL</a>
               <a href="/earth-school-mens-day">Men’s Day · November 28</a>
+              <a href="/earth-school-womens-day">Women’s Day · December 5</a>
               <a href="#private-sessions">Private Sessions</a>
               <a
                 className="btn nav-booking-button"
@@ -278,6 +280,15 @@ export default function Home() {
         <p>A day of hypnotherapy, meditation, grounding, intuitive exploration, art and connection with Rev. Dr. Jess.</p>
         <p><strong>10 AM–7 PM · $333 CAD per person · 10 places</strong><br />Food and refreshments included. Venue details to follow.</p>
         <div className="cta-row"><a className="btn" href="/earth-school-mens-day">Explore the men’s day ↗</a></div>
+      </section>
+
+      <section className="glass section mens-day-ad" aria-labelledby="womens-day-title">
+        <p className="authority">IN PERSON · CHARLOTTETOWN · SATURDAY, DECEMBER 5, 2026</p>
+        <p className="mens-day-ad-edition">THE WOMEN’S DAY</p>
+        <h3 id="womens-day-title"><span>EARTH SCHOOL</span>A Spiritual Warrior’s Day for Women</h3>
+        <p>A day to come back to yourself through meditation, hypnotherapy, intuitive exploration, art and connection with Rev. Dr. Jess.</p>
+        <p><strong>10 AM–7 PM · $333 CAD per person · 10 places</strong><br />Food and refreshments included. Venue details to follow.</p>
+        <div className="cta-row"><a className="btn" href="/earth-school-womens-day">Explore the women’s day ↗</a></div>
       </section>
 
       <PrivateSessions />

@@ -134,6 +134,7 @@ export default function Home() {
             <a className="nav-link" href="/earth-school-mens-day">Men’s Day</a>
             <a className="nav-link" href="/earth-school-womens-day">Women’s Day</a>
             <a className="nav-link" href="#private-sessions">Private Sessions</a>
+            <a className="nav-link" href="#podcast">Podcasts</a>
             <a
               className="btn nav-booking-button"
               href={bookingUrl}
@@ -151,6 +152,7 @@ export default function Home() {
               <a href="/earth-school-mens-day">Men’s Day · November 28</a>
               <a href="/earth-school-womens-day">Women’s Day · December 5</a>
               <a href="#private-sessions">Private Sessions</a>
+              <a href="#podcast">Podcasts</a>
               <a
                 className="btn nav-booking-button"
                 href={bookingUrl}
@@ -426,6 +428,30 @@ export default function Home() {
         <p className="text-center text-sm md:text-base font-medium mt-6 opacity-90">
           Jess <img src="/peacesymbolgold.png" className="peaceSignoff" alt="Peace icon" />
         </p>
+      </section>
+
+      <section id="podcast" className="private-sessions" aria-labelledby="podcast-title" style={{ background: "radial-gradient(ellipse at 90% 0%, rgba(54, 193, 181, .22), transparent 55%), linear-gradient(135deg, #071e28, #16132c 65%, #332038)" }}>
+        <div className="private-sessions-grid">
+          <div className="private-sessions-copy">
+            <p className="private-eyebrow">ON AIR · PODCASTS &amp; CONVERSATIONS</p>
+            <h2 id="podcast-title" style={{ maxWidth: "15ch" }}>Let’s make it a conversation.</h2>
+            <div className="private-introduction">
+              <p>Consciousness. Creativity. Being human. The future of games. Invite Rev. Dr. Jess to your podcast for an open, curious conversation that connects big ideas with real life.</p>
+              <p>From building EARTH SCHOOL inside Fortnite to spiritual exploration, entrepreneurship and neurodivergent creativity—there’s plenty to talk about.</p>
+            </div>
+            <p className="private-signature">A temporary human experience. A conversation worth having.</p>
+          </div>
+          <div className="service-card">
+            <p className="service-label">BEHIND THE MIC · REV. DR. JESS</p>
+            <h3>Invite Jess to Your Podcast</h3>
+            <p className="service-description">Creating an episode about self-awareness, consciousness, human behaviour, immersive technology or following a vision? Let’s connect.</p>
+            <div className="topicGrid" style={{ margin: "1.5rem 0" }}>
+              {["EARTH SCHOOL & gaming", "Consciousness & ancient wisdom", "AI & human potential", "Neurodivergent creativity"].map((topic) => <span key={topic} className="topicPill">{topic}</span>)}
+            </div>
+            <a className="btn service-booking-button" href={"mailto:jessgoodvibesonly@gmail.com?subject=" + encodeURIComponent("Podcast invitation for Rev. Dr. Jess") + "&body=" + encodeURIComponent("Hi Jess,\n\nI’d love to invite you onto my podcast.\n\nMy name: \nPodcast name and website: \nProposed topic: \nAudience: \nRecording format (remote / in person): \nPreferred dates and time zone: \nEpisode promotion plans: \n\nLooking forward to connecting!")}>Send a Podcast Request <span aria-hidden="true">↗</span></a>
+            <p className="service-support">Opens an email draft with the details to include. Send it from your email app, and Jess will reply directly.</p>
+          </div>
+        </div>
       </section>
 
       <section className="quote">The future is human. Let’s build it together.</section>

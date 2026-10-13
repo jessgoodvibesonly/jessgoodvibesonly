@@ -189,6 +189,7 @@ export default function Home() {
             <a className="nav-link" href="#private-sessions">Private Sessions</a>
             <a className="nav-link" href="#podcast">Podcasts</a>
             <a className="nav-link" href="#credentials">Meet Jess</a>
+            <a className="nav-link" href="/my-story">My Story</a>
             <a
               className="btn nav-booking-button"
               href={bookingUrl}
@@ -210,6 +211,7 @@ export default function Home() {
               <a href="#private-sessions">Private Sessions</a>
               <a href="#podcast">Podcasts</a>
               <a href="#credentials">Meet Jess</a>
+              <a href="/my-story">My Story — Read the Journey</a>
               <a href="https://www.instagram.com/jessgoodvibesonly/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
               <a href="https://www.youtube.com/@EarthSchoolOfficial" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
               <a
@@ -278,6 +280,7 @@ export default function Home() {
           <div className="credentials-spotlight-story">
             <p>Rev. Dr. Jessica Simmonds is an entrepreneur, author, public speaker, educator, ordained interfaith minister and creator of EARTH SCHOOL. Her work spans spiritual counselling, hypnotherapy, creative education, human development and immersive experiences.</p>
             <p>Almost three decades of entrepreneurship. Over 25 years of teaching. A lifelong curiosity about consciousness and what it means to be human.</p>
+            <a className="my-story-link" href="/my-story">Read My Story <span aria-hidden="true">↗</span></a>
           </div>
         </div>
         <div className="featured-credentials">
@@ -636,6 +639,9 @@ export default function Home() {
           </a>
           <a className="btn final-cta-secondary" href={earthSchoolUrl} target="_blank" rel="noreferrer">
             Explore Earth School
+          </a>
+          <a className="btn final-cta-secondary" href="/my-story">
+            Read My Story
           </a>
           <a className="btn final-cta-secondary" href="https://www.aspiritualwarriorspath.com" target="_blank" rel="noreferrer">
             Spiritual Work & Writings

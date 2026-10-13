@@ -164,13 +164,6 @@ const featuredCredentials = [
   { label: "Mind & Change", detail: "CBT, NLP, meditation and neuroplasticity studies" },
 ];
 
-const glitterPoints = [
-  [4,14],[8,42],[11,81],[16,7],[19,64],[24,32],[29,82],[33,16],
-  [38,56],[42,91],[46,13],[51,40],[54,76],[58,22],[61,63],[66,9],
-  [69,46],[73,83],[76,18],[79,67],[83,34],[88,7],[91,52],[95,84],
-  [10,25],[21,94],[36,37],[47,68],[64,90],[84,89],[96,16],[28,12]
-] as const;
-
 const getPillClassName = (text: string) =>
   text.length > 110 ? "pill long-pill" : "pill";
 
@@ -227,21 +220,6 @@ export default function Home() {
       </header>
       <main id="top" className="landing">
       <section className="hero glass" aria-label="Meet Jess">
-        <div className="glitter-field" aria-hidden="true">
-          {glitterPoints.map(([left, top], index) => (
-            <span
-              key={index}
-              className={`glitter-spark glitter-shade-${index % 7} ${index % 5 === 0 ? "glitter-spark-large" : ""}`}
-              style={{
-                left: `${left}%`,
-                top: `${top}%`,
-                animationDelay: `${(index * -0.37).toFixed(2)}s`,
-                animationDuration: `${3.2 + (index % 7) * 0.48}s`,
-              }}
-            />
-          ))}
-        </div>
-
         <div className="hero-copy heroTextContainer">
           <div className="heroHeader">
             <img src="/peacesymbolgold.png" className="peaceHeroLeft" alt="Peace icon" />
@@ -422,18 +400,35 @@ export default function Home() {
       </section>
 
       <section id="art" className="art-showcase" aria-labelledby="art-showcase-title">
-        <div className="art-showcase-visual" aria-hidden="true">
-          <span className="art-halo art-halo-one" />
-          <span className="art-halo art-halo-two" />
-          <span className="art-halo art-halo-three" />
-          <span className="art-signature-mark">✧</span>
+        <div className="art-showcase-intro">
+          <div>
+            <p className="art-showcase-eyebrow">ORIGINAL WORK · THE ART OF JESS</p>
+            <h2 id="art-showcase-title">Art, instinct<br />&amp; expression.</h2>
+          </div>
+          <div>
+            <p>My art is another way I explore the human experience—through images, symbols, colour, intuition and the unexpected. These are photographs of my original works, shared here just as I created them.</p>
+            <p className="art-source-note">Original artwork by Rev. Dr. Jessica Simmonds.</p>
+          </div>
         </div>
-        <div className="art-showcase-copy">
-          <p className="art-showcase-eyebrow">CREATIVE EXPRESSION · ART BY JESS</p>
-          <h2 id="art-showcase-title">Art is another<br /><em>way of seeing.</em></h2>
-          <p>Before a story becomes a world, it begins with an image, a feeling, a mark on a page. Painting, making and exploring symbols are all part of my creative expression—and they live alongside the spiritual work, teaching and game design.</p>
-          <p className="art-showcase-status">A curated selection of my original artwork is being prepared for this space.</p>
-          <a className="art-showcase-link" href="#guest-transmissions">Explore the creative world of EARTH SCHOOL <span aria-hidden="true">↗</span></a>
+        <div className="art-gallery-grid">
+          <figure className="art-gallery-piece art-gallery-featured">
+            <a href="/art/jess-original-earth-school-art.jpg" target="_blank" rel="noopener noreferrer" aria-label="View original EARTH SCHOOL artwork at full size">
+              <Image src="/art/jess-original-earth-school-art.jpg" width={2072} height={3720} alt="Original colourful EARTH SCHOOL artwork by Jess featuring hand-drawn symbols and figures" sizes="(max-width: 740px) 100vw, 48vw" />
+            </a>
+            <figcaption>EARTH SCHOOL — original artwork <span>01 / 03</span></figcaption>
+          </figure>
+          <figure className="art-gallery-piece">
+            <a href="/art/jess-original-mona-art.jpg" target="_blank" rel="noopener noreferrer" aria-label="View original Jess portrait artwork at full size">
+              <Image src="/art/jess-original-mona-art.jpg" width={3072} height={4080} alt="Jess's original Mona Lisa-inspired portrait artwork against a vibrant red background" sizes="(max-width: 740px) 100vw, 24vw" />
+            </a>
+            <figcaption>Portrait study — original artwork <span>02 / 03</span></figcaption>
+          </figure>
+          <figure className="art-gallery-piece">
+            <a href="/art/jess-original-vision-art.jpg" target="_blank" rel="noopener noreferrer" aria-label="View original Jess vision artwork at full size">
+              <Image src="/art/jess-original-vision-art.jpg" width={2629} height={3896} alt="Jess's original expressive portrait with vivid colour, symbols and writing" sizes="(max-width: 740px) 100vw, 24vw" />
+            </a>
+            <figcaption>Symbolic expression — original artwork <span>03 / 03</span></figcaption>
+          </figure>
         </div>
       </section>
 

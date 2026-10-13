@@ -91,6 +91,7 @@ const earthSchoolGallery = [
 ];
 
 const speakingTopics = [
+  "The Art of Conscious Programming: Remembering Who You Are",
   "AI, Consciousness, and the Future of Human Development",
   "Technology and the Human Mind",
   "The Future of VR/AR Human Development Experiences",
@@ -575,6 +576,13 @@ export default function Home() {
         <p>
           My talks are designed to shift perspective, spark innovation, and leave people seeing their work, their lives, and what&apos;s possible differently.
         </p>
+        <div className="service-card" style={{ margin: "2rem 0", textAlign: "left" }}>
+          <p className="service-label">FEATURED TALK · THE HIGH PRIESTjESS ☮️</p>
+          <h4>The Art of <span className="color-pop pop-cyan">Conscious Programming</span></h4>
+          <p className="service-description">Remembering who you are. A personal, practical exploration of the biological space suit, neurodivergence, nervous system awareness, compassion, boundaries, sound and meditation, the creative power of AI, and the everyday choices that reshape a life.</p>
+          <p className="service-description">Drawing on her own transformation—from rediscovering her identity as an intuitive, channeler, artist and creator to building EARTH SCHOOL—Jess introduces the 33 ACTS of Becoming: simple, real-world practices for making room for love, opportunity, confidence, travel and creativity. An engaging talk for retreats, conferences and communities ready to turn reflection into action.</p>
+          <a className="btn secondary" href="mailto:jessgoodvibesonly@gmail.com?subject=Book%20Jess%20%E2%80%94%20The%20Art%20of%20Conscious%20Programming">Enquire About This Talk ↗</a>
+        </div>
         <p className="speaking-topics-intro">Core Topics:</p>
         <div className="topicGrid">
           {speakingTopics.map((topic) => (

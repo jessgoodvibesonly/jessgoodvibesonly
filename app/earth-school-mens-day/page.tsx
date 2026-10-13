@@ -38,7 +38,7 @@ export default function MensDayPage() {
         <section className={styles.hero} aria-labelledby="event-title">
           <p className={styles.eyebrow}>One day. In person. Charlottetown.</p>
           <h1 id="event-title" className={styles.title}>EARTH<br />SCHOOL</h1>
-          <p className={styles.subtitle}>A Spiritual Warrior’s Day for Men</p>
+          <p className={styles.subtitle}>A Spiritual Warrior’s Day for <span className="color-pop pop-cyan">Men</span></p>
           <p className={styles.tagline}>Being human is the game.<br />Remembering who you are is how to play.</p>
           <div className={styles.ticket}>
             <div><span>THE DATE</span><strong><time dateTime="2026-11-28">Saturday, November 28, 2026</time></strong></div>
@@ -50,12 +50,12 @@ export default function MensDayPage() {
         </section>
         <section className={styles.intro} aria-labelledby="intro-title">
           <p className={styles.eyebrow}>Step out of the everyday</p>
-          <h2 id="intro-title">A day to come back to yourself.</h2>
+          <h2 id="intro-title">A day to come back to <span className="color-pop pop-yellow">yourself.</span></h2>
           <p>A small, in-person gathering for men to explore spirituality, creativity and connection. Take time for reflection, try something new and share the experience with others.</p>
           <p>Come with curiosity. You don’t need to have it all figured out.</p>
         </section>
         <section className={styles.experiences} aria-labelledby="experiences-title">
-          <div className={styles.sectionHeading}><p className={styles.eyebrow}>The experience</p><h2 id="experiences-title">Space to explore.</h2></div>
+          <div className={styles.sectionHeading}><p className={styles.eyebrow}>The experience</p><h2 id="experiences-title">Space to <span className="color-pop pop-cyan">explore.</span></h2></div>
           {experiences.map(([number, title, description]) => (
             <article className={styles.experience} key={number}><span className={styles.number}>{number}</span><div><h3>{title}</h3><p>{description}</p></div></article>
           ))}
@@ -76,7 +76,7 @@ export default function MensDayPage() {
           <details><summary>What happens after I enquire?</summary><p>Contact Jess by email or Instagram for availability, venue and booking details. An enquiry does not reserve or pay for a place.</p></details>
         </section>
         <section id="enquire" className={styles.enquire} aria-labelledby="enquire-title">
-          <p className={styles.eyebrow}>10 places · November 28</p><h2 id="enquire-title">Your next chapter<br />starts with curiosity.</h2>
+          <p className={styles.eyebrow}>10 places · November 28</p><h2 id="enquire-title">Your next chapter<br />starts with <span className="color-pop pop-yellow">curiosity.</span></h2>
           <p>{paymentUrl ? "Book your place through secure checkout, or contact Jess with any questions." : "Interested in joining us? Ask Jess about a place."}</p>
           <div className={styles.actions}>{paymentUrl && <a className={styles.primary} href={paymentUrl}>Pay $333 CAD & book ↗</a>}<a className={paymentUrl ? styles.secondary : styles.primary} href={emailUrl}>Email Jess ↗</a><a className={styles.secondary} href="https://www.instagram.com/jessgoodvibesonly/" target="_blank" rel="noopener noreferrer">Message on Instagram ↗</a></div>
           <p className={styles.note}>DM “EARTH SCHOOL” · @jessgoodvibesonly<br />Venue and booking details to follow.</p>

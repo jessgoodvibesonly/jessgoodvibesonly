@@ -34,6 +34,57 @@ const earthSchoolHighlights = [
   },
 ];
 
+const earthSchoolGallery = [
+  {
+    "file": "echo-point-lighthouse",
+    "title": "Echo Point Island",
+    "caption": "The lighthouse at sunset in the UEFN world.",
+    "alt": "EARTH SCHOOL in the UEFN editor, showing a lighthouse beneath a purple and pink sunset",
+    "width": 675,
+    "height": 1200
+  },
+  {
+    "file": "dream-state-diner",
+    "title": "Dream State Diner",
+    "caption": "A look inside the island’s retro diner.",
+    "alt": "EARTH SCHOOL gameplay inside Dream State Diner, with blue booths, a counter and patterned floors",
+    "width": 1200,
+    "height": 675
+  },
+  {
+    "file": "sanctuary-vehicle",
+    "title": "Sanctuary Vehicle",
+    "caption": "Retro TVs and a quiet place to pause.",
+    "alt": "Sanctuary Vehicle interior in the UEFN editor, with retro televisions, patterned wallpaper and a striped sofa",
+    "width": 1200,
+    "height": 675
+  },
+  {
+    "file": "island-characters",
+    "title": "Meeting the island’s characters",
+    "caption": "An early in-game encounter with Morgan.",
+    "alt": "EARTH SCHOOL gameplay showing the player avatar facing Morgan across a blue counter",
+    "width": 900,
+    "height": 1200
+  },
+  {
+    "file": "behind-the-scenes",
+    "title": "Behind the scenes with Jess",
+    "caption": "Building the island and editing its transmissions.",
+    "alt": "Jess’s workstation with EARTH SCHOOL open in UEFN and a transmission being edited on a laptop",
+    "width": 1200,
+    "height": 675
+  },
+  {
+    "file": "early-world-experiment",
+    "title": "An early world experiment",
+    "caption": "A separate Bitmagic exploration of Echo Point Island.",
+    "alt": "An early Echo Point Island concept on a laptop in Bitmagic, showing a coastal village with blue lights",
+    "width": 675,
+    "height": 1200
+  }
+];
+
 const speakingTopics = [
   "AI, Consciousness, and the Future of Human Development",
   "Technology and the Human Mind",
@@ -300,6 +351,24 @@ export default function Home() {
                 <p>{highlight.description}</p>
               </article>
             ))}
+          </div>
+          <div className="earth-school-gallery" aria-labelledby="earth-school-gallery-title">
+            <div className="earth-school-gallery-heading">
+              <p className="earth-school-kicker">FROM JESS’S DEVELOPMENT DESK</p>
+              <h3 id="earth-school-gallery-title">Step inside the world.</h3>
+              <p>Real photos from the making of EARTH SCHOOL. The game is in development; these images capture the journey so far.</p>
+            </div>
+            <div className="earth-school-gallery-grid">
+              {earthSchoolGallery.map((photo) => (
+                <figure className="earth-school-gallery-card" key={photo.file}>
+                  <a href={`/earth-school/${photo.file}.webp`} target="_blank" rel="noopener noreferrer" aria-label={`View full photo: ${photo.title} (opens in a new tab)`}>
+                    <Image src={`/earth-school/${photo.file}.webp`} alt={photo.alt} width={photo.width} height={photo.height} sizes="(max-width: 680px) 100vw, (max-width: 900px) 50vw, 33vw" className="earth-school-gallery-image" />
+                    <span className="earth-school-gallery-expand" aria-hidden="true">View photo ↗</span>
+                  </a>
+                  <figcaption><h4>{photo.title}</h4><p>{photo.caption}</p></figcaption>
+                </figure>
+              ))}
+            </div>
           </div>
           <div className="earth-school-actions">
             <a className="btn earth-school-button" href={earthSchoolUrl} target="_blank" rel="noreferrer">

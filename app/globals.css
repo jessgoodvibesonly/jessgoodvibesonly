@@ -2063,3 +2063,20 @@ a {text-underline-offset:4px}
   .glitter-spark,.hero h1::after {animation:none!important;opacity:.62!important}
   .credentials-expand summary span {transition:none!important}
 }
+
+/* EARTH SCHOOL development photo gallery */
+.earth-school-gallery {margin:3rem 0 2rem}
+.earth-school-gallery-heading {max-width:65ch;margin-bottom:1.5rem}
+.earth-school-gallery-heading h3 {font-family:var(--serif);font-size:clamp(2rem,4vw,3.25rem);line-height:1.12;color:#f6e9da;margin:.8rem 0}
+.earth-school-gallery-heading>p:last-child {color:#c6d2d6;line-height:1.75;font-size:.9rem}
+.earth-school-gallery-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem}
+.earth-school-gallery-card {margin:0;min-width:0;border:1px solid #c7a6d14d;background:#111b29;border-radius:5px;overflow:hidden}
+.earth-school-gallery-card>a {display:block;position:relative;background:#080d16}
+.earth-school-gallery-image {display:block;width:100%;height:250px;object-fit:contain}
+.earth-school-gallery-expand {position:absolute;bottom:.65rem;right:.65rem;font-size:.65rem;font-weight:700;color:#fff2e5;background:#0a111dea;border:1px solid #ddbc8466;border-radius:3px;padding:.35rem .6rem}
+.earth-school-gallery-card>a:focus-visible {outline:3px solid #9af0e6;outline-offset:-3px}
+.earth-school-gallery-card figcaption {padding:1.2rem}
+.earth-school-gallery-card h4 {font-family:var(--serif);font-size:1.2rem;color:#f2d4b0;margin:0 0 .45rem;line-height:1.3}
+.earth-school-gallery-card figcaption p {font-size:.8rem;line-height:1.65;color:#c4d0d5;margin:0}
+@media(max-width:900px) {.earth-school-gallery-grid {grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px) {.earth-school-gallery-grid {grid-template-columns:minmax(0,1fr)}.earth-school-gallery-image {height:auto;max-height:440px;object-fit:contain}.earth-school-gallery {margin-top:2rem}}

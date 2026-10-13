@@ -46,7 +46,8 @@ export function PrivateSessions() {
           <p className="service-label">Personal support · meaningful change</p>
           <h3>EARTH SCHOOL | Private <span className="color-pop pop-cyan">Consciousness</span> Mentorship</h3>
           <p className="service-description"><strong>What if you had a guide in your corner as you practice seeing life differently?</strong> Go beyond the occasional conversation: explore simulation theory, consciousness, neuroscience, ancient wisdom, intuition and the Art of Conscious Programming — then apply it to real life through personalized reflection, habits and action.</p>
-          <p className="service-description"><strong>Monthly mentorship:</strong> four private video calls, frequent two-way voice transmissions and messages between sessions, plus personalized practices — from grounding and nervous-system awareness to movement, creative exercises and conscious choices, adapted to your needs and abilities.</p>
+          <p className="service-description"><strong>Monthly mentorship:</strong> four private video calls, frequent two-way voice transmissions and messages between sessions, plus personalized real-life practices — grounding, breathwork, movement, reflective audio, healthy boundaries and conscious choices adapted to your needs and abilities.</p>
+          <p className="service-description"><strong>Prepare the biological space suit.</strong> Jess uses the image of a 1,000-watt bulb in a 100-watt socket to explore a powerful question: as your vision grows, are your habits, nervous system and support structures ready to hold it? It’s a metaphor for building capacity through practice, not a scientific measurement of energy or frequency.</p>
           <p className="service-description">This is ongoing, individualized guidance with clear communication hours, not 24/7 availability. Enquire for current pricing, scheduling and fit.</p>
           <div style={{ display: "grid", gap: ".75rem", marginTop: "1.4rem" }}>
             <a className="btn service-booking-button" href={singleSessionUrl}>Enquire About a Session <span aria-hidden="true">↗</span></a>
@@ -59,7 +60,7 @@ export function PrivateSessions() {
           <div className="service-card-marker" aria-hidden="true"><span>03</span></div>
           <p className="service-label">In person · Charlottetown</p>
           <h3><span className="color-pop pop-blue">EARTH SCHOOL</span> Days</h3>
-          <p className="service-description"><strong>What if reality isn’t quite what you think it is?</strong> Join Rev. Dr. Jess for an unforgettable day exploring simulation theory, consciousness, the Seven Hermetic Principles, neuroscience and conscious programming — in person, with room for curiosity and connection.</p>
+          <p className="service-description"><strong>What if reality isn’t quite what you think it is?</strong> Join Rev. Dr. Jess for a remarkable day exploring simulation theory, consciousness, ancient wisdom, neuroscience and conscious programming — plus real-world EARTH SCHOOL practices to help prepare your biological space suit for the changes you want to make.</p>
           <ul className="service-details" aria-label="Event details"><li>10 AM–7 PM</li><li>10 places</li><li>$333 CAD</li></ul>
           <div style={{ display: "grid", gap: ".75rem" }}>
             <a className="btn service-booking-button" href="/earth-school-mens-day">Men’s Day · November 28 <span aria-hidden="true">↗</span></a>

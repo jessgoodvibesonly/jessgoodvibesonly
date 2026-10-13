@@ -21,7 +21,7 @@ export function PrivateSessions() {
       <div className="vision-orbit vision-orbit-two" aria-hidden="true" />
       <div className="private-sessions-copy" style={{ marginBottom: "2.5rem" }}>
         <p className="private-eyebrow">WORK WITH REV. DR. JESS</p>
-        <h2 id="private-sessions-title" style={{ maxWidth: "18ch" }}>Three ways I can help.</h2>
+        <h2 id="private-sessions-title" style={{ maxWidth: "18ch" }}>Three ways I can <span className="color-pop pop-yellow">help.</span></h2>
         <div className="private-introduction">
           <p>Clarity for your next chapter. Space to reconnect with yourself. Support to turn awareness into everyday change.</p>
           <p>Choose an intuitive reading, explore personal coaching, or join us for an EARTH SCHOOL day in Charlottetown.</p>
@@ -34,7 +34,7 @@ export function PrivateSessions() {
         <article className="service-card">
           <div className="service-card-marker" aria-hidden="true"><span>01</span></div>
           <p className="service-label">A private space for what&apos;s next</p>
-          <h3>Intuitive Clarity Reading for Entrepreneurs &amp; Creators</h3>
+          <h3>Intuitive <span className="color-pop pop-pink">Clarity</span> Reading for Entrepreneurs &amp; Creators</h3>
           <p className="service-description">Bring one or two meaningful questions—or simply arrive open. Together, we’ll connect the dots and explore the intuitive guidance and possibilities surrounding business, purpose, relationships or your next chapter.</p>
           <ul className="service-details" aria-label="Reading details"><li>Private Zoom</li><li>45 minutes</li><li>$111 CAD</li></ul>
           <a className="btn service-booking-button" href={bookingUrl} target="_blank" rel="noopener noreferrer" aria-label="Book your Intuitive Clarity Reading on Calendly (opens in a new tab)">Book Your Reading <span aria-hidden="true">↗</span></a>
@@ -44,7 +44,7 @@ export function PrivateSessions() {
         <article className="service-card">
           <div className="service-card-marker" aria-hidden="true"><span>02</span></div>
           <p className="service-label">Personal support · meaningful change</p>
-          <h3>1:1 Spiritual Coaching</h3>
+          <h3>1:1 <span className="color-pop pop-cyan">Spiritual</span> Coaching</h3>
           <p className="service-description">A private space to explore the patterns, beliefs and choices shaping your experience. Through spiritual counselling, meditation, hypnotherapy and intuitive exploration, we’ll focus on what matters to you and the changes you’re ready to make.</p>
           <p className="service-description">Enquire about a single session or longer-term support. Jess will share the options, pricing and availability before you book.</p>
           <div style={{ display: "grid", gap: ".75rem", marginTop: "1.4rem" }}>
@@ -57,7 +57,7 @@ export function PrivateSessions() {
         <article className="service-card">
           <div className="service-card-marker" aria-hidden="true"><span>03</span></div>
           <p className="service-label">In person · Charlottetown</p>
-          <h3>EARTH SCHOOL Days</h3>
+          <h3><span className="color-pop pop-blue">EARTH SCHOOL</span> Days</h3>
           <p className="service-description">Step out of your everyday routine for a day of meditation, hypnotherapy, grounding, intuitive exploration, art and connection.</p>
           <ul className="service-details" aria-label="Event details"><li>10 AM–7 PM</li><li>10 places</li><li>$333 CAD</li></ul>
           <div style={{ display: "grid", gap: ".75rem" }}>

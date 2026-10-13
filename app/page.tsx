@@ -223,14 +223,12 @@ export default function Home() {
         <div className="hero-copy heroTextContainer">
           <div className="heroHeader">
             <img src="/peacesymbolgold.png" className="peaceHeroLeft" alt="Peace icon" />
-            <div><p className="hero-name">Rev. Dr. Jessica Simmonds</p><h1>Jess Good<br />Vibes Only<span className="hero-period">.</span></h1></div>
+            <div><p className="hero-name">Rev. Dr. Jessica Simmonds</p><h1>Jess <span className="color-pop pop-cyan">Good</span><br />Vibes <span className="color-pop pop-pink">Only</span><span className="hero-period">.</span></h1></div>
           </div>
-          <h2>Technology × Consciousness × Creativity</h2>
+          <h2>Technology × <span className="color-pop pop-yellow">Consciousness</span> × Creativity</h2>
           <p>CEO, Aspire Agency Global Inc. | Founder | Public Speaker | Author</p>
-          <p className="hero-lede">Creating at the intersection of technology, consciousness and the human experience.</p>
-          <p className="hero-highlight">
-            Why the next generation of games will change how we experience reality.
-          </p>
+          <p className="hero-lede">Creative worlds, conscious exploration and meaningful human experiences.</p>
+          <p className="hero-highlight">Building EARTH SCHOOL—where awareness becomes part of the game.</p>
 
 
           <div className="cta-row">
@@ -260,7 +258,7 @@ export default function Home() {
         <div className="credentials-spotlight-header">
           <div>
             <p className="credentials-eyebrow">THE HUMAN BEHIND THE VISION</p>
-            <h2 id="credentials-spotlight-title">Meet Jess.<br /><em>Experience meets imagination.</em></h2>
+            <h2 id="credentials-spotlight-title">Meet Jess.<br /><em>Experience meets <span className="color-pop pop-blue">imagination.</span></em></h2>
           </div>
           <div className="credentials-spotlight-story">
             <p>Rev. Dr. Jessica Simmonds is an entrepreneur, author, public speaker, educator, ordained interfaith minister and creator of EARTH SCHOOL. Her work spans spiritual counselling, hypnotherapy, creative education, human development and immersive experiences.</p>
@@ -284,30 +282,20 @@ export default function Home() {
         </details>
       </section>
 
-      <section className="vision-intro" aria-labelledby="vision-title"><p className="chapter-label">01 / THE VISION</p><h2 id="vision-title">Big ideas.<br /><em>Human at heart.</em></h2><div>          <p className="hero-lede">
-            Visionary founder, public speaker, interfaith minister, author, and global ecosystem
-            builder creating new models across AI, immersive technology, games, wellness,
-            education, and human development.
-          </p>
-          <p className="hero-lede">
-            I combine AI, game development, immersive technology, and the human mind to create
-            immersive experiences for curious people, creatives, neurodivergent thinkers and anyone
-            exploring meaningful transformation.
-          </p>
-<p className="authority">AI • Technology • Human Potential • Public Speaker • Founder • Author</p></div></section>
-
       <section id="earth-school" className="earth-school-feature" aria-labelledby="earth-school-title">
         <div className="earth-school-atmosphere" aria-hidden="true" />
         <div className="earth-school-content">
-          <p className="earth-school-kicker">In development in UEFN / Fortnite · 1980s East Coast · consciousness</p>
+          <p className="earth-school-kicker">IN DEVELOPMENT IN UEFN / FORTNITE · ECHO POINT ISLAND</p>
+          <p className="genre-eyebrow">A <span className="color-pop pop-cyan">NEW GENRE</span> IN GAMING</p>
           <h2 id="earth-school-title">EARTH SCHOOL</h2>
           <p className="earth-school-subtitle">A Temporary Human Experience</p>
           <h3>What if being human is the game—and remembering who you are is how you learn to play it?</h3>
           <div className="earth-school-story">
             <p>
-              EARTH SCHOOL is an original narrative game and immersive world set on Echo Point
-              Island—a mysterious East Coast community frozen in the 1980s. The current prototype
-              is being built inside Fortnite using Unreal Editor for Fortnite (UEFN).
+              EARTH SCHOOL is an original spiritual exploration game and immersive world set on Echo Point
+              Island—a mysterious East Coast community frozen in the 1980s. I&apos;m creating a new kind
+              of experience where consciousness, ancient wisdom and self-discovery become something people can play.
+              The prototype is being built using Unreal Editor for Fortnite (UEFN).
             </p>
             <p>
               Players create an avatar, explore the island, meet its characters and move through
@@ -363,7 +351,7 @@ export default function Home() {
         <div className="guest-transmissions-masthead">
           <div className="guest-transmissions-headline">
             <p className="guest-transmissions-eyebrow"><span aria-hidden="true" className="guest-transmissions-led" /> GUEST TRANSMISSIONS · OPEN INVITATION</p>
-            <h2 id="guest-transmissions-title">Your voice.<br /><em>Someone else&apos;s discovery.</em></h2>
+            <h2 id="guest-transmissions-title">Your voice.<br /><em>Someone else&apos;s <span className="color-pop pop-pink">discovery.</span></em></h2>
           </div>
           <div className="guest-transmissions-introduction">
             <p>We&apos;re inviting spiritual teachers, thinkers, storytellers and consciousness creators to become part of <strong>EARTH SCHOOL</strong>—a new kind of exploration game being developed inside Fortnite.</p>
@@ -403,7 +391,7 @@ export default function Home() {
         <div className="art-showcase-intro">
           <div>
             <p className="art-showcase-eyebrow">ORIGINAL WORK · THE ART OF JESS</p>
-            <h2 id="art-showcase-title">Art, instinct<br />&amp; expression.</h2>
+            <h2 id="art-showcase-title">Art, instinct<br />&amp; <span className="color-pop pop-blue">expression.</span></h2>
           </div>
           <div>
             <p>My art is another way I explore the human experience—through images, symbols, colour, intuition and the unexpected. These are photographs of my original works, shared here just as I created them.</p>
@@ -432,7 +420,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="events-heading"><p className="chapter-label">02 / COME TOGETHER</p><h2>Bring the experience<br /><em>into real life.</em></h2></div>
+      <div className="events-heading"><p className="chapter-label">02 / COME TOGETHER</p><h2>Bring the experience<br /><em>into <span className="color-pop pop-pink">real life.</span></em></h2></div>
       <div className="event-pair">
       <section className="glass section mens-day-ad" aria-labelledby="mens-day-title">
         <p className="authority">IN PERSON · CHARLOTTETOWN · SATURDAY, NOVEMBER 28, 2026</p>
@@ -640,8 +628,8 @@ export default function Home() {
           <a className="btn final-cta-secondary" href="https://www.linkedin.com/in/jessica-simmonds-aspire4/" target="_blank" rel="noreferrer">
             LinkedIn
           </a>
-          <a className="btn final-cta-secondary" href="https://www.instagram.com/aspiritualwarriorspath" target="_blank" rel="noreferrer">
-            Instagram: @aspiritualwarriorspath
+          <a className="btn final-cta-secondary" href="https://www.instagram.com/jessgoodvibesonly/" target="_blank" rel="noopener noreferrer">
+            Instagram: @jessgoodvibesonly
           </a>
         </div>
         <div className="final-cta-divider" aria-hidden="true" />

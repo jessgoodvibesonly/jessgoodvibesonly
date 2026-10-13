@@ -25,6 +25,7 @@ const experiences = [
   ["02","The Art of Conscious Programming","Connect neuroscience, habitual patterns, beliefs and nervous-system awareness with practical exercises for making more intentional choices."],
   ["03","Ancient wisdom meets real life","Explore the Seven Hermetic Principles, metaphysics, intuition and reflective practices in a welcoming, down-to-earth setting."],
   ["04","Reflect, create & connect","Make space for grounding, creativity, personal insight, meaningful conversations and the possibility of seeing life differently."],
+  ["05","PRACTICE · Prepare the vessel","Your biological space suit matters. Use movement, grounding, breathwork, boundaries and daily experiments to build the practical capacity for your next chapter."],
 ];
 
 export default function MensDayPage() {
@@ -55,6 +56,7 @@ export default function MensDayPage() {
           <p><strong>WHAT IF REALITY ISN’T QUITE WHAT YOU THINK IT IS? What if everything you’ve been taught about life, consciousness, and who you are is only part of the story?</strong></p>
           <p>This is not your typical men’s workshop. Step into a fascinating exploration where simulation theory, neuroscience, the Seven Hermetic Principles, ancient wisdom, human behaviour and consciousness intersect.</p>
           <p>Discover the unconscious programming behind your choices, the patterns shaping your experiences and the power of noticing them. No masks. No expectations. Just curiosity, connection and a new perspective on being human.</p>
+          <p><strong>THE 1,000-WATT LESSON:</strong> Imagine putting a 1,000-watt bulb in a socket built for 100. Jess uses this as a metaphor for a bigger question: can your biological space suit — your body, mind, routines and support systems — sustain the new life you want to create? We explore small, real-world practices to build that capacity, not just exciting ideas.</p>
           <p>WHAT IF THE GREATEST GAME YOU’LL EVER PLAY IS THE ONE YOU’RE ALREADY LIVING?</p>
           <p><strong>Being human is the game. Remembering who you are is how to play.</strong></p>
         </section>

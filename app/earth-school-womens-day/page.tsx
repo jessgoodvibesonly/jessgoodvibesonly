@@ -25,6 +25,7 @@ const experiences = [
   ["02","The Art of Conscious Programming","Look at neuroscience, subconscious patterns, nervous-system awareness and the possibility of choosing a new response to familiar experiences."],
   ["03","Ancient wisdom & intuition","Explore metaphysics, the Seven Hermetic Principles and spiritual ideas as invitations to reflection and self-discovery."],
   ["04","Remember, reconnect, become","Make room for conversation, creativity, reflection, laughter and connection in a supportive in-person setting."],
+  ["05","PRACTICE · Prepare the vessel","Connect awareness with everyday action. Explore grounding, movement, guided reflection, nervous-system awareness and healthy boundaries as ways to grow your capacity."],
 ];
 
 export default function WomensDayPage() {
@@ -56,6 +57,7 @@ export default function WomensDayPage() {
           <p>Welcome to EARTH SCHOOL — where simulation theory meets neuroscience, metaphysics, the Seven Hermetic Principles, intuition and the extraordinary mystery of consciousness.</p>
           <p>Explore the stories, expectations and unconscious patterns you’ve collected along the way. Through curiosity, conversation and the Art of Conscious Programming, discover new ways to reconnect with your own perspective and possibilities.</p>
           <p>This isn’t about fixing yourself. It’s about remembering who you are beneath the programming.</p>
+          <p><strong>THE 1,000-WATT LESSON:</strong> Imagine a 1,000-watt bulb in a socket designed for 100. Jess calls the body your biological space suit: as your sense of possibility expands, can your nervous system, habits, boundaries and support structures hold the changes you want to make? This is a metaphor for capacity — and the day includes grounded, real-world practices to help you build it.</p>
           <p><strong>Being human is the game. Remembering who you are is how to play.</strong></p>
         </section>
         <section className={styles.experiences} aria-labelledby="experiences-title">

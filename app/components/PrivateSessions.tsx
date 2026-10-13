@@ -21,12 +21,12 @@ export function PrivateSessions() {
       <div className="vision-orbit vision-orbit-two" aria-hidden="true" />
       <div className="private-sessions-copy" style={{ marginBottom: "2.5rem" }}>
         <p className="private-eyebrow">WORK WITH REV. DR. JESS</p>
-        <h2 id="private-sessions-title" style={{ maxWidth: "18ch" }}>Three ways I can <span className="color-pop pop-yellow">help.</span></h2>
+        <h2 id="private-sessions-title" style={{ maxWidth: "18ch" }}>Three ways to explore <span className="color-pop pop-yellow">the extraordinary.</span></h2>
         <div className="private-introduction">
-          <p>Clarity for your next chapter. Space to reconnect with yourself. Support to turn awareness into everyday change.</p>
-          <p>Choose an intuitive reading, explore personal coaching, or join us for an EARTH SCHOOL day in Charlottetown.</p>
+          <p>What if one conversation, one new perspective, or one extraordinary day could change the way you see everything?</p>
+          <p>Private intuitive readings, one-to-one spiritual mentorship and in-person EARTH SCHOOL days — exploring consciousness, simulation theory, neuroscience, ancient wisdom and the Art of Conscious Programming.</p>
         </div>
-        <p className="private-credibility">A lifelong entrepreneur with almost three decades of experience, Rev. Dr. Jessica Simmonds brings together spiritual counselling, hypnotherapy, meditation and creative exploration.</p>
+        <p className="private-credibility">Rev. Dr. Jess ☮️ brings decades of spiritual teaching, intuitive exploration, hypnotherapy and creative education into meaningful, open-minded experiences.</p>
         <p className="private-signature">Believe it to see it.</p>
       </div>
 
@@ -34,8 +34,8 @@ export function PrivateSessions() {
         <article className="service-card">
           <div className="service-card-marker" aria-hidden="true"><span>01</span></div>
           <p className="service-label">A private space for what&apos;s next</p>
-          <h3>Intuitive <span className="color-pop pop-pink">Clarity</span> Reading for Entrepreneurs &amp; Creators</h3>
-          <p className="service-description">Bring one or two meaningful questions—or simply arrive open. Together, we’ll connect the dots and explore the intuitive guidance and possibilities surrounding business, purpose, relationships or your next chapter.</p>
+          <h3>Intuitive <span className="color-pop pop-pink">Clarity</span> Reading</h3>
+          <p className="service-description"><strong>What if one conversation could change the way you see everything?</strong> Step beyond the ordinary with Rev. Dr. Jess ☮️. Explore relationships, life transitions, personal growth, spiritual questions, purpose or whatever is calling for clarity. Come curious. Leave with fresh perspectives.</p>
           <ul className="service-details" aria-label="Reading details"><li>Private Zoom</li><li>45 minutes</li><li>$111 CAD</li></ul>
           <a className="btn service-booking-button" href={bookingUrl} target="_blank" rel="noopener noreferrer" aria-label="Book your Intuitive Clarity Reading on Calendly (opens in a new tab)">Book Your Reading <span aria-hidden="true">↗</span></a>
           <p className="service-support">View available times and booking details on Calendly.</p>
@@ -44,8 +44,8 @@ export function PrivateSessions() {
         <article className="service-card">
           <div className="service-card-marker" aria-hidden="true"><span>02</span></div>
           <p className="service-label">Personal support · meaningful change</p>
-          <h3>1:1 <span className="color-pop pop-cyan">Spiritual</span> Coaching</h3>
-          <p className="service-description">A private space to explore the patterns, beliefs and choices shaping your experience. Through spiritual counselling, meditation, hypnotherapy and intuitive exploration, we’ll focus on what matters to you and the changes you’re ready to make.</p>
+          <h3>Private <span className="color-pop pop-cyan">Spiritual</span> Mentorship</h3>
+          <p className="service-description"><strong>What if everything changes when you begin to see life differently?</strong> Explore the intersections of simulation theory, consciousness, neuroscience, ancient wisdom, intuition and subconscious patterns. The Art of Conscious Programming brings these big ideas into thoughtful, practical reflection on your own life.</p>
           <p className="service-description">Enquire about a single session or longer-term support. Jess will share the options, pricing and availability before you book.</p>
           <div style={{ display: "grid", gap: ".75rem", marginTop: "1.4rem" }}>
             <a className="btn service-booking-button" href={singleSessionUrl}>Enquire About a Session <span aria-hidden="true">↗</span></a>
@@ -58,13 +58,13 @@ export function PrivateSessions() {
           <div className="service-card-marker" aria-hidden="true"><span>03</span></div>
           <p className="service-label">In person · Charlottetown</p>
           <h3><span className="color-pop pop-blue">EARTH SCHOOL</span> Days</h3>
-          <p className="service-description">Step out of your everyday routine for a day of meditation, hypnotherapy, grounding, intuitive exploration, art and connection.</p>
+          <p className="service-description"><strong>What if reality isn’t quite what you think it is?</strong> Join Rev. Dr. Jess for an unforgettable day exploring simulation theory, consciousness, the Seven Hermetic Principles, neuroscience and conscious programming — in person, with room for curiosity and connection.</p>
           <ul className="service-details" aria-label="Event details"><li>10 AM–7 PM</li><li>10 places</li><li>$333 CAD</li></ul>
           <div style={{ display: "grid", gap: ".75rem" }}>
             <a className="btn service-booking-button" href="/earth-school-mens-day">Men’s Day · November 28 <span aria-hidden="true">↗</span></a>
             <a className="btn service-booking-button" href="/earth-school-womens-day">Women’s Day · December 5 <span aria-hidden="true">↗</span></a>
           </div>
-          <p className="service-support">Food and refreshments included. View each event for details and enquiries.</p>
+          <p className="service-support">Food and refreshments included. Explore each retreat page; secure Stripe registration will appear once payment links are connected.</p>
         </article>
       </div>
     </section>

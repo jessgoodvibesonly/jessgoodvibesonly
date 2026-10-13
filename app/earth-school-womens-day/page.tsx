@@ -14,7 +14,12 @@ export const metadata: Metadata = {
 };
 
 const emailUrl = "mailto:jessgoodvibesonly@gmail.com?subject=EARTH%20SCHOOL%20Women%27s%20Day%20%E2%80%94%20December%205&body=Hi%20Jess%2C%0A%0AI%27m%20interested%20in%20the%20Earth%20School%20women%27s%20day%20on%20December%205.%20Please%20send%20me%20the%20venue%20and%20booking%20details.%0A%0AMy%20name%3A%20%0A";
-const paymentUrl = process.env.NEXT_PUBLIC_WOMENS_DAY_PAYMENT_URL;
+const configuredPaymentUrl = process.env.NEXT_PUBLIC_WOMENS_DAY_PAYMENT_URL?.trim();
+// Show a payment action only when a properly formed Stripe checkout URL is configured.
+// Otherwise the event remains an enquiry page; no unverified checkout is offered.
+const paymentUrl = configuredPaymentUrl && /^https:\/\/(?:buy|checkout)\.stripe\.com\/[^\s]+$/.test(configuredPaymentUrl)
+  ? configuredPaymentUrl
+  : undefined;
 const experiences = [
   ["01", "Pause & reconnect", "Guided meditation, grounding and hypnotherapy: space to slow down and turn your attention inward."],
   ["02", "Explore your inner world", "Numerology, astrology and intuitive exploration as invitations to reflect on your patterns, purpose and possibilities."],

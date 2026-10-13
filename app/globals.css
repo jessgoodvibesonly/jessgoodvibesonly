@@ -2627,3 +2627,32 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--photo-cyan);outlin
   .footer-social-links a {min-height:42px;align-items:center}
   .footer-social-handle {display:none}
 }
+
+
+/* Story link: an editorial text CTA rather than another large card. */
+.my-story-link {
+  display:inline-flex;
+  align-items:center;
+  gap:1.1rem;
+  min-height:44px;
+  margin-top:1rem;
+  padding:.4rem 0;
+  font-family:var(--sans);
+  font-size:.82rem;
+  font-weight:800;
+  color:#f8f8f8;
+  text-decoration:none;
+  border-bottom:1px solid #a2a2a2;
+}
+.my-story-link span {
+  color:var(--photo-pink,#f35a98);
+  font-size:1.15rem;
+  line-height:1;
+}
+.my-story-link:hover {
+  color:var(--photo-cyan,#43cdec);
+  border-bottom-color:var(--photo-cyan,#43cdec)
+}
+@media(max-width:680px) {
+  .my-story-link {min-height:48px;font-size:.86rem;margin-top:.7rem}
+}

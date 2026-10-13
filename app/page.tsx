@@ -21,6 +21,13 @@ const supportingInitiatives = [
 ];
 
 const earthSchoolUrl = "https://earth-school-five.vercel.app";
+const guestTransmissionInquiryUrl =
+  "mailto:jessgoodvibesonly@gmail.com?subject=" +
+  encodeURIComponent("EARTH SCHOOL — Guest Transmission Proposal") +
+  "&body=" +
+  encodeURIComponent(
+    "Hi Jess,\n\nI would love to explore being part of EARTH SCHOOL.\n\nName / public name: \nWebsite or social profile: \nMy work / community: \nTopic I would love to share: \nPreferred format (retro voicemail / drive-in / either): \nInterested in discussing a character inspired by my likeness? (optional): \nEmail to reach me: \n\nI understand this is an unpaid collaboration proposal, not an agreement to use or license my work. Any recording, image or likeness permissions would be agreed separately in writing before use.\n\nThank you!"
+  );
 const earthSchoolInvestorPdfUrl = "/EARTH-SCHOOL-INVESTOR-OVERVIEW.pdf";
 const earthSchoolHighlights = [
   {
@@ -132,6 +139,7 @@ export default function Home() {
           </a>
           <div className="desktop-nav">
             <a className="nav-link" href="#earth-school">EARTH SCHOOL</a>
+            <a className="nav-link" href="#guest-transmissions">Be in the Game</a>
             <a className="nav-link" href="#mens-day-title">Events</a>
             <a className="nav-link" href="#private-sessions">Private Sessions</a>
             <a className="nav-link" href="#podcast">Podcasts</a>
@@ -150,6 +158,7 @@ export default function Home() {
             <summary aria-label="Open navigation menu"><span aria-hidden="true" /></summary>
             <div className="mobile-nav-panel">
               <a href="#earth-school">EARTH SCHOOL</a>
+              <a href="#guest-transmissions">Be in the Game</a>
               <a href="/earth-school-mens-day">Men’s Day · November 28</a>
               <a href="/earth-school-womens-day">Women’s Day · December 5</a>
               <a href="#private-sessions">Private Sessions</a>
@@ -261,6 +270,46 @@ export default function Home() {
             </a>
           </div>
         </div>
+      </section>
+
+      <section id="guest-transmissions" className="guest-transmissions" aria-labelledby="guest-transmissions-title">
+        <div className="guest-transmissions-masthead">
+          <div className="guest-transmissions-headline">
+            <p className="guest-transmissions-eyebrow"><span aria-hidden="true" className="guest-transmissions-led" /> GUEST TRANSMISSIONS · OPEN INVITATION</p>
+            <h2 id="guest-transmissions-title">Your voice.<br /><em>Someone else&apos;s discovery.</em></h2>
+          </div>
+          <div className="guest-transmissions-introduction">
+            <p>We&apos;re inviting spiritual teachers, thinkers, storytellers and consciousness creators to become part of <strong>EARTH SCHOOL</strong>—a new kind of exploration game being developed inside Fortnite.</p>
+            <p>Instead of another interview, imagine sharing an idea in your own words, at your own pace. Record an uninterrupted <strong>20–30 minute transmission</strong> on a subject that means something to you. Somewhere on our nostalgic 1980s island, a player may discover it.</p>
+          </div>
+        </div>
+        <div className="guest-transmissions-choices">
+          <article className="guest-transmissions-choice">
+            <div className="guest-transmissions-choice-top"><span>01 / AN ANALOG MESSAGE</span><span className="guest-transmissions-symbol" aria-hidden="true">☎</span></div>
+            <h3>The Voicemail</h3>
+            <p>A voice waiting to be heard. Players find your transmission through a retro answering machine or an island payphone, like an unexpected message from a friend.</p>
+          </article>
+          <article className="guest-transmissions-choice">
+            <div className="guest-transmissions-choice-top"><span>02 / A BIG-SCREEN MOMENT</span><span className="guest-transmissions-symbol" aria-hidden="true">✦</span></div>
+            <h3>The Drive-In</h3>
+            <p>Your photograph, your voice and atmospheric visuals fill the island&apos;s outdoor cinema—turning an evening at the drive-in into a new perspective.</p>
+          </article>
+        </div>
+        <div className="guest-transmissions-details">
+          <div className="guest-transmissions-themes">
+            <p className="guest-transmissions-small-label">CONVERSATIONS WE&apos;RE EXPLORING</p>
+            <p>Ancient wisdom meets everyday experience. Hermetic principles, simulation theory, neuroscience, the nervous system, manifestation, numerology, astrology, synchronicity, Kabbalah, energy, attention and choice. Or choose a topic that&apos;s entirely your own.</p>
+            <p className="guest-transmissions-character">There may also be opportunities to discuss an in-game character inspired by your likeness, subject to development feasibility and your explicit permission.</p>
+          </div>
+          <div className="guest-transmissions-apply">
+            <p className="guest-transmissions-small-label">A NEW WAY TO SHARE WHAT YOU KNOW</p>
+            <h3>Want to leave a transmission?</h3>
+            <p>Tell us a little about your work, the topic you&apos;d love to explore and whether the voicemail or drive-in speaks to you.</p>
+            <a className="btn guest-transmissions-button" href={guestTransmissionInquiryUrl}>Request to Be in the Game <span aria-hidden="true">↗</span></a>
+            <p className="guest-transmissions-apply-note">This opens a pre-filled email to Jess. Send it from your email app to make your enquiry.</p>
+          </div>
+        </div>
+        <p className="guest-transmissions-permission">This is an unpaid creative collaboration. Submitting an enquiry doesn&apos;t guarantee an appearance or grant permission to use your material. Recordings, photographs, likenesses and promotional excerpts would only be used with separately agreed written permission.</p>
       </section>
 
       <section className="supporting-initiatives" aria-labelledby="supporting-title">

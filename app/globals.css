@@ -2492,3 +2492,68 @@ a{color:inherit}
 @media(prefers-reduced-motion:reduce){
   .art-gallery-piece img{transition:none}
 }
+
+
+/* Bio photograph accents · October 13
+   These four tones are sampled visually from the paintings behind Jess:
+   turquoise-blue, hibiscus pink, cobalt/lavender blue and yellow.  Color is
+   reserved for individual words; everything around them remains editorial. */
+:root{
+  --photo-cyan:#39c7eb;
+  --photo-pink:#f35a98;
+  --photo-blue:#7c9eff;
+  --photo-yellow:#ebdc68;
+}
+.color-pop{display:inline;color:inherit;text-shadow:none;font-style:inherit}
+.pop-cyan{color:var(--photo-cyan)!important}
+.pop-pink{color:var(--photo-pink)!important}
+.pop-blue{color:var(--photo-blue)!important}
+.pop-yellow{color:var(--photo-yellow)!important}
+.hero h1 .color-pop,.hero h2 .color-pop{white-space:nowrap}
+.hero .hero-period{color:#fff!important}
+.hero .hero-highlight{font-weight:400}
+.genre-eyebrow{
+  display:block;
+  margin:0 0 1.25rem;
+  padding:0;
+  background:transparent;
+  border:0;
+  color:#eeeeee;
+  font-family:var(--sans);
+  font-weight:800;
+  font-size:clamp(.85rem,1.35vw,1.15rem);
+  line-height:1.5;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+}
+.earth-school-kicker{margin-bottom:.9rem}
+.earth-school-content>h2{margin-bottom:.65rem}
+.credentials-spotlight h2 .color-pop,.art-showcase h2 .color-pop,
+.events-heading h2 .color-pop,.guest-transmissions h2 .color-pop{
+  color:inherit;
+  font-family:inherit;
+  font-weight:inherit;
+  font-style:inherit;
+  text-decoration:none;
+}
+.hero .cta-row .btn,.service-booking-button,.guest-transmissions-button{
+  min-height:48px;
+}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--photo-cyan);outline-offset:4px}
+@media(max-width:1120px){
+  .mobile-nav-panel{max-width:min(92vw,360px)}
+}
+@media(max-width:680px){
+  .hero h1{font-size:clamp(3rem,11.2vw,4.5rem);line-height:1.03}
+  .hero h2{font-size:.72rem;line-height:1.9;letter-spacing:.07em}
+  .genre-eyebrow{font-size:.83rem;letter-spacing:.13em;margin:.3rem 0 1.1rem}
+  .earth-school-kicker{font-size:.64rem;line-height:1.7}
+  .earth-school-content>h2{overflow-wrap:anywhere}
+  .featured-credentials{row-gap:1rem}
+  .credential-badges,.service-description,.guest-transmissions-introduction{overflow-wrap:break-word}
+  .mobile-nav-panel>a{min-height:44px}
+  .art-gallery-piece a,.earth-school-gallery-card a{outline-offset:3px}
+}
+@media(max-width:370px){
+  .hero h1{font-size:clamp(2.7rem,10.8vw,3.1rem)}
+}

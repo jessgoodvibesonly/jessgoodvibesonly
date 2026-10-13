@@ -2,24 +2,6 @@ import Image from "next/image";
 import jessImage from "../public/earth-school-jess.webp";
 import { bookingUrl, PrivateSessions } from "./components/PrivateSessions";
 
-const supportingInitiatives = [
-  {
-    title: "ASPIRE P.O.D.S.",
-    description:
-      "Production, development and operational infrastructure supporting ambitious creative work.",
-  },
-  {
-    title: "ASPIRE GLOBAL FOUNDATION",
-    description:
-      "Technology and compassion working together to create meaningful real-world impact.",
-  },
-  {
-    title: "LOVE STORM RETREATS",
-    description:
-      "In-person experiences centred on connection, healing, creativity and conscious living.",
-  },
-];
-
 const earthSchoolUrl = "https://earth-school-five.vercel.app";
 const guestTransmissionInquiryUrl =
   "mailto:jessgoodvibesonly@gmail.com?subject=" +
@@ -59,8 +41,6 @@ const speakingTopics = [
   "The Future of Immersive Wellness",
   "From Game Development to Human Development",
   "Games as Consciousness-Shifting Experiences",
-  "Global Game Development Infrastructure",
-  "Building Systems that Scale People and Studios",
   "Building People-First Systems",
   "Technology, Compassion, and Global Impact",
   "Neurodivergent-Affirming Leadership and Human Development",
@@ -221,9 +201,9 @@ export default function Home() {
             education, and human development.
           </p>
           <p className="hero-lede">
-            I combine AI, game development, immersive technology, and the human mind to build
-            systems that support studios, creators, neurodivergent thinkers, and people seeking
-            meaningful transformation.
+            I combine AI, game development, immersive technology, and the human mind to create
+            immersive experiences for curious people, creatives, neurodivergent thinkers and anyone
+            exploring meaningful transformation.
           </p>
 <p className="authority">AI • Technology • Human Potential • Public Speaker • Founder • Author</p></div></section>
 
@@ -312,22 +292,6 @@ export default function Home() {
         <p className="guest-transmissions-permission">This is an unpaid creative collaboration. Submitting an enquiry doesn&apos;t guarantee an appearance or grant permission to use your material. Recordings, photographs, likenesses and promotional excerpts would only be used with separately agreed written permission.</p>
       </section>
 
-      <section className="supporting-initiatives" aria-labelledby="supporting-title">
-        <div className="supporting-heading">
-          <p>Connected initiatives</p>
-          <h3 id="supporting-title">Supporting the Wider Vision</h3>
-          <p>EARTH SCHOOL sits at the centre. These initiatives support its development, community and real-world impact.</p>
-        </div>
-        <div className="supporting-cards">
-          {supportingInitiatives.map((card) => (
-            <article key={card.title} className="supporting-card">
-              <h4>{card.title}</h4>
-              <p>{card.description}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
       <div className="events-heading"><p className="chapter-label">02 / COME TOGETHER</p><h2>Bring the experience<br /><em>into real life.</em></h2></div>
       <div className="event-pair">
       <section className="glass section mens-day-ad" aria-labelledby="mens-day-title">
@@ -352,13 +316,13 @@ export default function Home() {
       <PrivateSessions />
 
       <section className="glass section center manifesto">
-        <h3>I build systems for studios and experiences for people.</h3>
+        <h3>I create worlds that invite people to see differently.</h3>
         <p>
           My work brings together game development, immersive technology, human potential,
           consciousness, compassion, and real-world impact.
         </p>
         <p className="formula">Technology + Awareness + Compassion = A Better Future</p>
-        <p>Building systems that work. Building people up. Building what’s next.</p>
+        <p>Creating with curiosity. Making room for discovery. Building what’s next.</p>
       </section>
 
       <section className="glass section">
@@ -436,7 +400,7 @@ export default function Home() {
           I build experiences at the intersection of immersive technology, human consciousness,
           creativity, wellness, games, and global impact.
         </p>
-        <p>From studio infrastructure to human transformation, my work connects systems, people, and possibility.</p>
+        <p>From meaningful gameplay to real-world reflection, my work connects imagination, people, and possibility.</p>
         <p>This includes:</p>
         <ul className="edge-list">
           <li>AI-assisted creativity</li>
@@ -460,7 +424,7 @@ export default function Home() {
         <ul className="edge-list">
           <li>Human potential</li>
           <li>Education and talent development</li>
-          <li>Studio infrastructure</li>
+          <li>Immersive experiences and creative learning</li>
           <li>Real-world impact</li>
         </ul>
       </section>
@@ -469,7 +433,7 @@ export default function Home() {
       <section className="glass section speaking-topics-section"><p className="chapter-label">04 / IDEAS WORTH SHARING</p>
         <h3>Speaking Topics</h3>
         <p>
-          I speak at the intersection of technology, consciousness, human potential, and global systems — helping audiences rethink how we build, create, and experience the future.
+          I speak at the intersection of technology, consciousness, storytelling and human potential—inviting audiences to rethink what games, creativity and personal growth can make possible.
         </p>
         <p>
           My talks are designed to shift perspective, spark innovation, and leave people seeing their work, their lives, and what&apos;s possible differently.
@@ -536,9 +500,6 @@ export default function Home() {
           </a>
           <a className="btn final-cta-secondary" href={earthSchoolUrl} target="_blank" rel="noreferrer">
             Explore Earth School
-          </a>
-          <a className="btn final-cta-secondary" href="https://aspire-pods.vercel.app" target="_blank" rel="noreferrer">
-            Aspire P.O.D.S.
           </a>
           <a className="btn final-cta-secondary" href="https://www.aspiritualwarriorspath.com" target="_blank" rel="noreferrer">
             Spiritual Work & Writings

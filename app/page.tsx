@@ -3,6 +3,11 @@ import jessImage from "../public/earth-school-jess.webp";
 import { bookingUrl, PrivateSessions } from "./components/PrivateSessions";
 
 const earthSchoolUrl = "https://earth-school-five.vercel.app";
+const socialLinks = [
+  { label: "Instagram", handle: "@jessgoodvibesonly", url: "https://www.instagram.com/jessgoodvibesonly/" },
+  { label: "YouTube", handle: "@EarthSchoolOfficial", url: "https://www.youtube.com/@EarthSchoolOfficial" },
+  { label: "LinkedIn", handle: "Rev. Dr. Jess", url: "https://www.linkedin.com/in/jessica-simmonds-aspire4/" },
+];
 const guestTransmissionInquiryUrl =
   "mailto:jessgoodvibesonly@gmail.com?subject=" +
   encodeURIComponent("EARTH SCHOOL — Guest Transmission Proposal") +
@@ -205,6 +210,8 @@ export default function Home() {
               <a href="#private-sessions">Private Sessions</a>
               <a href="#podcast">Podcasts</a>
               <a href="#credentials">Meet Jess</a>
+              <a href="https://www.instagram.com/jessgoodvibesonly/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+              <a href="https://www.youtube.com/@EarthSchoolOfficial" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
               <a
                 className="btn nav-booking-button"
                 href={bookingUrl}
@@ -242,6 +249,14 @@ export default function Home() {
             </a>
             <a className="hero-text-link" href="#earth-school">Discover EARTH SCHOOL ↓</a>
           </div>
+          <nav className="social-shortcuts" aria-label="Follow Jess and EARTH SCHOOL">
+            <span className="social-shortcuts-label">Follow the journey</span>
+            {socialLinks.map((social) => (
+              <a key={social.label} href={social.url} target="_blank" rel="noopener noreferrer" aria-label={`${social.label} ${social.handle} (opens in a new tab)`}>
+                {social.label}<span aria-hidden="true"> ↗</span>
+              </a>
+            ))}
+          </nav>
         </div>
         <div className="hero-image-wrap">
           <Image
@@ -625,13 +640,14 @@ export default function Home() {
           <a className="btn final-cta-secondary" href="https://www.aspiritualwarriorspath.com" target="_blank" rel="noreferrer">
             Spiritual Work & Writings
           </a>
-          <a className="btn final-cta-secondary" href="https://www.linkedin.com/in/jessica-simmonds-aspire4/" target="_blank" rel="noreferrer">
-            LinkedIn
-          </a>
-          <a className="btn final-cta-secondary" href="https://www.instagram.com/jessgoodvibesonly/" target="_blank" rel="noopener noreferrer">
-            Instagram: @jessgoodvibesonly
-          </a>
         </div>
+        <nav className="footer-social-links" aria-label="Follow on social media">
+          {socialLinks.map((social) => (
+            <a key={social.label} href={social.url} target="_blank" rel="noopener noreferrer">
+              {social.label}<span className="footer-social-handle">{social.handle}</span><span aria-hidden="true"> ↗</span>
+            </a>
+          ))}
+        </nav>
         <div className="final-cta-divider" aria-hidden="true" />
         <p className="final-cta-note">For partnerships, speaking, media, or aligned collaboration, let&apos;s connect.</p>
         <div className="contact-info">

@@ -236,7 +236,7 @@ export default function Home() {
           <h2>Technology × <span className="color-pop pop-yellow">Consciousness</span> × Creativity</h2>
           <p>CEO, Aspire Agency Global Inc. | Founder | Public Speaker | Author</p>
           <p className="hero-lede">Creative <span className="color-pop pop-blue">worlds</span>, conscious exploration and meaningful human experiences.</p>
-          <p className="hero-highlight">Building EARTH SCHOOL—where <span className="color-pop pop-pink">awareness</span> becomes part of the game.</p>
+          <p className="hero-highlight">Building EARTH SCHOOL—where <span className="color-pop pop-pink">awareness</span>, simulation theory and the art of being human become part of the game.</p>
 
 
           <div className="cta-row">
@@ -311,7 +311,7 @@ export default function Home() {
             <p>
               EARTH SCHOOL is an original spiritual exploration game and immersive world set on Echo Point
               Island—a mysterious East Coast community frozen in the 1980s. I&apos;m creating a new kind
-              of experience where consciousness, ancient wisdom and self-discovery become something people can play.
+              of experience where consciousness, simulation theory, neuroscience, ancient wisdom and self-discovery become something people can play.
               The prototype is being built using Unreal Editor for Fortnite (UEFN).
             </p>
             <p>
@@ -442,23 +442,34 @@ export default function Home() {
       <section className="glass section mens-day-ad" aria-labelledby="mens-day-title">
         <p className="authority">IN PERSON · CHARLOTTETOWN · SATURDAY, NOVEMBER 28, 2026</p>
         <p className="mens-day-ad-edition">THE FIRST <span className="color-pop pop-cyan">MEN’S DAY</span></p>
-        <h3 id="mens-day-title"><span>EARTH SCHOOL</span>A Spiritual Warrior’s Day for Men</h3>
-        <p>A day of hypnotherapy, meditation, grounding, intuitive exploration, art and connection with Rev. Dr. Jess.</p>
+        <h3 id="mens-day-title"><span>EARTH SCHOOL</span>Men’s Day · The Art of Being Human</h3>
+        <p><strong>WHAT IF REALITY ISN’T QUITE WHAT YOU THINK IT IS?</strong> Step inside an extraordinary exploration of simulation theory, neuroscience, consciousness, the Seven Hermetic Principles and the Art of Conscious Programming — with Rev. Dr. Jess ☮️.</p>
         <p><strong>10 AM–7 PM · $333 CAD per person · 10 places</strong><br />Food and refreshments included. Venue details to follow.</p>
-        <div className="cta-row"><a className="btn" href="/earth-school-mens-day">Explore the men’s day ↗</a></div>
+        <div className="cta-row"><a className="btn" href="/earth-school-mens-day">Discover the men’s experience ↗</a></div>
       </section>
 
       <section className="glass section mens-day-ad" aria-labelledby="womens-day-title">
         <p className="authority">IN PERSON · CHARLOTTETOWN · SATURDAY, DECEMBER 5, 2026</p>
         <p className="mens-day-ad-edition">THE <span className="color-pop pop-pink">WOMEN’S DAY</span></p>
-        <h3 id="womens-day-title"><span>EARTH SCHOOL</span>A Spiritual Warrior’s Day for Women</h3>
-        <p>A day to come back to yourself through meditation, hypnotherapy, intuitive exploration, art and connection with Rev. Dr. Jess.</p>
+        <h3 id="womens-day-title"><span>EARTH SCHOOL</span>Women’s Day · The Art of Becoming</h3>
+        <p><strong>WHAT IF YOU ARE SO MUCH MORE THAN YOU’VE BEEN TAUGHT TO BE?</strong> Discover the fascinating connections between simulation theory, intuition, neuroscience, metaphysics, ancient wisdom and conscious choice — with Rev. Dr. Jess ☮️.</p>
         <p><strong>10 AM–7 PM · $333 CAD per person · 10 places</strong><br />Food and refreshments included. Venue details to follow.</p>
-        <div className="cta-row"><a className="btn" href="/earth-school-womens-day">Explore the women’s day ↗</a></div>
+        <div className="cta-row"><a className="btn" href="/earth-school-womens-day">Discover the women’s experience ↗</a></div>
       </section>
 
       </div>
       <PrivateSessions />
+
+      <section id="spiritual-writings" className="glass section" aria-labelledby="spiritual-writings-title">
+        <p className="chapter-label">GO DEEPER · THE BOOK & THE JOURNEY</p>
+        <h3 id="spiritual-writings-title">A Spiritual Warrior’s <span className="color-pop pop-yellow">Path to Re-Enlightening.</span></h3>
+        <p>Before EARTH SCHOOL became an interactive world, the questions were already alive in Jess’s writing: Who are we beyond our conditioning? What shapes the reality we experience? What becomes possible when we begin to see life differently?</p>
+        <p>Explore the book and Jess’s wider spiritual work — including consciousness, intuition, metaphysics, simulation theory and the art of being human.</p>
+        <div className="cta-row">
+          <a className="btn" href="https://www.aspiritualwarriorspath.com" target="_blank" rel="noopener noreferrer">Explore the Book & Spiritual Work ↗</a>
+          <a className="btn secondary" href="/my-story">Meet the Author ↗</a>
+        </div>
+      </section>
 
       <section className="glass section center manifesto">
         <h3>I create worlds that invite people to see <span className="color-pop pop-blue">differently.</span></h3>

@@ -234,8 +234,8 @@ export default function Home() {
           </div>
           <h2>Technology × <span className="color-pop pop-yellow">Consciousness</span> × Creativity</h2>
           <p>CEO, Aspire Agency Global Inc. | Founder | Public Speaker | Author</p>
-          <p className="hero-lede">Creative worlds, conscious exploration and meaningful human experiences.</p>
-          <p className="hero-highlight">Building EARTH SCHOOL—where awareness becomes part of the game.</p>
+          <p className="hero-lede">Creative <span className="color-pop pop-blue">worlds</span>, conscious exploration and meaningful human experiences.</p>
+          <p className="hero-highlight">Building EARTH SCHOOL—where <span className="color-pop pop-pink">awareness</span> becomes part of the game.</p>
 
 
           <div className="cta-row">
@@ -284,7 +284,7 @@ export default function Home() {
           {featuredCredentials.map((item, index) => (
             <article className="featured-credential" key={item.label}>
               <span className="featured-credential-index">0{index + 1}</span>
-              <h3>{item.label}</h3>
+              <h3 className={index === 1 ? "color-pop pop-blue" : index === 2 ? "color-pop pop-pink" : index === 4 ? "color-pop pop-cyan" : undefined}>{item.label}</h3>
               <p>{item.detail}</p>
             </article>
           ))}
@@ -303,8 +303,8 @@ export default function Home() {
           <p className="earth-school-kicker">IN DEVELOPMENT IN UEFN / FORTNITE · ECHO POINT ISLAND</p>
           <p className="genre-eyebrow">A <span className="color-pop pop-cyan">NEW GENRE</span> IN GAMING</p>
           <h2 id="earth-school-title">EARTH SCHOOL</h2>
-          <p className="earth-school-subtitle">A Temporary Human Experience</p>
-          <h3>What if being human is the game—and remembering who you are is how you learn to play it?</h3>
+          <p className="earth-school-subtitle">A Temporary <span className="color-pop pop-blue">Human</span> Experience</p>
+          <h3>What if being human is the game—and <span className="color-pop pop-yellow">remembering</span> who you are is how you learn to play it?</h3>
           <div className="earth-school-story">
             <p>
               EARTH SCHOOL is an original spiritual exploration game and immersive world set on Echo Point
@@ -323,7 +323,7 @@ export default function Home() {
             <p>Most games ask how powerful your character can become.</p>
             <p>EARTH SCHOOL asks who you can become through playing.</p>
           </div>
-          <p className="earth-school-differentiator">The avatar evolves because the player does.</p>
+          <p className="earth-school-differentiator">The avatar evolves because the <span className="color-pop pop-cyan">player</span> does.</p>
           <div className="earth-school-highlights">
             {earthSchoolHighlights.map((highlight, index) => (
               <article key={highlight.title} className="earth-school-highlight">
@@ -336,7 +336,7 @@ export default function Home() {
           <div className="earth-school-gallery" aria-labelledby="earth-school-gallery-title">
             <div className="earth-school-gallery-heading">
               <p className="earth-school-kicker">FROM JESS’S DEVELOPMENT DESK</p>
-              <h3 id="earth-school-gallery-title">Step inside the world.</h3>
+              <h3 id="earth-school-gallery-title">Step inside the <span className="color-pop pop-blue">world.</span></h3>
               <p>Real photos from the making of EARTH SCHOOL. The game is in development; these images capture the journey so far.</p>
             </div>
             <div className="earth-school-gallery-grid">
@@ -376,12 +376,12 @@ export default function Home() {
         <div className="guest-transmissions-choices">
           <article className="guest-transmissions-choice">
             <div className="guest-transmissions-choice-top"><span>01 / AN ANALOG MESSAGE</span><span className="guest-transmissions-symbol" aria-hidden="true">☎</span></div>
-            <h3>The Voicemail</h3>
+            <h3>The <span className="color-pop pop-cyan">Voicemail</span></h3>
             <p>A voice waiting to be heard. Players find your transmission through a retro answering machine or an island payphone, like an unexpected message from a friend.</p>
           </article>
           <article className="guest-transmissions-choice">
             <div className="guest-transmissions-choice-top"><span>02 / A BIG-SCREEN MOMENT</span><span className="guest-transmissions-symbol" aria-hidden="true">✦</span></div>
-            <h3>The Drive-In</h3>
+            <h3>The <span className="color-pop pop-pink">Drive-In</span></h3>
             <p>Your photograph, your voice and atmospheric visuals fill the island&apos;s outdoor cinema—turning an evening at the drive-in into a new perspective.</p>
           </article>
         </div>
@@ -393,7 +393,7 @@ export default function Home() {
           </div>
           <div className="guest-transmissions-apply">
             <p className="guest-transmissions-small-label">A NEW WAY TO SHARE WHAT YOU KNOW</p>
-            <h3>Want to leave a transmission?</h3>
+            <h3>Want to leave a <span className="color-pop pop-yellow">transmission?</span></h3>
             <p>Tell us a little about your work, the topic you&apos;d love to explore and whether the voicemail or drive-in speaks to you.</p>
             <a className="btn guest-transmissions-button" href={guestTransmissionInquiryUrl}>Request to Be in the Game <span aria-hidden="true">↗</span></a>
             <p className="guest-transmissions-apply-note">This opens a pre-filled email to Jess. Send it from your email app to make your enquiry.</p>
@@ -439,7 +439,7 @@ export default function Home() {
       <div className="event-pair">
       <section className="glass section mens-day-ad" aria-labelledby="mens-day-title">
         <p className="authority">IN PERSON · CHARLOTTETOWN · SATURDAY, NOVEMBER 28, 2026</p>
-        <p className="mens-day-ad-edition">THE FIRST MEN’S DAY</p>
+        <p className="mens-day-ad-edition">THE FIRST <span className="color-pop pop-cyan">MEN’S DAY</span></p>
         <h3 id="mens-day-title"><span>EARTH SCHOOL</span>A Spiritual Warrior’s Day for Men</h3>
         <p>A day of hypnotherapy, meditation, grounding, intuitive exploration, art and connection with Rev. Dr. Jess.</p>
         <p><strong>10 AM–7 PM · $333 CAD per person · 10 places</strong><br />Food and refreshments included. Venue details to follow.</p>
@@ -448,7 +448,7 @@ export default function Home() {
 
       <section className="glass section mens-day-ad" aria-labelledby="womens-day-title">
         <p className="authority">IN PERSON · CHARLOTTETOWN · SATURDAY, DECEMBER 5, 2026</p>
-        <p className="mens-day-ad-edition">THE WOMEN’S DAY</p>
+        <p className="mens-day-ad-edition">THE <span className="color-pop pop-pink">WOMEN’S DAY</span></p>
         <h3 id="womens-day-title"><span>EARTH SCHOOL</span>A Spiritual Warrior’s Day for Women</h3>
         <p>A day to come back to yourself through meditation, hypnotherapy, intuitive exploration, art and connection with Rev. Dr. Jess.</p>
         <p><strong>10 AM–7 PM · $333 CAD per person · 10 places</strong><br />Food and refreshments included. Venue details to follow.</p>
@@ -459,7 +459,7 @@ export default function Home() {
       <PrivateSessions />
 
       <section className="glass section center manifesto">
-        <h3>I create worlds that invite people to see differently.</h3>
+        <h3>I create worlds that invite people to see <span className="color-pop pop-blue">differently.</span></h3>
         <p>
           My work brings together game development, immersive technology, human potential,
           consciousness, compassion, and real-world impact.
@@ -469,7 +469,7 @@ export default function Home() {
       </section>
 
       <section className="glass section">
-        <h3>Neurodivergent-Affirming Work</h3>
+        <h3><span className="color-pop pop-cyan">Neurodivergent</span>-Affirming Work</h3>
         <p>
           My work is intentionally designed to support neurodivergent individuals, including those
           with ADHD, autism, sensory sensitivity, and nonlinear ways of thinking.
@@ -492,7 +492,7 @@ export default function Home() {
       </section>
 
       <section id="about" className="glass section resume-section"><p className="chapter-label">03 / MEET THE HUMAN</p>
-        <h3>Global Experience, Credibility & Human Development Work</h3>
+        <h3>Global Experience, <span className="color-pop pop-pink">Credibility</span> &amp; Human Development Work</h3>
         <p>
           Rev. Dr. Jessica Simmonds is a lifelong entrepreneur with almost three decades of
           experience, an author, educator and teacher, an ordained Spiritual-Interfaith Minister,
@@ -531,7 +531,7 @@ export default function Home() {
 
       <div className="perspective-pair">
       <section className="glass section edge-section">
-        <h3>My Unique Edge</h3>
+        <h3>My <span className="color-pop pop-yellow">Unique</span> Edge</h3>
         <p>
           I build experiences at the intersection of immersive technology, human consciousness,
           creativity, wellness, games, and global impact.
@@ -547,7 +547,7 @@ export default function Home() {
       </section>
 
       <section className="glass section edge-section">
-        <h3>AI + Human Potential</h3>
+        <h3>AI + Human <span className="color-pop pop-blue">Potential</span></h3>
         <p>
           AI does not replace the human experience. It expands it.
         </p>
@@ -567,7 +567,7 @@ export default function Home() {
 
       </div>
       <section className="glass section speaking-topics-section"><p className="chapter-label">04 / IDEAS WORTH SHARING</p>
-        <h3>Speaking Topics</h3>
+        <h3><span className="color-pop pop-cyan">Speaking</span> Topics</h3>
         <p>
           I speak at the intersection of technology, consciousness, storytelling and human potential—inviting audiences to rethink what games, creativity and personal growth can make possible.
         </p>
@@ -582,7 +582,7 @@ export default function Home() {
             </span>
           ))}
         </div>
-        <p className="speaking-topics-highlight">&ldquo;These are not just talks. They are perspective-shifting experiences.&rdquo;</p>
+        <p className="speaking-topics-highlight">&ldquo;These are not just talks. They are <span className="color-pop pop-blue">perspective-shifting</span> experiences.&rdquo;</p>
         <p className="text-center text-sm md:text-base font-medium mt-6 opacity-90">
           Jess <img src="/peacesymbolgold.png" className="peaceSignoff" alt="Peace icon" />
         </p>
@@ -593,7 +593,7 @@ export default function Home() {
         <div className="private-sessions-grid">
           <div className="private-sessions-copy">
             <p className="private-eyebrow">ON AIR · PODCASTS &amp; CONVERSATIONS</p>
-            <h2 id="podcast-title" style={{ maxWidth: "15ch" }}>Let’s make it a conversation.</h2>
+            <h2 id="podcast-title" style={{ maxWidth: "15ch" }}>Let’s make it a <span className="color-pop pop-pink">conversation.</span></h2>
             <div className="private-introduction">
               <p>Consciousness. Creativity. Being human. The future of games. Invite Rev. Dr. Jess to your podcast for an open, curious conversation that connects big ideas with real life.</p>
               <p>From building EARTH SCHOOL inside Fortnite to spiritual exploration, entrepreneurship and neurodivergent creativity—there’s plenty to talk about.</p>
@@ -602,7 +602,7 @@ export default function Home() {
           </div>
           <div className="service-card">
             <p className="service-label">BEHIND THE MIC · REV. DR. JESS</p>
-            <h3>Invite Jess to Your Podcast</h3>
+            <h3>Invite Jess to Your <span className="color-pop pop-cyan">Podcast</span></h3>
             <p className="service-description">Creating an episode about self-awareness, consciousness, human behaviour, immersive technology or following a vision? Let’s connect.</p>
             <div className="topicGrid" style={{ margin: "1.5rem 0" }}>
               {["EARTH SCHOOL & gaming", "Consciousness & ancient wisdom", "AI & human potential", "Neurodivergent creativity"].map((topic) => <span key={topic} className="topicPill">{topic}</span>)}
@@ -613,7 +613,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="quote">The future is human. Let’s build it together.</section>
+      <section className="quote">The future is <span className="color-pop pop-yellow">human.</span> Let’s build it together.</section>
 
       <section className="quote-section" aria-label="Frida Kahlo quote">
         <p className="quote-section-main">&ldquo;I have painted my own reality.&rdquo; — Frida Kahlo</p>
@@ -623,7 +623,7 @@ export default function Home() {
       </section>
 
       <section className="glass section center final-cta">
-        <h3>Gaming. Human Performance. Consciousness. Impact.</h3>
+        <h3>Gaming. Human Performance. <span className="color-pop pop-pink">Consciousness.</span> Impact.</h3>
         <p className="final-cta-prompt">Where do you want to start?</p>
         <div className="final-cta-buttons" role="group" aria-label="Explore Jessica’s ecosystem">
           <a

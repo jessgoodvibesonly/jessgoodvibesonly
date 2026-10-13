@@ -10,8 +10,8 @@ const singleSessionUrl = enquiryUrl(
   "Hi Jess,\n\nI’m interested in a private coaching session. Please send me the session options, price and availability.\n\nMy name: \nWhat I’d like support with: \n",
 );
 const longTermUrl = enquiryUrl(
-  "Long-term coaching enquiry",
-  "Hi Jess,\n\nI’m interested in working with you over a longer period.\n\nMy name: \nWhat I’d like support with: \nWhat I’m ready to change: \nMy preferred availability: \n\nPlease send me the options and pricing.\n",
+  "EARTH SCHOOL private consciousness mentorship enquiry",
+  "Hi Jess,\n\nI’m interested in your EARTH SCHOOL monthly mentorship with four video calls, two-way voice transmissions and ongoing guidance.\n\nMy name: \nWhat I’d like to explore: \nMy preferred availability: \n\nPlease send me the mentorship details and pricing.\n",
 );
 
 export function PrivateSessions() {
@@ -44,12 +44,13 @@ export function PrivateSessions() {
         <article className="service-card">
           <div className="service-card-marker" aria-hidden="true"><span>02</span></div>
           <p className="service-label">Personal support · meaningful change</p>
-          <h3>Private <span className="color-pop pop-cyan">Spiritual</span> Mentorship</h3>
-          <p className="service-description"><strong>What if everything changes when you begin to see life differently?</strong> Explore the intersections of simulation theory, consciousness, neuroscience, ancient wisdom, intuition and subconscious patterns. The Art of Conscious Programming brings these big ideas into thoughtful, practical reflection on your own life.</p>
-          <p className="service-description">Enquire about a single session or longer-term support. Jess will share the options, pricing and availability before you book.</p>
+          <h3>EARTH SCHOOL | Private <span className="color-pop pop-cyan">Consciousness</span> Mentorship</h3>
+          <p className="service-description"><strong>What if you had a guide in your corner as you practice seeing life differently?</strong> Go beyond the occasional conversation: explore simulation theory, consciousness, neuroscience, ancient wisdom, intuition and the Art of Conscious Programming — then apply it to real life through personalized reflection, habits and action.</p>
+          <p className="service-description"><strong>Monthly mentorship:</strong> four private video calls, frequent two-way voice transmissions and messages between sessions, plus personalized practices — from grounding and nervous-system awareness to movement, creative exercises and conscious choices, adapted to your needs and abilities.</p>
+          <p className="service-description">This is ongoing, individualized guidance with clear communication hours, not 24/7 availability. Enquire for current pricing, scheduling and fit.</p>
           <div style={{ display: "grid", gap: ".75rem", marginTop: "1.4rem" }}>
             <a className="btn service-booking-button" href={singleSessionUrl}>Enquire About a Session <span aria-hidden="true">↗</span></a>
-            <a className="btn service-booking-button" href={longTermUrl}>Enquire About Long-Term Support <span aria-hidden="true">↗</span></a>
+            <a className="btn service-booking-button" href={longTermUrl}>Enquire About Monthly Mentorship <span aria-hidden="true">↗</span></a>
           </div>
           <p className="service-support">These buttons open an email draft to Jess. Send your enquiry from your email app.</p>
         </article>

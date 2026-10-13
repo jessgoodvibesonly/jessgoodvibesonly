@@ -98,3 +98,97 @@
   .title {font-size:17.5vw}
   .headerLink {max-width:100px}
 }
+
+
+/* THE BLACK EDITION · event pages · premium monochrome */
+.page{
+  --paper:#070707;
+  --ink:#f5f5f3;
+  --accent:#f2f2f0;
+  --orange:#f2f2f0;
+  background:#070707;
+  color:var(--ink);
+  overflow-x:clip;
+  font-family:var(--sans)
+}
+.page a{color:inherit}
+.header{
+  max-width:1200px;
+  border-bottom:1px solid #424242;
+  padding:1.35rem clamp(1rem,3vw,2rem)
+}
+.wordmark{color:#fff!important;font-weight:800;letter-spacing:-.035em}
+.wordmark span{color:#eee}
+.headerLink{color:#eee!important;font-weight:600}
+.hero{max-width:1150px;background:transparent;padding:clamp(3.2rem,8vw,7rem) clamp(1rem,3vw,2rem) 4.5rem}
+.page .eyebrow{color:#adadad;letter-spacing:.16em}
+.title{
+  font-family:var(--sans);
+  font-weight:800;
+  color:#fafafa;
+  transform:none;
+  text-shadow:none;
+  letter-spacing:-.085em;
+  line-height:.93;
+  font-size:clamp(4.5rem,13vw,10rem);
+  margin-bottom:2.5rem
+}
+.subtitle{
+  font-family:var(--sans);
+  color:#f5f5f5;
+  font-size:clamp(1.25rem,3vw,2.2rem);
+  font-weight:500;
+  letter-spacing:-.04em;
+  text-transform:none
+}
+.tagline{font-family:var(--sans);font-style:normal;color:#b8b8b8}
+.ticket{
+  border-color:#555;
+  background:transparent;
+  border-width:1px
+}
+.ticket>div{border-color:#333}
+.ticket span{color:#a6a6a6}
+.ticket small{color:#aaa}
+.primary{
+  background:#f3f3f1;
+  color:#080808!important;
+  border:1px solid #f3f3f1;
+  border-radius:2px
+}
+.primary:hover{background:#d3d3d1;color:#080808!important}
+.secondary{
+  border:1px solid #aaa;
+  background:transparent;
+  color:#fff!important;
+  border-radius:2px
+}
+.secondary:hover{background:#1d1d1d}
+.intro,.experiences,.host,.faq,.enquire{border-color:#383838}
+.page h2,.page h3{font-family:var(--sans);color:#f5f5f3}
+.page h2{font-weight:500}
+.experience,.faq details{border-color:#383838}
+.number{font-family:var(--sans);color:#b3b3b3}
+.page .eyebrow{color:#aeaeae}
+.faq summary{color:#f2f2f0}
+.host a{color:#f1f1f1!important}
+.note,.experience p,.intro>p:not(.eyebrow),.host p,.faq details p,.enquire>p:not(.eyebrow){color:#c8c8c7}
+.footer{background:#050505;color:#b5b5b5;border-top:1px solid #333}
+.page :focus-visible{outline:2px solid white;outline-offset:4px}
+@media(max-width:650px){
+  .header{padding:1rem}
+  .wordmark{font-size:.89rem}
+  .headerLink{font-size:.7rem;max-width:115px;text-align:right}
+  .hero{padding:3rem 1rem}
+  .title{font-size:clamp(3.6rem,17vw,6.2rem);line-height:1;transform:none;text-shadow:none}
+  .subtitle{font-size:1.4rem}
+  .ticket{grid-template-columns:1fr}
+  .ticket>div{border-right:0;border-bottom:1px solid #383838}
+  .intro,.experiences,.host,.faq,.enquire{padding:2.75rem 1.2rem}
+  .actions>a{width:100%;min-height:50px}
+  .footer{padding:1.5rem 1.1rem}
+}
+@media(max-width:360px){
+  .title{font-size:16vw}
+  .wordmark{font-size:.78rem}
+}

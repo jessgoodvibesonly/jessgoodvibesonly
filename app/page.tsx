@@ -104,6 +104,22 @@ const credentials = [
   "Millionaire Mind Intensive Graduate",
 ];
 
+const featuredCredentials = [
+  { label: "Metaphysics", detail: "Doctorate in Philosophy of Metaphysics" },
+  { label: "Spiritual Counselling", detail: "Doctorate in Philosophy of Spiritual Counselling" },
+  { label: "Hypnotherapy", detail: "Clinical Hypnotherapist since 2006" },
+  { label: "Interfaith", detail: "Ordained Spiritual-Interfaith Minister" },
+  { label: "Teaching", detail: "25+ years of teaching and education" },
+  { label: "Mind & Change", detail: "CBT, NLP, meditation and neuroplasticity studies" },
+];
+
+const glitterPoints = [
+  [4,14],[8,42],[11,81],[16,7],[19,64],[24,32],[29,82],[33,16],
+  [38,56],[42,91],[46,13],[51,40],[54,76],[58,22],[61,63],[66,9],
+  [69,46],[73,83],[76,18],[79,67],[83,34],[88,7],[91,52],[95,84],
+  [10,25],[21,94],[36,37],[47,68],[64,90],[84,89],[96,16],[28,12]
+] as const;
+
 const getPillClassName = (text: string) =>
   text.length > 110 ? "pill long-pill" : "pill";
 
@@ -123,7 +139,7 @@ export default function Home() {
             <a className="nav-link" href="#mens-day-title">Events</a>
             <a className="nav-link" href="#private-sessions">Private Sessions</a>
             <a className="nav-link" href="#podcast">Podcasts</a>
-            <a className="nav-link" href="#about">About Jess</a>
+            <a className="nav-link" href="#credentials">Meet Jess</a>
             <a
               className="btn nav-booking-button"
               href={bookingUrl}
@@ -139,11 +155,12 @@ export default function Home() {
             <div className="mobile-nav-panel">
               <a href="#earth-school">EARTH SCHOOL</a>
               <a href="#guest-transmissions">Be in the Game</a>
+              <a href="#art">Art by Jess</a>
               <a href="/earth-school-mens-day">Men’s Day · November 28</a>
               <a href="/earth-school-womens-day">Women’s Day · December 5</a>
               <a href="#private-sessions">Private Sessions</a>
               <a href="#podcast">Podcasts</a>
-              <a href="#about">About Jess</a>
+              <a href="#credentials">Meet Jess</a>
               <a
                 className="btn nav-booking-button"
                 href={bookingUrl}
@@ -159,6 +176,21 @@ export default function Home() {
       </header>
       <main id="top" className="landing">
       <section className="hero glass" aria-label="Meet Jess">
+        <div className="glitter-field" aria-hidden="true">
+          {glitterPoints.map(([left, top], index) => (
+            <span
+              key={index}
+              className={`glitter-spark glitter-shade-${index % 7} ${index % 5 === 0 ? "glitter-spark-large" : ""}`}
+              style={{
+                left: `${left}%`,
+                top: `${top}%`,
+                animationDelay: `${(index * -0.37).toFixed(2)}s`,
+                animationDuration: `${3.2 + (index % 7) * 0.48}s`,
+              }}
+            />
+          ))}
+        </div>
+
         <div className="hero-copy heroTextContainer">
           <div className="heroHeader">
             <img src="/peacesymbolgold.png" className="peaceHeroLeft" alt="Peace icon" />
@@ -195,6 +227,34 @@ export default function Home() {
         </div>
       </section>
       <div className="identity-strip"><span>Games</span><span>Human Potential</span><span>Technology</span><span>Compassion</span><span>Global Impact</span></div>
+      <section id="credentials" className="credentials-spotlight" aria-labelledby="credentials-spotlight-title">
+        <div className="credentials-spotlight-header">
+          <div>
+            <p className="credentials-eyebrow">THE HUMAN BEHIND THE VISION</p>
+            <h2 id="credentials-spotlight-title">Meet Jess.<br /><em>Experience meets imagination.</em></h2>
+          </div>
+          <div className="credentials-spotlight-story">
+            <p>Rev. Dr. Jessica Simmonds is an entrepreneur, author, public speaker, educator, ordained interfaith minister and creator of EARTH SCHOOL. Her work spans spiritual counselling, hypnotherapy, creative education, human development and immersive experiences.</p>
+            <p>Almost three decades of entrepreneurship. Over 25 years of teaching. A lifelong curiosity about consciousness and what it means to be human.</p>
+          </div>
+        </div>
+        <div className="featured-credentials">
+          {featuredCredentials.map((item, index) => (
+            <article className="featured-credential" key={item.label}>
+              <span className="featured-credential-index">0{index + 1}</span>
+              <h3>{item.label}</h3>
+              <p>{item.detail}</p>
+            </article>
+          ))}
+        </div>
+        <details className="credentials-expand">
+          <summary>Explore all credentials &amp; certifications <span aria-hidden="true">↗</span></summary>
+          <ul className="credentials-full-list">
+            {credentials.map((credential) => <li key={credential}>{credential}</li>)}
+          </ul>
+        </details>
+      </section>
+
       <section className="vision-intro" aria-labelledby="vision-title"><p className="chapter-label">01 / THE VISION</p><h2 id="vision-title">Big ideas.<br /><em>Human at heart.</em></h2><div>          <p className="hero-lede">
             Visionary founder, public speaker, interfaith minister, author, and global ecosystem
             builder creating new models across AI, immersive technology, games, wellness,
@@ -292,6 +352,22 @@ export default function Home() {
         <p className="guest-transmissions-permission">This is an unpaid creative collaboration. Submitting an enquiry doesn&apos;t guarantee an appearance or grant permission to use your material. Recordings, photographs, likenesses and promotional excerpts would only be used with separately agreed written permission.</p>
       </section>
 
+      <section id="art" className="art-showcase" aria-labelledby="art-showcase-title">
+        <div className="art-showcase-visual" aria-hidden="true">
+          <span className="art-halo art-halo-one" />
+          <span className="art-halo art-halo-two" />
+          <span className="art-halo art-halo-three" />
+          <span className="art-signature-mark">✧</span>
+        </div>
+        <div className="art-showcase-copy">
+          <p className="art-showcase-eyebrow">CREATIVE EXPRESSION · ART BY JESS</p>
+          <h2 id="art-showcase-title">Art is another<br /><em>way of seeing.</em></h2>
+          <p>Before a story becomes a world, it begins with an image, a feeling, a mark on a page. Painting, making and exploring symbols are all part of my creative expression—and they live alongside the spiritual work, teaching and game design.</p>
+          <p className="art-showcase-status">A curated selection of my original artwork is being prepared for this space.</p>
+          <a className="art-showcase-link" href="#guest-transmissions">Explore the creative world of EARTH SCHOOL <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
       <div className="events-heading"><p className="chapter-label">02 / COME TOGETHER</p><h2>Bring the experience<br /><em>into real life.</em></h2></div>
       <div className="event-pair">
       <section className="glass section mens-day-ad" aria-labelledby="mens-day-title">
@@ -382,14 +458,7 @@ export default function Home() {
               ))}
             </ul>
           </details>
-          <details className="resume-card">
-            <summary>Credentials & Certifications</summary>
-            <ul className="credential-badges">
-              {credentials.map((item) => (
-                <li key={item} className={getPillClassName(item)}>{item}</li>
-              ))}
-            </ul>
-          </details>
+
         </div>
       </section>
 

@@ -90,6 +90,51 @@ const earthSchoolGallery = [
   }
 ];
 
+const originalArtHighlights = [
+  {
+    "src": "/art/jess-heart-of-colour.jpg",
+    "title": "Heart of Colour",
+    "alt": "Original vibrantly coloured anatomical heart illustration by Jess",
+    "w": 2883,
+    "h": 3796
+  },
+  {
+    "src": "/art/jess-bloom-and-become.jpg",
+    "title": "Bloom & Become",
+    "alt": "Original mixed-media Jess artwork of bright flowers and a self-empowerment message",
+    "w": 3072,
+    "h": 3518
+  },
+  {
+    "src": "/art/jess-purpose-of-enlightenment.jpg",
+    "title": "Stay Open",
+    "alt": "Original illustrated sketchbook page by Jess exploring enlightenment",
+    "w": 2289,
+    "h": 2945
+  },
+  {
+    "src": "/art/jess-colourful-rooster.jpg",
+    "title": "The Rooster",
+    "alt": "Original expressive rooster painting by Jess",
+    "w": 2393,
+    "h": 2684
+  },
+  {
+    "src": "/art/jess-brain-and-beliefs.jpg",
+    "title": "The Inner Mind",
+    "alt": "Original brain and belief map illustration by Jess",
+    "w": 1933,
+    "h": 2679
+  },
+  {
+    "src": "/art/jess-cosmic-night.jpg",
+    "title": "Cosmic Night",
+    "alt": "Original artwork of swirling blue night sky and stars by Jess",
+    "w": 2996,
+    "h": 3979
+  }
+];
+
 const speakingTopics = [
   "The Art of Conscious Programming: Remembering Who You Are",
   "AI, Consciousness, and the Future of Human Development",
@@ -436,28 +481,18 @@ export default function Home() {
           </div>
           <div>
             <p>My art is another way I explore the human experience—through images, symbols, colour, intuition and the unexpected. These are photographs of my original works, shared here just as I created them.</p>
-            <p className="art-source-note">Original artwork by Rev. Dr. Jessica Simmonds.</p>
+            <p className="art-source-note">Original artwork by Rev. Dr. Jessica Simmonds · Selected from the 16-photo JESS ART collection.</p>
           </div>
         </div>
         <div className="art-gallery-grid">
-          <figure className="art-gallery-piece art-gallery-featured">
-            <a href="/art/jess-original-earth-school-art.jpg" target="_blank" rel="noopener noreferrer" aria-label="View original EARTH SCHOOL artwork at full size">
-              <Image src="/art/jess-original-earth-school-art.jpg" width={2072} height={3720} alt="Original colourful EARTH SCHOOL artwork by Jess featuring hand-drawn symbols and figures" sizes="(max-width: 740px) 100vw, 48vw" />
-            </a>
-            <figcaption>EARTH SCHOOL — original artwork <span>01 / 03</span></figcaption>
-          </figure>
-          <figure className="art-gallery-piece">
-            <a href="/art/jess-original-mona-art.jpg" target="_blank" rel="noopener noreferrer" aria-label="View original Jess portrait artwork at full size">
-              <Image src="/art/jess-original-mona-art.jpg" width={3072} height={4080} alt="Jess's original Mona Lisa-inspired portrait artwork against a vibrant red background" sizes="(max-width: 740px) 100vw, 24vw" />
-            </a>
-            <figcaption>Portrait study — original artwork <span>02 / 03</span></figcaption>
-          </figure>
-          <figure className="art-gallery-piece">
-            <a href="/art/jess-original-vision-art.jpg" target="_blank" rel="noopener noreferrer" aria-label="View original Jess vision artwork at full size">
-              <Image src="/art/jess-original-vision-art.jpg" width={2629} height={3896} alt="Jess's original expressive portrait with vivid colour, symbols and writing" sizes="(max-width: 740px) 100vw, 24vw" />
-            </a>
-            <figcaption>Symbolic expression — original artwork <span>03 / 03</span></figcaption>
-          </figure>
+          {originalArtHighlights.map((work, index) => (
+            <figure key={work.src} className={`art-gallery-piece${index === 0 ? " art-gallery-featured" : ""}`}>
+              <a href={work.src} target="_blank" rel="noopener noreferrer" aria-label={`View ${work.title} at full size (opens in a new tab)`}>
+                <Image src={work.src} width={work.w} height={work.h} alt={work.alt} sizes="(max-width: 740px) 100vw, 33vw" />
+              </a>
+              <figcaption>{work.title} <span>{String(index + 1).padStart(2, "0")} / {String(originalArtHighlights.length).padStart(2, "0")}</span></figcaption>
+            </figure>
+          ))}
         </div>
         <div style={{display:"flex",flexWrap:"wrap",gap:"1rem",alignItems:"center",marginTop:"1.8rem"}}>
           <a className="btn" href="/art">Explore More of My Art ↗</a>

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 const emailUrl = "mailto:jessgoodvibesonly@gmail.com?subject=EARTH%20SCHOOL%20Men%27s%20Day%20%E2%80%94%20November%2028&body=Hi%20Jess%2C%0A%0AI%27m%20interested%20in%20the%20Earth%20School%20men%27s%20day%20on%20November%2028.%20Please%20send%20me%20the%20venue%20and%20booking%20details.%0A%0AMy%20name%3A%20%0A";
 // Verified by the site owner as the live Men’s Day Stripe checkout link.
-const paymentUrl = "https://buy.stripe.com/9B6dR99767es8M632p4AU02";
+const paymentUrl = "https://buy.stripe.com/6oU14nabaeGUaUe46t4AU09";
 const experiences = [
   ["01","Reality, perception & the game","Explore simulation theory as a thought-provoking hypothesis, the mystery of consciousness, and the ways attention and perception shape our human experience."],
   ["02","The Art of Conscious Programming","Connect neuroscience, habitual patterns, beliefs and nervous-system awareness with practical exercises for making more intentional choices."],

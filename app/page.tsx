@@ -186,7 +186,9 @@ export default function Home() {
           <div className="desktop-nav">
             <a className="nav-link" href="#earth-school">EARTH SCHOOL</a>
             <a className="nav-link" href="#guest-transmissions">Be in the Game</a>
-            <a className="nav-link" href="#mens-day-title">Events</a>
+            <a className="nav-link" href="#mens-day-title">Retreats</a>
+            <a className="nav-link" href="#art">My Art</a>
+            <a className="nav-link" href="#talks">Talks</a>
             <a className="nav-link" href="#private-sessions">Private Sessions</a>
             <a className="nav-link" href="#podcast">Podcasts</a>
             <a className="nav-link" href="#credentials">Meet Jess</a>
@@ -205,9 +207,10 @@ export default function Home() {
             <div className="mobile-nav-panel">
               <a href="#earth-school">EARTH SCHOOL</a>
               <a href="#guest-transmissions">Be in the Game</a>
-              <a href="#art">Art by Jess</a>
               <a href="/earth-school-mens-day">Men’s Day · November 28</a>
               <a href="/earth-school-womens-day">Women’s Day · December 5</a>
+              <a href="#art">My Art</a>
+              <a href="#talks">Talks</a>
               <a href="#private-sessions">Private Sessions</a>
               <a href="#podcast">Podcasts</a>
               <a href="#credentials">Meet Jess</a>
@@ -404,6 +407,27 @@ export default function Home() {
         <p className="guest-transmissions-permission">This is an unpaid creative collaboration. Submitting an enquiry doesn&apos;t guarantee an appearance or grant permission to use your material. Recordings, photographs, likenesses and promotional excerpts would only be used with separately agreed written permission.</p>
       </section>
 
+      <div className="events-heading"><p className="chapter-label">02 / COME TOGETHER</p><h2>Bring the experience<br /><em>into <span className="color-pop pop-pink">real life.</span></em></h2></div>
+      <div className="event-pair">
+      <section className="glass section mens-day-ad" aria-labelledby="mens-day-title">
+        <p className="authority">IN PERSON · CHARLOTTETOWN · SATURDAY, NOVEMBER 28, 2026</p>
+        <p className="mens-day-ad-edition">THE FIRST <span className="color-pop pop-cyan">MEN’S DAY</span></p>
+        <h3 id="mens-day-title"><span>EARTH SCHOOL</span>Men’s Day · The Art of Being Human</h3>
+        <p><strong>WHAT IF REALITY ISN’T QUITE WHAT YOU THINK IT IS?</strong> Step inside an extraordinary exploration of simulation theory, neuroscience, consciousness, the Seven Hermetic Principles and the Art of Conscious Programming — plus PRACTICE: grounding, movement, boundaries and preparing the biological space suit for change — with Rev. Dr. Jess ☮️.</p>
+        <p><strong>10 AM–7 PM · $333 CAD per person · 10 places</strong><br />Food and refreshments included. Venue details to follow.</p>
+        <div className="cta-row"><a className="btn" href="/earth-school-mens-day">Discover the men’s experience ↗</a></div>
+      </section>
+
+      <section className="glass section mens-day-ad" aria-labelledby="womens-day-title">
+        <p className="authority">IN PERSON · CHARLOTTETOWN · SATURDAY, DECEMBER 5, 2026</p>
+        <p className="mens-day-ad-edition">THE <span className="color-pop pop-pink">WOMEN’S DAY</span></p>
+        <h3 id="womens-day-title"><span>EARTH SCHOOL</span>Women’s Day · The Art of Becoming</h3>
+        <p><strong>WHAT IF YOU ARE SO MUCH MORE THAN YOU’VE BEEN TAUGHT TO BE?</strong> Discover the fascinating connections between simulation theory, intuition, neuroscience, metaphysics, ancient wisdom and conscious choice — with practical activations and the 1,000-watt lesson on preparing your biological space suit to hold a new chapter — with Rev. Dr. Jess ☮️.</p>
+        <p><strong>10 AM–7 PM · $333 CAD per person · 10 places</strong><br />Food and refreshments included. Venue details to follow.</p>
+        <div className="cta-row"><a className="btn" href="/earth-school-womens-day">Discover the women’s experience ↗</a></div>
+      </section>
+
+      </div>
       <section id="art" className="art-showcase" aria-labelledby="art-showcase-title">
         <div className="art-showcase-intro">
           <div>
@@ -441,27 +465,35 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="events-heading"><p className="chapter-label">02 / COME TOGETHER</p><h2>Bring the experience<br /><em>into <span className="color-pop pop-pink">real life.</span></em></h2></div>
-      <div className="event-pair">
-      <section className="glass section mens-day-ad" aria-labelledby="mens-day-title">
-        <p className="authority">IN PERSON · CHARLOTTETOWN · SATURDAY, NOVEMBER 28, 2026</p>
-        <p className="mens-day-ad-edition">THE FIRST <span className="color-pop pop-cyan">MEN’S DAY</span></p>
-        <h3 id="mens-day-title"><span>EARTH SCHOOL</span>Men’s Day · The Art of Being Human</h3>
-        <p><strong>WHAT IF REALITY ISN’T QUITE WHAT YOU THINK IT IS?</strong> Step inside an extraordinary exploration of simulation theory, neuroscience, consciousness, the Seven Hermetic Principles and the Art of Conscious Programming — plus PRACTICE: grounding, movement, boundaries and preparing the biological space suit for change — with Rev. Dr. Jess ☮️.</p>
-        <p><strong>10 AM–7 PM · $333 CAD per person · 10 places</strong><br />Food and refreshments included. Venue details to follow.</p>
-        <div className="cta-row"><a className="btn" href="/earth-school-mens-day">Discover the men’s experience ↗</a></div>
+      <section id="talks" className="glass section speaking-topics-section"><p className="chapter-label">04 / IDEAS WORTH SHARING</p>
+        <h3><span className="color-pop pop-cyan">Speaking</span> Topics</h3>
+        <p>
+          I speak at the intersection of technology, consciousness, storytelling and human potential—inviting audiences to rethink what games, creativity and personal growth can make possible.
+        </p>
+        <p>
+          My talks are designed to shift perspective, spark innovation, and leave people seeing their work, their lives, and what&apos;s possible differently.
+        </p>
+        <div className="service-card" style={{ margin: "2rem 0", textAlign: "left" }}>
+          <p className="service-label">FEATURED TALK · THE HIGH PRIESTjESS ☮️</p>
+          <h4>The Art of <span className="color-pop pop-cyan">Conscious Programming</span></h4>
+          <p className="service-description">Remembering who you are. A personal, practical exploration of the biological space suit, neurodivergence, nervous system awareness, compassion, boundaries, sound and meditation, the creative power of AI, and the everyday choices that reshape a life.</p>
+          <p className="service-description">Drawing on her own transformation—from rediscovering her identity as an intuitive, channeler, artist and creator to building EARTH SCHOOL—Jess introduces the 33 ACTS of Becoming: simple, real-world practices for making room for love, opportunity, confidence, travel and creativity. An engaging talk for retreats, conferences and communities ready to turn reflection into action.</p>
+          <a className="btn secondary" href="mailto:jessgoodvibesonly@gmail.com?subject=Book%20Jess%20%E2%80%94%20The%20Art%20of%20Conscious%20Programming">Enquire About This Talk ↗</a>
+        </div>
+        <p className="speaking-topics-intro">Core Topics:</p>
+        <div className="topicGrid">
+          {speakingTopics.map((topic) => (
+            <span key={topic} className="topicPill">
+              {topic}
+            </span>
+          ))}
+        </div>
+        <p className="speaking-topics-highlight">&ldquo;These are not just talks. They are <span className="color-pop pop-blue">perspective-shifting</span> experiences.&rdquo;</p>
+        <p className="text-center text-sm md:text-base font-medium mt-6 opacity-90">
+          Jess <img src="/peacesymbolgold.png" className="peaceSignoff" alt="Peace icon" />
+        </p>
       </section>
 
-      <section className="glass section mens-day-ad" aria-labelledby="womens-day-title">
-        <p className="authority">IN PERSON · CHARLOTTETOWN · SATURDAY, DECEMBER 5, 2026</p>
-        <p className="mens-day-ad-edition">THE <span className="color-pop pop-pink">WOMEN’S DAY</span></p>
-        <h3 id="womens-day-title"><span>EARTH SCHOOL</span>Women’s Day · The Art of Becoming</h3>
-        <p><strong>WHAT IF YOU ARE SO MUCH MORE THAN YOU’VE BEEN TAUGHT TO BE?</strong> Discover the fascinating connections between simulation theory, intuition, neuroscience, metaphysics, ancient wisdom and conscious choice — with practical activations and the 1,000-watt lesson on preparing your biological space suit to hold a new chapter — with Rev. Dr. Jess ☮️.</p>
-        <p><strong>10 AM–7 PM · $333 CAD per person · 10 places</strong><br />Food and refreshments included. Venue details to follow.</p>
-        <div className="cta-row"><a className="btn" href="/earth-school-womens-day">Discover the women’s experience ↗</a></div>
-      </section>
-
-      </div>
       <PrivateSessions />
 
       <section id="spiritual-writings" className="glass section" aria-labelledby="spiritual-writings-title">
@@ -583,35 +615,6 @@ export default function Home() {
       </section>
 
       </div>
-      <section className="glass section speaking-topics-section"><p className="chapter-label">04 / IDEAS WORTH SHARING</p>
-        <h3><span className="color-pop pop-cyan">Speaking</span> Topics</h3>
-        <p>
-          I speak at the intersection of technology, consciousness, storytelling and human potential—inviting audiences to rethink what games, creativity and personal growth can make possible.
-        </p>
-        <p>
-          My talks are designed to shift perspective, spark innovation, and leave people seeing their work, their lives, and what&apos;s possible differently.
-        </p>
-        <div className="service-card" style={{ margin: "2rem 0", textAlign: "left" }}>
-          <p className="service-label">FEATURED TALK · THE HIGH PRIESTjESS ☮️</p>
-          <h4>The Art of <span className="color-pop pop-cyan">Conscious Programming</span></h4>
-          <p className="service-description">Remembering who you are. A personal, practical exploration of the biological space suit, neurodivergence, nervous system awareness, compassion, boundaries, sound and meditation, the creative power of AI, and the everyday choices that reshape a life.</p>
-          <p className="service-description">Drawing on her own transformation—from rediscovering her identity as an intuitive, channeler, artist and creator to building EARTH SCHOOL—Jess introduces the 33 ACTS of Becoming: simple, real-world practices for making room for love, opportunity, confidence, travel and creativity. An engaging talk for retreats, conferences and communities ready to turn reflection into action.</p>
-          <a className="btn secondary" href="mailto:jessgoodvibesonly@gmail.com?subject=Book%20Jess%20%E2%80%94%20The%20Art%20of%20Conscious%20Programming">Enquire About This Talk ↗</a>
-        </div>
-        <p className="speaking-topics-intro">Core Topics:</p>
-        <div className="topicGrid">
-          {speakingTopics.map((topic) => (
-            <span key={topic} className="topicPill">
-              {topic}
-            </span>
-          ))}
-        </div>
-        <p className="speaking-topics-highlight">&ldquo;These are not just talks. They are <span className="color-pop pop-blue">perspective-shifting</span> experiences.&rdquo;</p>
-        <p className="text-center text-sm md:text-base font-medium mt-6 opacity-90">
-          Jess <img src="/peacesymbolgold.png" className="peaceSignoff" alt="Peace icon" />
-        </p>
-      </section>
-
       <section id="podcast" className="private-sessions podcast-feature" aria-labelledby="podcast-title">
         <div className="podcast-wave" aria-hidden="true">{[22,45,70,35,95,55,80,40,100,62,28,73,48,90,30,65,40,85,52,25].map((height, i) => <span key={i} style={{ height: `${height}%` }} />)}</div>
         <div className="private-sessions-grid">

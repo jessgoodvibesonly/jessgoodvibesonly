@@ -244,7 +244,7 @@ export default function Home() {
               href={bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Book a Reading on Calendly (opens in a new tab)"
+              aria-label="Pay securely for a 45-minute Intuitive Clarity Reading on Stripe (opens in a new tab)"
             >
               Book a Reading
             </a>
@@ -269,7 +269,7 @@ export default function Home() {
                 href={bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Book a Reading on Calendly (opens in a new tab)"
+                aria-label="Pay securely for a 45-minute Intuitive Clarity Reading on Stripe (opens in a new tab)"
               >
                 Book a Reading
               </a>
@@ -287,6 +287,7 @@ export default function Home() {
             <p style={{fontSize:"2.2rem",fontWeight:800,margin:"6px 0",color:"#ffe1ac"}}>$111 CAD <span style={{fontSize:"0.9rem",fontWeight:400,color:"#fff3e4"}}>/ session</span></p>
             <p style={{fontSize:"0.95rem",lineHeight:1.6}}>A private intuitive session for perspective, guidance and clarity.</p>
             <a href={bookingUrl} target="_blank" rel="noopener noreferrer" style={{display:"inline-block",marginTop:"10px",padding:"12px 18px",borderRadius:"99px",background:"#f5d39c",color:"#211724",fontWeight:700,textDecoration:"none"}}>Book a Reading ↗</a>
+            <p style={{fontSize:"0.82rem",opacity:0.85,marginTop:"8px"}}>Secure Stripe checkout · Schedule via Calendly after payment</p>
           </article>
           <article style={{border:"1px solid rgba(221,183,128,.65)",borderRadius:"20px",padding:"22px",background:"linear-gradient(130deg,rgba(31,73,83,.85),rgba(27,30,61,.94))",color:"#fff3e4",boxShadow:"0 8px 30px #0002"}}>
             <p style={{fontSize:"0.75rem",letterSpacing:"0.13em",fontFamily:"sans-serif",color:"#ffdda3",margin:"0 0 8px"}}>MONTHLY GROUP MENTORSHIP</p>

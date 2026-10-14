@@ -1,5 +1,6 @@
+// Customers pay via Stripe, then schedule using the Calendly link in their payment confirmation.
 const bookingUrl =
-  "https://calendly.com/aspiritualwarriorspath/intuitive-clarity-reading-for-entrepreneurs-creators";
+  "https://buy.stripe.com/14A28r5UU8iw7I25ax4AU07";
 
 function enquiryUrl(subject: string, body: string) {
   return `mailto:jessgoodvibesonly@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
@@ -37,8 +38,8 @@ export function PrivateSessions() {
           <h3>Intuitive <span className="color-pop pop-pink">Clarity</span> Reading</h3>
           <p className="service-description"><strong>What if one conversation could change the way you see everything?</strong> Step beyond the ordinary with Rev. Dr. Jess ☮️. Explore relationships, life transitions, personal growth, spiritual questions, purpose or whatever is calling for clarity. Come curious. Leave with fresh perspectives.</p>
           <ul className="service-details" aria-label="Reading details"><li>Private Zoom</li><li>45 minutes</li><li>$111 CAD</li></ul>
-          <a className="btn service-booking-button" href={bookingUrl} target="_blank" rel="noopener noreferrer" aria-label="Book your Intuitive Clarity Reading on Calendly (opens in a new tab)">Book Your Reading <span aria-hidden="true">↗</span></a>
-          <p className="service-support">View available times and booking details on Calendly.</p>
+          <a className="btn service-booking-button" href={bookingUrl} target="_blank" rel="noopener noreferrer" aria-label="Pay for your 45-minute Intuitive Clarity Reading securely on Stripe (opens in a new tab)">Book Your Reading <span aria-hidden="true">↗</span></a>
+          <p className="service-support">Pay securely through Stripe, then follow the confirmation instructions to schedule your reading on Calendly. If you need help booking a time, email jessgoodvibesonly@gmail.com.</p>
         </article>
 
         <article className="service-card">

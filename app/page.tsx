@@ -233,7 +233,7 @@ export default function Home() {
             <a className="nav-link" href="#earth-school">EARTH SCHOOL</a>
             <a className="nav-link" href="#guest-transmissions">Be in the Game</a>
             <a className="nav-link" href="#mens-day-title">Retreats</a>
-            <a className="nav-link" href="/inner-circle">Inner Circle · $33/mo</a>
+            <a className="nav-link" href="/inner-circle">The Inner Circle</a>
             <a className="nav-link" href="#art">My Art</a>
             <a className="nav-link" href="#talks">Talks</a>
             <a className="nav-link" href="#private-sessions">Private Sessions</a>
@@ -256,7 +256,7 @@ export default function Home() {
               <a href="#guest-transmissions">Be in the Game</a>
               <a href="/earth-school-mens-day">Men’s Day · November 28</a>
               <a href="/earth-school-womens-day">Women’s Day · December 5</a>
-              <a href="/inner-circle">Inner Circle · $33/mo</a>
+              <a href="/inner-circle">The Inner Circle</a>
               <a href="#art">My Art</a>
               <a href="#talks">Talks</a>
               <a href="#private-sessions">Private Sessions</a>
@@ -290,10 +290,10 @@ export default function Home() {
             <p style={{fontSize:"0.82rem",opacity:0.85,marginTop:"8px"}}>Secure Stripe checkout · Schedule via Calendly after payment</p>
           </article>
           <article style={{border:"1px solid rgba(221,183,128,.65)",borderRadius:"20px",padding:"22px",background:"linear-gradient(130deg,rgba(31,73,83,.85),rgba(27,30,61,.94))",color:"#fff3e4",boxShadow:"0 8px 30px #0002"}}>
-            <p style={{fontSize:"0.75rem",letterSpacing:"0.13em",fontFamily:"sans-serif",color:"#ffdda3",margin:"0 0 8px"}}>MONTHLY GROUP MENTORSHIP</p>
+            <p style={{fontSize:"0.75rem",letterSpacing:"0.13em",fontFamily:"sans-serif",color:"#ffdda3",margin:"0 0 8px"}}>PRIVATE MONTHLY MENTORSHIP</p>
             <h2 style={{fontSize:"clamp(1.35rem,2vw,1.7rem)",margin:"0 0 8px",color:"inherit"}}>EARTH SCHOOL · The Inner Circle</h2>
-            <p style={{fontSize:"2.2rem",fontWeight:800,margin:"6px 0",color:"#ffe1ac"}}>$33 CAD <span style={{fontSize:"0.9rem",fontWeight:400,color:"#fff3e4"}}>/ month</span></p>
-            <p style={{fontSize:"0.95rem",lineHeight:1.6}}>Group calls, weekly transmissions and activations. Cancel anytime.</p>
+            <p style={{fontSize:"1.2rem",fontWeight:700,margin:"8px 0",color:"#ffe1ac"}}>Personal guidance · Monthly subscription</p>
+            <p style={{fontSize:"0.95rem",lineHeight:1.6}}>Four private video calls, two-way voice transmissions and practical support. Pricing at checkout.</p>
             <a href="/inner-circle" style={{display:"inline-block",marginTop:"10px",padding:"12px 18px",borderRadius:"99px",background:"#f5d39c",color:"#211724",fontWeight:700,textDecoration:"none"}}>Explore Membership ↗</a>
           </article>
         </div>
@@ -467,10 +467,10 @@ export default function Home() {
         <p className="chapter-label">EARTH SCHOOL · MONTHLY SPIRITUAL MENTORSHIP</p>
         <h2 id="inner-circle-title">THE INNER CIRCLE</h2>
         <p style={{fontSize:"1.3rem",fontStyle:"italic"}}>The art of remembering who you are.</p>
-        <p className="section-text">Join THE HIGH PRIESTjESS for monthly live group mentorship, weekly audio transmissions, guided activations, synchronicity explorations and real-world practices. All levels of awareness welcome.</p>
-        <p style={{fontSize:"1.8rem",fontWeight:700,margin:"1.2rem auto"}}>$33 CAD / month</p>
-        <p>Cancel anytime · Separate from private readings and one-on-one mentorship</p>
-        <div className="cta-row"><a className="btn" href="/inner-circle">Explore the Inner Circle ↗</a></div>
+        <p className="section-text">Join THE HIGH PRIESTjESS for private monthly consciousness mentorship: four one-to-one video calls, two-way voice transmissions, ongoing messages and personalized real-world practices. All levels of awareness welcome.</p>
+        <p style={{fontSize:"1.2rem",fontWeight:700,margin:"1.2rem auto"}}>Monthly subscription · Price shown in Stripe checkout</p>
+        <p>The Inner Circle is your private monthly mentorship · Separate from one-time readings</p>
+        <div className="cta-row"><a className="btn" href="/inner-circle">Explore the Inner Circle ↗</a><a className="btn secondary" href="https://buy.stripe.com/28EcN51EEdCQe6q7iF4AU08" target="_blank" rel="noopener noreferrer">Join Now · Secure Checkout ↗</a></div>
       </section>
 
       <section id="art" className="art-showcase" aria-labelledby="art-showcase-title">

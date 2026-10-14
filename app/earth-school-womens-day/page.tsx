@@ -14,12 +14,7 @@ export const metadata: Metadata = {
 };
 
 const emailUrl = "mailto:jessgoodvibesonly@gmail.com?subject=EARTH%20SCHOOL%20Women%27s%20Day%20%E2%80%94%20December%205&body=Hi%20Jess%2C%0A%0AI%27m%20interested%20in%20the%20Earth%20School%20women%27s%20day%20on%20December%205.%20Please%20send%20me%20the%20venue%20and%20booking%20details.%0A%0AMy%20name%3A%20%0A";
-const configuredPaymentUrl = process.env.NEXT_PUBLIC_WOMENS_DAY_PAYMENT_URL?.trim();
-// Show a payment action only when a properly formed Stripe checkout URL is configured.
-// Otherwise the event remains an enquiry page; no unverified checkout is offered.
-const paymentUrl = configuredPaymentUrl && /^https:\/\/(?:buy|checkout)\.stripe\.com\/[^\s]+$/.test(configuredPaymentUrl)
-  ? configuredPaymentUrl
-  : undefined;
+const paymentUrl = "https://buy.stripe.com/00w4gzgzycyM1jEgTf4AU0a";
 const experiences = [
   ["01","Question the nature of reality","Explore simulation theory as an intriguing possibility, alongside perception, intuition, consciousness and the stories we tell ourselves."],
   ["02","The Art of Conscious Programming","Look at neuroscience, subconscious patterns, nervous-system awareness and the possibility of choosing a new response to familiar experiences."],
@@ -34,7 +29,7 @@ export default function WomensDayPage() {
       <a className={styles.skip} href="#event">Skip to event details</a>
       <header className={styles.header}>
         <a href="/" className={styles.wordmark}>Jess Good Vibes Only <span aria-hidden="true">☮</span></a>
-        <a href={paymentUrl || "#enquire"} className={styles.headerLink}>{paymentUrl ? "Book your place ↗" : "Enquire about a place ↗"}</a>
+        <a href={paymentUrl} className={styles.headerLink}>Book your place ↗</a>
       </header>
       <main id="event">
         <section className={styles.hero} aria-labelledby="event-title">
@@ -47,7 +42,7 @@ export default function WomensDayPage() {
             <div><span>THE DAY</span><strong>10 AM–7 PM</strong><small>Charlottetown, PEI</small></div>
             <div><span>YOUR PLACE</span><strong>$333 CAD per person</strong><small>10 places · Food & refreshments included</small></div>
           </div>
-          <a href={paymentUrl || "#enquire"} className={styles.primary}>{paymentUrl ? "Book my place · $333 CAD" : "I’m interested"} <span aria-hidden="true">↗</span></a>
+          <a href={paymentUrl} className={styles.primary}>Book my place · $333 CAD <span aria-hidden="true">↗</span></a>
           <p className={styles.note}>Venue details to follow.</p>
         </section>
         <section className={styles.intro} aria-labelledby="intro-title">
@@ -80,12 +75,12 @@ export default function WomensDayPage() {
           <details><summary>Do I need to know about simulation theory or spirituality?</summary><p>Not at all. Come curious. Simulation theory is explored as a possibility to question, not as an established scientific fact, and you are welcome to bring your own perspective.</p></details>
           <details><summary>Can I come on my own?</summary><p>Yes. You’re welcome to attend on your own and meet others during the day.</p></details>
           <details><summary>Is this the video game?</summary><p>This is a real-world, in-person Earth School experience. Jess is also developing EARTH SCHOOL, a spiritual exploration game inside Fortnite using UEFN.</p></details>
-          <details><summary>What happens after I enquire?</summary><p>Contact Jess by email or Instagram for availability, venue and booking details. An enquiry does not reserve or pay for a place.</p></details>
+          <details><summary>What happens after I book?</summary><p>Complete the secure Stripe checkout to reserve your place. Keep your payment confirmation; venue and arrival details will follow. An email or Instagram enquiry alone does not reserve a place.</p></details>
         </section>
         <section id="enquire" className={styles.enquire} aria-labelledby="enquire-title">
           <p className={styles.eyebrow}>10 places · December 5</p><h2 id="enquire-title">Your next chapter<br />starts with <span className="color-pop pop-blue">curiosity.</span></h2>
-          <p>{paymentUrl ? "Book your place through secure checkout, or contact Jess with any questions." : "Interested in joining us? Stripe registration is being prepared. For now, contact Jess to enquire; an enquiry does not reserve a place."}</p>
-          <div className={styles.actions}>{paymentUrl && <a className={styles.primary} href={paymentUrl}>Pay $333 CAD & book ↗</a>}<a className={paymentUrl ? styles.secondary : styles.primary} href={emailUrl}>Email Jess ↗</a><a className={styles.secondary} href="https://www.instagram.com/jessgoodvibesonly/" target="_blank" rel="noopener noreferrer">Message on Instagram ↗</a></div>
+          <p>Reserve your place through secure Stripe checkout, or contact Jess with any questions. Venue and arrival details will follow.</p>
+          <div className={styles.actions}><a className={styles.primary} href={paymentUrl}>Pay $333 CAD & book ↗</a><a className={styles.secondary} href={emailUrl}>Email Jess ↗</a><a className={styles.secondary} href="https://www.instagram.com/jessgoodvibesonly/" target="_blank" rel="noopener noreferrer">Message on Instagram ↗</a></div>
           <p className={styles.note}>DM “WOMEN’S DAY” · @jessgoodvibesonly<br />Venue and booking details to follow.</p>
         </section>
       </main>

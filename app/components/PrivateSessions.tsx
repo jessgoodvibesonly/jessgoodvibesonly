@@ -1,6 +1,8 @@
 // Customers pay via Stripe, then schedule using the Calendly link in their payment confirmation.
 const bookingUrl =
   "https://buy.stripe.com/14A28r5UU8iw7I25ax4AU07";
+const monthlyMentorshipPaymentUrl =
+  "https://buy.stripe.com/28EcN51EEdCQe6q7iF4AU08";
 
 function enquiryUrl(subject: string, body: string) {
   return `mailto:jessgoodvibesonly@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
@@ -49,12 +51,13 @@ export function PrivateSessions() {
           <p className="service-description"><strong>What if you had a guide in your corner as you practice seeing life differently?</strong> Go beyond the occasional conversation: explore simulation theory, consciousness, neuroscience, ancient wisdom, intuition and the Art of Conscious Programming — then apply it to real life through personalized reflection, habits and action.</p>
           <p className="service-description"><strong>Monthly mentorship:</strong> four private video calls, frequent two-way voice transmissions and messages between sessions, plus personalized real-life practices — grounding, breathwork, movement, reflective audio, healthy boundaries and conscious choices adapted to your needs and abilities.</p>
           <p className="service-description"><strong>Prepare the biological space suit.</strong> Jess uses the image of a 1,000-watt bulb in a 100-watt socket to explore a powerful question: as your vision grows, are your habits, nervous system and support structures ready to hold it? It’s a metaphor for building capacity through practice, not a scientific measurement of energy or frequency.</p>
-          <p className="service-description">This is ongoing, individualized guidance with clear communication hours, not 24/7 availability. Enquire for current pricing, scheduling and fit.</p>
+          <p className="service-description">This is ongoing, individualized guidance with clear communication hours, not 24/7 availability. Contact Jess with questions about scheduling, availability and fit before subscribing.</p>
           <div style={{ display: "grid", gap: ".75rem", marginTop: "1.4rem" }}>
             <a className="btn service-booking-button" href={singleSessionUrl}>Enquire About a Session <span aria-hidden="true">↗</span></a>
-            <a className="btn service-booking-button" href={longTermUrl}>Enquire About Monthly Mentorship <span aria-hidden="true">↗</span></a>
+            <a className="btn service-booking-button" href={monthlyMentorshipPaymentUrl} target="_blank" rel="noopener noreferrer" aria-label="Start monthly private mentorship through secure Stripe checkout (opens in a new tab)">Start Monthly Mentorship <span aria-hidden="true">↗</span></a>
+            <a className="btn service-booking-button" href={longTermUrl}>Ask About Monthly Mentorship <span aria-hidden="true">↗</span></a>
           </div>
-          <p className="service-support">These buttons open an email draft to Jess. Send your enquiry from your email app.</p>
+          <p className="service-support">Start Monthly Mentorship opens secure Stripe checkout. The enquiry buttons open an email draft to Jess if you would like to discuss details before purchasing.</p>
         </article>
 
         <article className="service-card">

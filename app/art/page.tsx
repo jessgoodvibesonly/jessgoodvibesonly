@@ -7,48 +7,9 @@ export const metadata = {
 };
 
 const art = [
-  {
-    "src": "/art/jess-heart-of-colour.jpg",
-    "title": "Heart of Colour",
-    "alt": "Original vibrantly coloured anatomical heart illustration by Jess",
-    "w": 2883,
-    "h": 3796
-  },
-  {
-    "src": "/art/jess-bloom-and-become.jpg",
-    "title": "Bloom & Become",
-    "alt": "Original mixed-media artwork by Jess with bright flowers and an empowering message",
-    "w": 3072,
-    "h": 3518
-  },
-  {
-    "src": "/art/jess-purpose-of-enlightenment.jpg",
-    "title": "Stay Open",
-    "alt": "Original illustrated sketchbook artwork exploring enlightenment by Jess",
-    "w": 2289,
-    "h": 2945
-  },
-  {
-    "src": "/art/jess-colourful-rooster.jpg",
-    "title": "The Rooster",
-    "alt": "Original colourful expressive rooster painting by Jess",
-    "w": 2393,
-    "h": 2684
-  },
-  {
-    "src": "/art/jess-brain-and-beliefs.jpg",
-    "title": "The Inner Mind",
-    "alt": "Original illustration of the brain and beliefs by Jess",
-    "w": 1933,
-    "h": 2679
-  },
-  {
-    "src": "/art/jess-cosmic-night.jpg",
-    "title": "Cosmic Night",
-    "alt": "Original starry blue night sky artwork by Jess",
-    "w": 2996,
-    "h": 3979
-  }
+  {src:"/art/jess-heart-original.jpg",title:"The Heart",alt:"Jess's original multicoloured anatomical heart artwork",w:2883,h:3796},
+  {src:"/art/jess-flowers-original.jpg",title:"Nobody Is Coming to Stop You",alt:"Jess's original vibrant floral mixed-media artwork",w:3072,h:3518},
+  {src:"/art/jess-enlightenment-original.jpg",title:"The Purpose of Enlightenment",alt:"Jess's original illustrated page about staying open",w:2289,h:2945},
 ];
 
 export default function ArtPage() {

@@ -10,6 +10,8 @@ const art = [
   {src:"/art/jess-original-earth-school-art.jpg",title:"EARTH SCHOOL",alt:"Original expressive EARTH SCHOOL art by Jessica Simmonds",w:2072,h:3720},
   {src:"/art/jess-original-mona-art.jpg",title:"Portrait Study",alt:"Original red-background portrait artwork by Jessica Simmonds",w:3072,h:4080},
   {src:"/art/jess-original-vision-art.jpg",title:"Symbolic Expression",alt:"Original symbolic portrait artwork by Jessica Simmonds",w:2629,h:3896},
+  {src:"/art/jess-pop-art-portrait.jpg",title:"Colour & Character",alt:"Jess original multicoloured pop-art female portrait with vivid blue and pink tones",w:1024,h:1536},
+  {src:"/art/jess-flamingo-collage.jpg",title:"Worthy · Powerful",alt:"Jess original pink flamingo mixed-media artwork with cut-out words",w:1024,h:1536},
 ];
 
 export default function ArtPage() {
@@ -26,7 +28,7 @@ export default function ArtPage() {
           <a href={work.src} target="_blank" rel="noopener noreferrer" aria-label={`View ${work.title} at full size`} style={{display:"block"}}>
             <Image src={work.src} alt={work.alt} width={work.w} height={work.h} sizes="(max-width: 680px) 100vw, 33vw" style={{width:"100%",height:"auto",display:"block"}}/>
           </a>
-          <figcaption style={{padding:20,fontSize:16}}>{work.title}<span style={{float:"right",opacity:.6,fontSize:13}}>0{i+1} / 03</span></figcaption>
+          <figcaption style={{padding:20,fontSize:16}}>{work.title}<span style={{float:"right",opacity:.6,fontSize:13}}>0{i+1} / 05</span></figcaption>
         </figure>)}
       </section>
       <section style={{marginTop:85,padding:"clamp(26px,5vw,62px)",borderRadius:22,border:"1px solid #d8b8a36b",background:"linear-gradient(130deg,#583a5544,#cba78319)"}}>

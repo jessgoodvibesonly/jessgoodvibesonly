@@ -2,15 +2,15 @@ import Link from "next/link";
 
 export const metadata = {
   title: "The Inner Circle | EARTH SCHOOL",
-  description: "Monthly spiritual mentorship with THE HIGH PRIESTjESS. $33 CAD per month, cancel anytime.",
+  description: "Private monthly consciousness mentorship with THE HIGH PRIESTjESS. Individual calls, voice transmissions and real-world practice.",
 };
 
 const benefits = [
-  ["LIVE CONNECTION", "One group mentorship and Q&A gathering each month."],
-  ["WEEKLY TRANSMISSIONS", "Audio reflections and intuitive teachings from Jess, wherever in the world she happens to be."],
-  ["MONTHLY ACTIVATION", "A practical EARTH SCHOOL exercise with reflection prompts and real-life experiments."],
-  ["EXPLORE THE TEACHINGS", "Synchronicities, intuition, the Seven Hermetic Principles, A Course in Miracles-inspired perception work, neuroscience, and simulation theory as an exploratory lens."],
-  ["THE JOURNEY", "Behind-the-scenes EARTH SCHOOL game developments and updates from the road."],
+  ["FOUR PRIVATE CALLS", "Four individual video calls each month for guidance, reflection and conscious action."],
+  ["PERSONAL VOICE TRANSMISSIONS", "Two-way voice messages and ongoing guidance between calls, within agreed communication hours."],
+  ["REAL-WORLD PRACTICES", "Personalized grounding, breathwork, movement, reflection, boundaries and conscious choices."],
+  ["EXPLORE THE TEACHINGS", "Intuition, the Seven Hermetic Principles, A Course in Miracles-inspired perception work, neuroscience, and simulation theory as an exploratory lens."],
+  ["THE JOURNEY", "Make these insights part of your everyday human experience, with meaningful practices and integration."],
 ];
 
 export default function InnerCircle() {
@@ -21,16 +21,16 @@ export default function InnerCircle() {
         <span style={{color:"#e8cd9c",letterSpacing:2,fontFamily:"sans-serif",fontSize:12}}>EARTH SCHOOL · A TEMPORARY HUMAN EXPERIENCE</span>
       </nav>
       <section style={{textAlign:"center",padding:"20px 0 45px"}}>
-        <p style={{letterSpacing:5,color:"#ddba89",fontSize:13,fontFamily:"sans-serif"}}>MONTHLY SPIRITUAL MENTORSHIP</p>
+        <p style={{letterSpacing:5,color:"#ddba89",fontSize:13,fontFamily:"sans-serif"}}>PRIVATE MONTHLY MENTORSHIP</p>
         <h1 style={{fontSize:"clamp(3.1rem,9vw,6.3rem)",lineHeight:1.08,margin:"18px 0",fontWeight:400}}>THE INNER CIRCLE</h1>
         <p style={{fontStyle:"italic",fontSize:"clamp(1.2rem,3vw,1.65rem)",color:"#e9d1de"}}>The art of remembering who you are.</p>
-        <p style={{maxWidth:690,margin:"28px auto",lineHeight:1.85,fontSize:18}}>A welcoming space for curious humans exploring consciousness, intuition, synchronicities, compassion, and the art of being human. Join Rev. Dr. Jess Simmonds — THE HIGH PRIESTjESS — for teachings, real conversations, channeled transmissions, and practices you can carry into everyday life.</p>
+        <p style={{maxWidth:690,margin:"28px auto",lineHeight:1.85,fontSize:18}}>A private one-to-one mentorship with Rev. Dr. Jess Simmonds — THE HIGH PRIESTjESS — bringing together four video calls each month, personal two-way voice transmissions, ongoing messages and grounded practices that you can carry into everyday life.</p>
         <div style={{border:"1px solid #be9876",borderRadius:20,background:"#ffffff0b",maxWidth:445,margin:"35px auto 0",padding:"30px 25px"}}>
-          <p style={{fontFamily:"sans-serif",fontSize:12,letterSpacing:3,color:"#e8cd9c"}}>FOUNDING MEMBERSHIP</p>
-          <div style={{fontSize:54,margin:"8px 0"}}>$33 <span style={{fontSize:17}}>CAD / month</span></div>
-          <p style={{fontFamily:"sans-serif",fontSize:14}}>Monthly recurring subscription · Cancel anytime</p>
-          <p style={{fontSize:14,lineHeight:1.7,opacity:.85,marginTop:18}}>Enrollment is being prepared. Request the subscription link and be first to hear when membership opens.</p>
-          <a href="mailto:jessgoodvibesonly@gmail.com?subject=EARTH%20SCHOOL%20Inner%20Circle%20Membership" style={{display:"inline-block",background:"#e9c28e",color:"#1b1720",padding:"14px 22px",borderRadius:40,textDecoration:"none",fontFamily:"sans-serif",fontWeight:700,marginTop:10}}>REQUEST MEMBERSHIP DETAILS ↗</a>
+          <p style={{fontFamily:"sans-serif",fontSize:12,letterSpacing:3,color:"#e8cd9c"}}>THE INNER CIRCLE · PRIVATE MEMBERSHIP</p>
+          <div style={{fontSize:34,margin:"12px 0"}}>One membership. Personal guidance.</div>
+          <p style={{fontFamily:"sans-serif",fontSize:14}}>Monthly subscription · Check price and billing terms in Stripe</p>
+          <p style={{fontSize:14,lineHeight:1.7,opacity:.85,marginTop:18}}>Explore the mentorship details below, then subscribe securely. After payment, contact Jess to arrange your first session.</p>
+          <a href="https://buy.stripe.com/28EcN51EEdCQe6q7iF4AU08" target="_blank" rel="noopener noreferrer" style={{display:"inline-block",background:"#e9c28e",color:"#1b1720",padding:"14px 22px",borderRadius:40,textDecoration:"none",fontFamily:"sans-serif",fontWeight:700,marginTop:10}}>JOIN THE INNER CIRCLE · SECURE CHECKOUT ↗</a>
         </div>
       </section>
       <section style={{margin:"45px 0 55px"}}>
@@ -44,8 +44,8 @@ export default function InnerCircle() {
       </section>
       <section style={{maxWidth:700,margin:"0 auto",textAlign:"center",borderTop:"1px solid #ffffff35",paddingTop:45}}>
         <h2 style={{fontSize:"clamp(1.7rem,4vw,2.6rem)",fontWeight:400}}>Understand the pattern.<br/>Question the story.<br/>Choose the loving action.</h2>
-        <p style={{lineHeight:1.8,marginTop:24}}>All levels of awareness welcome. This is group spiritual mentorship and education, separate from private psychic readings and one-on-one sessions. No particular spiritual belief is required.</p>
-        <p style={{fontSize:13,opacity:.72,lineHeight:1.6,marginTop:26}}>EARTH SCHOOL is an independent teaching experience inspired by multiple traditions and is not affiliated with or endorsed by the publishers of A Course in Miracles. Membership access and billing will begin only when an active checkout is provided.</p>
+        <p style={{lineHeight:1.8,marginTop:24}}>All levels of awareness welcome. The Inner Circle is the private monthly mentorship offering; it is separate from the standalone 45-minute intuitive reading. No particular spiritual belief is required.</p>
+        <p style={{fontSize:13,opacity:.72,lineHeight:1.6,marginTop:26}}>EARTH SCHOOL is an independent teaching experience inspired by multiple traditions and is not affiliated with or endorsed by the publishers of A Course in Miracles. Review the subscription price, payment frequency and terms in Stripe before completing checkout.</p>
         <Link href="/" style={{color:"#e8cd9c",display:"inline-block",marginTop:26}}>← Return to the website</Link>
       </section>
     </div>

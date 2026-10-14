@@ -435,6 +435,10 @@ export default function Home() {
             <figcaption>Symbolic expression — original artwork <span>03 / 03</span></figcaption>
           </figure>
         </div>
+        <div style={{display:"flex",flexWrap:"wrap",gap:"1rem",alignItems:"center",marginTop:"1.8rem"}}>
+          <a className="btn" href="/art">Explore More of My Art ↗</a>
+          <span style={{opacity:0.8}}>Original art · An oracle deck is coming soon</span>
+        </div>
       </section>
 
       <div className="events-heading"><p className="chapter-label">02 / COME TOGETHER</p><h2>Bring the experience<br /><em>into <span className="color-pop pop-pink">real life.</span></em></h2></div>

@@ -70,7 +70,7 @@ export function PrivateSessions() {
             <a className="btn service-booking-button" href="/earth-school-mens-day">Men’s Day · November 28 <span aria-hidden="true">↗</span></a>
             <a className="btn service-booking-button" href="/earth-school-womens-day">Women’s Day · December 5 <span aria-hidden="true">↗</span></a>
           </div>
-          <p className="service-support">Food and refreshments included. Explore each retreat page; secure Stripe registration will appear once payment links are connected.</p>
+          <p className="service-support">Food and refreshments included. Explore either retreat page and book your place through secure Stripe checkout.</p>
         </article>
       </div>
     </section>

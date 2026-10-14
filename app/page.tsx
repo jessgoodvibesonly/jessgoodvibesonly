@@ -377,6 +377,13 @@ export default function Home() {
           <h2 id="earth-school-title">EARTH SCHOOL</h2>
           <p className="earth-school-subtitle">A Temporary <span className="color-pop pop-blue">Human</span> Experience</p>
           <h3>What if being human is the game—and <span className="color-pop pop-yellow">remembering</span> who you are is how you learn to play it?</h3>
+          <div style={{maxWidth:"850px",margin:"24px auto",padding:"24px",border:"1px solid rgba(235,195,132,.5)",borderRadius:"20px",background:"rgba(34,25,49,.60)"}}>
+            <p style={{letterSpacing:"0.16em",fontWeight:700,fontSize:"0.8rem",color:"#f4d29a"}}>A FOUNDATIONAL EARTH SCHOOL TEACHING</p>
+            <h3 style={{fontSize:"clamp(1.7rem,4vw,2.7rem)",margin:"10px 0"}}>RE-ENLIGHTEN <span style={{color:"#f4d29a"}}>✦</span></h3>
+            <p style={{lineHeight:1.8}}>Inspired by Jess&apos;s book <em>A Spiritual Warrior&apos;s Path to Re-Enlightening</em>, Re-Enlighten is the invitation to rediscover awareness, intuition, compassion and creativity beneath the stories and conditioning we have learned. It is not about becoming someone else. It is about remembering and bringing that awareness into everyday choices.</p>
+            <p style={{lineHeight:1.8}}>The Seven Hermetic Principles explore patterns. The Art of Remembering, inspired in part by <em>A Course in Miracles</em>, explores perception from fear toward love. <strong>Re-Enlighten</strong> is the lived practice: notice, question, choose, integrate, and return to the world differently.</p>
+            <p style={{fontWeight:700}}>Understand the pattern. Question the story. Choose the loving action.</p>
+          </div>
           <div className="earth-school-story">
             <p>
               EARTH SCHOOL is an original spiritual exploration game and immersive world set on Echo Point

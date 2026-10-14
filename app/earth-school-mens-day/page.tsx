@@ -14,12 +14,8 @@ export const metadata: Metadata = {
 };
 
 const emailUrl = "mailto:jessgoodvibesonly@gmail.com?subject=EARTH%20SCHOOL%20Men%27s%20Day%20%E2%80%94%20November%2028&body=Hi%20Jess%2C%0A%0AI%27m%20interested%20in%20the%20Earth%20School%20men%27s%20day%20on%20November%2028.%20Please%20send%20me%20the%20venue%20and%20booking%20details.%0A%0AMy%20name%3A%20%0A";
-const configuredPaymentUrl = process.env.NEXT_PUBLIC_MENS_DAY_PAYMENT_URL?.trim();
-// Show a payment action only when a properly formed Stripe checkout URL is configured.
-// Otherwise the event remains an enquiry page; no unverified checkout is offered.
-const paymentUrl = configuredPaymentUrl && /^https:\/\/(?:buy|checkout)\.stripe\.com\/[^\s]+$/.test(configuredPaymentUrl)
-  ? configuredPaymentUrl
-  : undefined;
+// Verified by the site owner as the live Men’s Day Stripe checkout link.
+const paymentUrl = "https://buy.stripe.com/9B6dR99767es8M632p4AU02";
 const experiences = [
   ["01","Reality, perception & the game","Explore simulation theory as a thought-provoking hypothesis, the mystery of consciousness, and the ways attention and perception shape our human experience."],
   ["02","The Art of Conscious Programming","Connect neuroscience, habitual patterns, beliefs and nervous-system awareness with practical exercises for making more intentional choices."],
@@ -80,11 +76,11 @@ export default function MensDayPage() {
           <details><summary>Do I need to know about simulation theory or spirituality?</summary><p>Not at all. Come curious. Simulation theory is explored as a possibility to question, not as an established scientific fact, and you are welcome to bring your own perspective.</p></details>
           <details><summary>Can I come on my own?</summary><p>Yes. You’re welcome to attend on your own and meet others during the day.</p></details>
           <details><summary>Is this the video game?</summary><p>This is a real-world, in-person Earth School experience. Jess is also developing EARTH SCHOOL, a spiritual exploration game inside Fortnite using UEFN.</p></details>
-          <details><summary>What happens after I enquire?</summary><p>Contact Jess by email or Instagram for availability, venue and booking details. An enquiry does not reserve or pay for a place.</p></details>
+          <details><summary>What happens after I book?</summary><p>Complete the secure Stripe checkout to reserve your place. Keep your payment confirmation; venue and arrival information will follow. An email or Instagram enquiry alone does not reserve a place.</p></details>
         </section>
         <section id="enquire" className={styles.enquire} aria-labelledby="enquire-title">
           <p className={styles.eyebrow}>10 places · November 28</p><h2 id="enquire-title">Your next chapter<br />starts with <span className="color-pop pop-yellow">curiosity.</span></h2>
-          <p>{paymentUrl ? "Book your place through secure checkout, or contact Jess with any questions." : "Interested in joining us? Stripe registration is being prepared. For now, contact Jess to enquire; an enquiry does not reserve a place."}</p>
+          <p>Reserve your place through secure Stripe checkout, or contact Jess with any questions. Exact venue and arrival details will follow.</p>
           <div className={styles.actions}>{paymentUrl && <a className={styles.primary} href={paymentUrl}>Pay $333 CAD & book ↗</a>}<a className={paymentUrl ? styles.secondary : styles.primary} href={emailUrl}>Email Jess ↗</a><a className={styles.secondary} href="https://www.instagram.com/jessgoodvibesonly/" target="_blank" rel="noopener noreferrer">Message on Instagram ↗</a></div>
           <p className={styles.note}>DM “EARTH SCHOOL” · @jessgoodvibesonly<br />Venue and booking details to follow.</p>
         </section>

@@ -680,10 +680,6 @@ export default function Home() {
             <a href="mailto:jessgoodvibesonly@gmail.com">jessgoodvibesonly@gmail.com</a>
           </p>
           <p>
-            <strong>Business Email:</strong>{' '}
-            <a href="mailto:jessica@aspireagencyglobal.com">jessica@aspireagencyglobal.com</a>
-          </p>
-          <p>
             <strong>WhatsApp:</strong>{' '}
             <a href="https://wa.me/19029405818" target="_blank" rel="noopener noreferrer">
               +1 (902) 940-5818

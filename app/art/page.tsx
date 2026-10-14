@@ -7,11 +7,48 @@ export const metadata = {
 };
 
 const art = [
-  {src:"/art/jess-original-earth-school-art.jpg",title:"EARTH SCHOOL",alt:"Original expressive EARTH SCHOOL art by Jessica Simmonds",w:2072,h:3720},
-  {src:"/art/jess-original-mona-art.jpg",title:"Portrait Study",alt:"Original red-background portrait artwork by Jessica Simmonds",w:3072,h:4080},
-  {src:"/art/jess-original-vision-art.jpg",title:"Symbolic Expression",alt:"Original symbolic portrait artwork by Jessica Simmonds",w:2629,h:3896},
-  {src:"/art/jess-pop-art-portrait.jpg",title:"Colour & Character",alt:"Jess original multicoloured pop-art female portrait with vivid blue and pink tones",w:1024,h:1536},
-  {src:"/art/jess-flamingo-collage.jpg",title:"Worthy · Powerful",alt:"Jess original pink flamingo mixed-media artwork with cut-out words",w:1024,h:1536},
+  {
+    "src": "/art/jess-heart-of-colour.jpg",
+    "title": "Heart of Colour",
+    "alt": "Original vibrantly coloured anatomical heart illustration by Jess",
+    "w": 2883,
+    "h": 3796
+  },
+  {
+    "src": "/art/jess-bloom-and-become.jpg",
+    "title": "Bloom & Become",
+    "alt": "Original mixed-media artwork by Jess with bright flowers and an empowering message",
+    "w": 3072,
+    "h": 3518
+  },
+  {
+    "src": "/art/jess-purpose-of-enlightenment.jpg",
+    "title": "Stay Open",
+    "alt": "Original illustrated sketchbook artwork exploring enlightenment by Jess",
+    "w": 2289,
+    "h": 2945
+  },
+  {
+    "src": "/art/jess-colourful-rooster.jpg",
+    "title": "The Rooster",
+    "alt": "Original colourful expressive rooster painting by Jess",
+    "w": 2393,
+    "h": 2684
+  },
+  {
+    "src": "/art/jess-brain-and-beliefs.jpg",
+    "title": "The Inner Mind",
+    "alt": "Original illustration of the brain and beliefs by Jess",
+    "w": 1933,
+    "h": 2679
+  },
+  {
+    "src": "/art/jess-cosmic-night.jpg",
+    "title": "Cosmic Night",
+    "alt": "Original starry blue night sky artwork by Jess",
+    "w": 2996,
+    "h": 3979
+  }
 ];
 
 export default function ArtPage() {
@@ -21,16 +58,17 @@ export default function ArtPage() {
       <header style={{margin:"65px 0 45px"}}>
         <p style={{letterSpacing:"0.25em",fontSize:12,textTransform:"uppercase",color:"#e9c2ba"}}>THE ART OF JESS · ORIGINAL WORK</p>
         <h1 style={{fontSize:"clamp(3.3rem,9vw,7rem)",lineHeight:1,letterSpacing:"-.06em",margin:"20px 0"}}>Art, instinct<br/><em style={{color:"#a6dbe1"}}>& expression.</em></h1>
-        <p style={{fontSize:"clamp(1rem,2vw,1.35rem)",lineHeight:1.7,maxWidth:720,color:"#e0d9d5"}}>These are pieces of my inner world — symbols, stories, colours and intuitive expression. Each artwork is a little window into the mystery of being human.</p>
+        <p style={{fontSize:"clamp(1rem,2vw,1.35rem)",lineHeight:1.7,maxWidth:720,color:"#e0d9d5"}}>These are pieces of my inner world — symbols, stories, colours and intuitive expression. Each photograph shows a piece of my original artwork.</p>
       </header>
       <section aria-label="Original artwork" style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(min(100%,280px),1fr))",gap:24}}>
         {art.map((work,i)=><figure key={work.src} style={{margin:0,background:"#ffffff0e",border:"1px solid #ffffff29",borderRadius:18,overflow:"hidden"}}>
           <a href={work.src} target="_blank" rel="noopener noreferrer" aria-label={`View ${work.title} at full size`} style={{display:"block"}}>
             <Image src={work.src} alt={work.alt} width={work.w} height={work.h} sizes="(max-width: 680px) 100vw, 33vw" style={{width:"100%",height:"auto",display:"block"}}/>
           </a>
-          <figcaption style={{padding:20,fontSize:16}}>{work.title}<span style={{float:"right",opacity:.6,fontSize:13}}>0{i+1} / 05</span></figcaption>
+          <figcaption style={{padding:20,fontSize:16}}>{work.title}<span style={{float:"right",opacity:.6,fontSize:13}}>0{i+1} / 0{art.length}</span></figcaption>
         </figure>)}
       </section>
+      <div style={{margin:"2rem 0",display:"flex",flexWrap:"wrap",gap:16,alignItems:"center"}}><a href="https://drive.google.com/drive/folders/1f0BiwTLqN8YFEG2218GMZp2PuZtV1LVr?usp=drive_link" target="_blank" rel="noopener noreferrer" style={{padding:"1rem 1.3rem",border:"1px solid #e9c2ba",borderRadius:8,textDecoration:"none",fontWeight:600}}>Explore my full JESS ART collection · 16 photographs ↗</a><span style={{color:"#dcd5d3"}}>More original artwork in my Google Drive gallery.</span></div>
       <section style={{marginTop:85,padding:"clamp(26px,5vw,62px)",borderRadius:22,border:"1px solid #d8b8a36b",background:"linear-gradient(130deg,#583a5544,#cba78319)"}}>
         <p style={{letterSpacing:".22em",fontSize:12,color:"#f2c7b1"}}>THE HIGH PRIESTjESS · COMING SOON</p>
         <h2 style={{fontSize:"clamp(2.2rem,5vw,4rem)",lineHeight:1.1,margin:"18px 0"}}>An oracle deck,<br/><em>born from my art.</em></h2>

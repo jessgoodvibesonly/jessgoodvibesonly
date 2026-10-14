@@ -233,6 +233,7 @@ export default function Home() {
             <a className="nav-link" href="#earth-school">EARTH SCHOOL</a>
             <a className="nav-link" href="#guest-transmissions">Be in the Game</a>
             <a className="nav-link" href="#mens-day-title">Retreats</a>
+            <a className="nav-link" href="/inner-circle">Inner Circle · $33/mo</a>
             <a className="nav-link" href="#art">My Art</a>
             <a className="nav-link" href="#talks">Talks</a>
             <a className="nav-link" href="#private-sessions">Private Sessions</a>
@@ -255,6 +256,7 @@ export default function Home() {
               <a href="#guest-transmissions">Be in the Game</a>
               <a href="/earth-school-mens-day">Men’s Day · November 28</a>
               <a href="/earth-school-womens-day">Women’s Day · December 5</a>
+              <a href="/inner-circle">Inner Circle · $33/mo</a>
               <a href="#art">My Art</a>
               <a href="#talks">Talks</a>
               <a href="#private-sessions">Private Sessions</a>
@@ -434,6 +436,16 @@ export default function Home() {
       </section>
 
       </div>
+      <section id="inner-circle" className="glass section" aria-labelledby="inner-circle-title" style={{textAlign:"center",border:"1px solid rgba(226,186,144,.38)"}}>
+        <p className="chapter-label">EARTH SCHOOL · MONTHLY SPIRITUAL MENTORSHIP</p>
+        <h2 id="inner-circle-title">THE INNER CIRCLE</h2>
+        <p style={{fontSize:"1.3rem",fontStyle:"italic"}}>The art of remembering who you are.</p>
+        <p className="section-text">Join THE HIGH PRIESTjESS for monthly live group mentorship, weekly audio transmissions, guided activations, synchronicity explorations and real-world practices. All levels of awareness welcome.</p>
+        <p style={{fontSize:"1.8rem",fontWeight:700,margin:"1.2rem auto"}}>$33 CAD / month</p>
+        <p>Cancel anytime · Separate from private readings and one-on-one mentorship</p>
+        <div className="cta-row"><a className="btn" href="/inner-circle">Explore the Inner Circle ↗</a></div>
+      </section>
+
       <section id="art" className="art-showcase" aria-labelledby="art-showcase-title">
         <div className="art-showcase-intro">
           <div>

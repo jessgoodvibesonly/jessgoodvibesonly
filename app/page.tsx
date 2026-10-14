@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ArtworkGallery from "./components/ArtworkGallery";
 import jessImage from "../public/earth-school-jess.webp";
 import { bookingUrl, PrivateSessions } from "./components/PrivateSessions";
 
@@ -441,14 +442,10 @@ export default function Home() {
           </div>
           <div>
             <p>My art is another way I explore the human experience—through images, symbols, colour, intuition and the unexpected. These are photographs of my original works, shared here just as I created them.</p>
-            <p className="art-source-note">Original artwork by Rev. Dr. Jessica Simmonds · Selected from the 16-photo JESS ART collection.</p>
+            <p className="art-source-note">Original artwork by Rev. Dr. Jessica Simmonds · Tap any piece to enlarge.</p>
           </div>
         </div>
-        <div className="art-gallery-grid">
-          <figure className="art-gallery-piece art-gallery-featured"><a href="/art/jess-heart-original.jpg" target="_blank" rel="noopener noreferrer" aria-label="View original heart artwork"><Image src="/art/jess-heart-original.jpg" width={2883} height={3796} alt="Original vivid multicoloured anatomical heart artwork by Jess" sizes="(max-width: 740px) 100vw, 48vw" /></a><figcaption>The Heart — original artwork <span>01 / 03</span></figcaption></figure>
-          <figure className="art-gallery-piece"><a href="/art/jess-flowers-original.jpg" target="_blank" rel="noopener noreferrer" aria-label="View original floral mixed-media artwork"><Image src="/art/jess-flowers-original.jpg" width={3072} height={3518} alt="Original mixed-media artwork with bright flowers and empowering text" sizes="(max-width: 740px) 100vw, 24vw" /></a><figcaption>Nobody Is Coming to Stop You — original artwork <span>02 / 03</span></figcaption></figure>
-          <figure className="art-gallery-piece"><a href="/art/jess-enlightenment-original.jpg" target="_blank" rel="noopener noreferrer" aria-label="View original enlightenment illustration"><Image src="/art/jess-enlightenment-original.jpg" width={2289} height={2945} alt="Hand-drawn illustration: The purpose of enlightenment is to stay open" sizes="(max-width: 740px) 100vw, 24vw" /></a><figcaption>The Purpose of Enlightenment — original artwork <span>03 / 03</span></figcaption></figure>
-        </div>
+        <ArtworkGallery />
         <div style={{display:"flex",flexWrap:"wrap",gap:"1rem",alignItems:"center",marginTop:"1.8rem"}}>
           <a className="btn" href="/art">Explore More of My Art ↗</a>
           <span style={{opacity:0.8}}>Original art · An oracle deck is coming soon</span>

@@ -278,6 +278,25 @@ export default function Home() {
         </nav>
       </header>
       <main id="top" className="landing">
+      <section aria-label="Explore Jess's offerings" style={{maxWidth:"1180px",margin:"18px auto 22px",padding:"0 18px"}}>
+        <p style={{textAlign:"center",fontFamily:"sans-serif",letterSpacing:"0.18em",fontSize:"0.78rem",fontWeight:700,margin:"0 0 12px"}}>WORK WITH JESS · CHOOSE YOUR EXPERIENCE</p>
+        <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(260px,1fr))",gap:"14px"}}>
+          <article style={{border:"1px solid rgba(221,183,128,.65)",borderRadius:"20px",padding:"22px",background:"linear-gradient(130deg,rgba(63,39,80,.82),rgba(23,27,46,.94))",color:"#fff3e4",boxShadow:"0 8px 30px #0002"}}>
+            <p style={{fontSize:"0.75rem",letterSpacing:"0.13em",fontFamily:"sans-serif",color:"#ffdda3",margin:"0 0 8px"}}>ONE-ON-ONE · 45 MINUTES</p>
+            <h2 style={{fontSize:"clamp(1.35rem,2vw,1.7rem)",margin:"0 0 8px",color:"inherit"}}>Intuitive Clarity Reading</h2>
+            <p style={{fontSize:"2.2rem",fontWeight:800,margin:"6px 0",color:"#ffe1ac"}}>$111 CAD <span style={{fontSize:"0.9rem",fontWeight:400,color:"#fff3e4"}}>/ session</span></p>
+            <p style={{fontSize:"0.95rem",lineHeight:1.6}}>A private intuitive session for perspective, guidance and clarity.</p>
+            <a href={bookingUrl} target="_blank" rel="noopener noreferrer" style={{display:"inline-block",marginTop:"10px",padding:"12px 18px",borderRadius:"99px",background:"#f5d39c",color:"#211724",fontWeight:700,textDecoration:"none"}}>Book a Reading ↗</a>
+          </article>
+          <article style={{border:"1px solid rgba(221,183,128,.65)",borderRadius:"20px",padding:"22px",background:"linear-gradient(130deg,rgba(31,73,83,.85),rgba(27,30,61,.94))",color:"#fff3e4",boxShadow:"0 8px 30px #0002"}}>
+            <p style={{fontSize:"0.75rem",letterSpacing:"0.13em",fontFamily:"sans-serif",color:"#ffdda3",margin:"0 0 8px"}}>MONTHLY GROUP MENTORSHIP</p>
+            <h2 style={{fontSize:"clamp(1.35rem,2vw,1.7rem)",margin:"0 0 8px",color:"inherit"}}>EARTH SCHOOL · The Inner Circle</h2>
+            <p style={{fontSize:"2.2rem",fontWeight:800,margin:"6px 0",color:"#ffe1ac"}}>$33 CAD <span style={{fontSize:"0.9rem",fontWeight:400,color:"#fff3e4"}}>/ month</span></p>
+            <p style={{fontSize:"0.95rem",lineHeight:1.6}}>Group calls, weekly transmissions and activations. Cancel anytime.</p>
+            <a href="/inner-circle" style={{display:"inline-block",marginTop:"10px",padding:"12px 18px",borderRadius:"99px",background:"#f5d39c",color:"#211724",fontWeight:700,textDecoration:"none"}}>Explore Membership ↗</a>
+          </article>
+        </div>
+      </section>
       <section className="hero glass" aria-label="Meet Jess">
         <div className="hero-copy heroTextContainer">
           <div className="heroHeader">

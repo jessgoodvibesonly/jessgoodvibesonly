@@ -226,7 +226,7 @@ export default function Home() {
       <header className="site-header">
         <nav className="site-nav" aria-label="Primary navigation">
           <a className="site-mark" href="#top" aria-label="Rev. Dr. Jessica Simmonds — home">
-            <img src="/peacesymbolgold.png" alt="" aria-hidden="true" />
+            <img src="/peace-iridescent.svg" alt="" aria-hidden="true" />
             <span>Jess Good Vibes Only</span>
           </a>
           <div className="desktop-nav">
@@ -301,7 +301,7 @@ export default function Home() {
       <section className="hero glass" aria-label="Meet Jess">
         <div className="hero-copy heroTextContainer">
           <div className="heroHeader">
-            <img src="/peacesymbolgold.png" className="peaceHeroLeft" alt="Peace icon" />
+            <img src="/peace-iridescent.svg" className="peaceHeroLeft" alt="Peace icon" />
             <div><p className="hero-name">Rev. Dr. Jessica Simmonds</p><h1>Jess <span className="color-pop pop-cyan">Good</span><br />Vibes <span className="color-pop pop-pink">Only</span><span className="hero-period">.</span></h1></div>
           </div>
           <h2>Technology × <span className="color-pop pop-yellow">Consciousness</span> × Creativity</h2>
@@ -516,7 +516,7 @@ export default function Home() {
         </div>
         <p className="speaking-topics-highlight">&ldquo;These are not just talks. They are <span className="color-pop pop-blue">perspective-shifting</span> experiences.&rdquo;</p>
         <p className="text-center text-sm md:text-base font-medium mt-6 opacity-90">
-          Jess <img src="/peacesymbolgold.png" className="peaceSignoff" alt="Peace icon" />
+          Jess <img src="/peace-iridescent.svg" className="peaceSignoff" alt="Peace icon" />
         </p>
       </section>
 
@@ -756,7 +756,7 @@ export default function Home() {
           </p>
         </div>
         <p className="final-cta-signoff">
-          Jess <img src="/peacesymbolgold.png" className="peaceSignoff" alt="Peace icon" />
+          Jess <img src="/peace-iridescent.svg" className="peaceSignoff" alt="Peace icon" />
         </p>
         <div className="final-cta-divider" aria-hidden="true" />
         <p className="creator-credit">

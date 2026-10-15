@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Iridescent peace symbol">
+<defs>
+<linearGradient id="iridescent" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#a87cff"/>
+<stop offset="23%" stop-color="#ed78de"/>
+<stop offset="44%" stop-color="#ffab9f"/>
+<stop offset="62%" stop-color="#f579ca"/>
+<stop offset="82%" stop-color="#4bdbeb"/>
+<stop offset="100%" stop-color="#11c9c7"/>
+</linearGradient>
+<linearGradient id="highlight" x1="0" y1="0" x2="0.8" y2="1">
+<stop stop-color="#fff6e8" stop-opacity=".65"/><stop offset=".45" stop-color="#fff" stop-opacity=".08"/><stop offset="1" stop-color="#5e31bd" stop-opacity=".22"/>
+</linearGradient>
+</defs>
+<circle cx="64" cy="64" r="51" fill="none" stroke="url(#iridescent)" stroke-width="14"/>
+<path d="M64 13 V114 M64 64 L28 100 M64 64 L100 100" fill="none" stroke="url(#iridescent)" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="64" cy="64" r="51" fill="none" stroke="url(#highlight)" stroke-width="3" opacity=".7"/>
+</svg>

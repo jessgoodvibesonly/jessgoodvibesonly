@@ -2783,3 +2783,21 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--photo-cyan);outlin
   .original-art-controls{gap:4px;font-size:.72rem}
   .original-art-controls button{padding:9px 8px;font-size:.72rem}
 }
+
+/* October 15 brand refresh: let Jess's introduction lead the homepage. */
+.offerings-after-intro {margin-top:clamp(2rem,5vw,4.5rem)!important;margin-bottom:clamp(2rem,5vw,4rem)!important;}
+/* The original gold-era rules desaturated the new colourful brand mark. */
+.site-mark {display:inline-flex;align-items:center;gap:.72rem;font-family:var(--sans);font-weight:800;letter-spacing:-.035em;text-decoration:none;line-height:1.12;}
+.site-mark img {width:43px;height:43px;flex:0 0 43px;filter:drop-shadow(0 2px 7px rgba(186,90,214,.25))!important;opacity:1!important;transition:transform .2s ease;}
+.site-mark:hover img {transform:rotate(-8deg) scale(1.07);}
+.brand-wordmark {font-size:clamp(.93rem,1.45vw,1.15rem);font-weight:850;color:#f7f7f8;white-space:nowrap;}
+.brand-jess {color:#f5f5fc}
+.brand-good {color:#65ddec}
+.brand-vibes {color:#ff85bd}
+.brand-only {color:#d1a6ff}
+@media(max-width:680px) {
+ .site-mark {gap:.42rem;}
+ .site-mark img {width:34px;height:34px;flex-basis:34px;}
+ .brand-wordmark {font-size:clamp(.76rem,3.25vw,.98rem);white-space:normal;max-width:168px;}
+ .offerings-after-intro {margin-top:1.8rem!important;padding-inline:0!important;}
+}

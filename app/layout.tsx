@@ -6,9 +6,9 @@ export const metadata: Metadata = {
   description:
     "Explore EARTH SCHOOL, the original narrative game and immersive world created by Rev. Dr. Jessica Simmonds.",
   icons: {
-    icon: "/peacesymbolgold.png",
-    shortcut: "/peacesymbolgold.png",
-    apple: "/peacesymbolgold.png",
+    icon: "/peace-iridescent.svg",
+    shortcut: "/peace-iridescent.svg",
+    apple: "/peace-iridescent.svg",
   },
 };
 

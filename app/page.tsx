@@ -80,14 +80,6 @@ const earthSchoolGallery = [
     "alt": "Jess’s workstation with EARTH SCHOOL open in UEFN and a transmission being edited on a laptop",
     "width": 1200,
     "height": 675
-  },
-  {
-    "file": "early-world-experiment",
-    "title": "An early world experiment",
-    "caption": "A separate Bitmagic exploration of Echo Point Island.",
-    "alt": "An early Echo Point Island concept on a laptop in Bitmagic, showing a coastal village with blue lights",
-    "width": 675,
-    "height": 1200
   }
 ];
 

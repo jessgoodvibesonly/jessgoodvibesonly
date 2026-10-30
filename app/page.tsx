@@ -231,6 +231,7 @@ export default function Home() {
             <a className="nav-link" href="#private-sessions">Private Sessions</a>
             <a className="nav-link" href="#podcast">Podcasts</a>
             <a className="nav-link" href="#credentials">Meet Jess</a>
+            <a className="nav-link" href="/interfaith-ceremonies">Weddings & Ceremonies</a>
             <a
               className="btn nav-booking-button"
               href={bookingUrl}
@@ -254,6 +255,7 @@ export default function Home() {
               <a href="#private-sessions">Private Sessions</a>
               <a href="#podcast">Podcasts</a>
               <a href="#credentials">Meet Jess</a>
+              <a href="/interfaith-ceremonies">Weddings & Ceremonies · 2027</a>
               <a href="https://www.instagram.com/jessgoodvibesonly/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
               <a href="https://www.youtube.com/@EarthSchoolOfficial" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
               <a

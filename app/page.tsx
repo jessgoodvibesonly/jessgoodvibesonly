@@ -222,7 +222,7 @@ export default function Home() {
             <span className="brand-wordmark"><span className="brand-jess">Jess</span> <span className="brand-good">Good</span> <span className="brand-vibes">Vibes</span> <span className="brand-only">Only</span></span>
           </a>
           <div className="desktop-nav">
-            <a className="nav-link" href="#earth-school">EARTH SCHOOL</a>
+            <a className="nav-link" href="#book-experiences">Book Experiences</a><a className="nav-link" href="#earth-school">EARTH SCHOOL</a>
             <a className="nav-link" href="#guest-transmissions">Be in the Game</a>
             <a className="nav-link" href="#mens-day-title">Retreats</a>
             <a className="nav-link" href="/inner-circle">The Inner Circle</a>
@@ -244,7 +244,7 @@ export default function Home() {
           <details className="mobile-nav">
             <summary aria-label="Open navigation menu"><span aria-hidden="true" /></summary>
             <div className="mobile-nav-panel">
-              <a href="#earth-school">EARTH SCHOOL</a>
+              <a href="#book-experiences">Book Experiences</a><a href="#earth-school">EARTH SCHOOL</a>
               <a href="#guest-transmissions">Be in the Game</a>
               <a href="/earth-school-mens-day">Men’s Day · November 28</a>
               <a href="/earth-school-womens-day">Women’s Day · December 5</a>
@@ -310,6 +310,31 @@ export default function Home() {
             sizes="(max-width: 900px) 100vw, 40vw"
             priority
           />
+        </div>
+      </section>
+      <section id="book-experiences" aria-label="Book an experience with Jess" style={{maxWidth:"1180px",margin:"22px auto",padding:"0 18px"}}>
+        <div style={{background:"linear-gradient(130deg,#201b37,#153e47)",color:"#fff",border:"1px solid #b9a5cc",borderRadius:"22px",padding:"clamp(20px,4vw,36px)"}}>
+          <p style={{fontFamily:"sans-serif",fontWeight:750,letterSpacing:".16em",fontSize:".77rem",color:"#f6d5a4"}}>ISLAND ROOTS HOMESTEAD · WORK WITH REV. DR. JESS</p>
+          <h2 style={{fontSize:"clamp(1.65rem,3.5vw,2.6rem)",margin:"8px 0 12px",color:"#fff"}}>Choose Your Experience</h2>
+          <p style={{maxWidth:"65ch",lineHeight:1.7}}>Intuition, consciousness, metaphysics, meditation and the art of being human. Select an experience and book directly, or contact Jess with questions.</p>
+          <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(min(100%,230px),1fr))",gap:"14px",marginTop:"22px"}}>
+            {[
+              {tag:"LIVE ZOOM · SAT NOV 14 · 2 PM ATLANTIC",name:"EARTH SCHOOL · The Art of Being Human",price:"$33 CAD · 90 minutes",note:"Introduction to intuition, consciousness, neuroscience, simulation theory, meditation and live Q&A.",url:"https://buy.stripe.com/bJecN5fvubuI5zU46t4AU0c",cta:"Register for Zoom"},
+              {tag:"ONE-TO-ONE · 15 MINUTES",name:"Introductory Call",price:"$33 CAD",note:"A short introductory conversation. Contact Jess to arrange yours.",url:"mailto:jessgoodvibesonly@gmail.com?subject=15-minute%20introductory%20call%20%E2%80%94%20%2433",cta:"Enquire About Intro"},
+              {tag:"ONE-TO-ONE · 45 MINUTES",name:"Intuitive Clarity Reading",price:"$111 CAD",note:"Personal intuitive guidance and perspective.",url:bookingUrl,cta:"Book a Reading"},
+              {tag:"IN PERSON · SAT NOV 28",name:"Men’s EARTH SCHOOL Day",price:"$333 CAD",note:"Charlottetown · Limited to 10 places.",url:"/earth-school-mens-day",cta:"View & Book Men’s Day"},
+              {tag:"IN PERSON · SAT DEC 5",name:"Women’s EARTH SCHOOL Day",price:"$333 CAD",note:"Charlottetown · Limited to 10 places.",url:"/earth-school-womens-day",cta:"View & Book Women’s Day"}
+            ].map((offer)=>(
+              <article key={offer.name} style={{display:"flex",flexDirection:"column",gap:"8px",background:"rgba(255,255,255,.08)",border:"1px solid rgba(255,255,255,.25)",borderRadius:"16px",padding:"18px"}}>
+                <p style={{fontFamily:"sans-serif",fontSize:".7rem",fontWeight:750,letterSpacing:".09em",color:"#ffddaa",margin:0}}>{offer.tag}</p>
+                <h3 style={{fontSize:"1.27rem",color:"#fff",margin:0}}>{offer.name}</h3>
+                <strong style={{color:"#ffe1ac",fontSize:"1.15rem"}}>{offer.price}</strong>
+                <p style={{lineHeight:1.55,fontSize:".91rem",flex:1,margin:0}}>{offer.note}</p>
+                <a href={offer.url} style={{display:"inline-block",padding:"12px 14px",borderRadius:"99px",background:"#ffe1ac",color:"#20192b",fontWeight:800,textAlign:"center",textDecoration:"none"}}>{offer.cta} ↗</a>
+              </article>
+            ))}
+          </div>
+          <p style={{marginTop:"18px",fontSize:".82rem",opacity:.9}}>Zoom access details are sent after registration. Retreat venue details will follow. Secure checkout is provided through Stripe where available.</p>
         </div>
       </section>
       <section aria-label="Explore Jess's offerings" className="offerings-after-intro" style={{maxWidth:"1180px",margin:"18px auto 22px",padding:"0 18px"}}>

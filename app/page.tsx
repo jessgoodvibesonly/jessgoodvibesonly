@@ -314,6 +314,25 @@ export default function Home() {
           />
         </div>
       </section>
+      <section aria-label="Explore Earth School" style={{maxWidth:"1180px",margin:"28px auto 12px",padding:"0 18px"}}>
+        <p style={{textAlign:"center",letterSpacing:".16em",fontWeight:800,fontSize:".8rem",margin:"0 0 10px"}}>WELCOME TO EARTH SCHOOL</p>
+        <h2 style={{textAlign:"center",fontSize:"clamp(1.7rem,3.6vw,2.7rem)",margin:"0 0 12px"}}>One school. Many ways to experience it.</h2>
+        <p style={{textAlign:"center",maxWidth:"66ch",margin:"0 auto 22px",lineHeight:1.7}}>Explore the game, discover the Magic Shop, or register for experiences at Island Roots Homestead. Weddings and ceremonies have their own dedicated space.</p>
+        <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(min(100%,230px),1fr))",gap:"14px"}}>
+          {[
+            {name:"EARTH SCHOOL · The Game",detail:"Enter the world of Echo Point Island, transmissions and discovery.",url:"#earth-school",action:"Explore the Game"},
+            {name:"EARTH SCHOOL · The Magic Shop",detail:"Discover our curated favourites and a little everyday magic.",url:"https://earthschoolmagicshop.vercel.app",action:"Visit the Magic Shop"},
+            {name:"EARTH SCHOOL · Island Roots Homestead",detail:"Classes, workshops, retreats and private sessions. View current pricing and register.",url:"#book-experiences",action:"See Offerings & Register"},
+            {name:"Weddings & Ceremonies",detail:"Personal, meaningful ceremonies and 2027 wedding enquiries.",url:"/interfaith-ceremonies",action:"Explore Ceremonies"}
+          ].map(item=>(
+            <article key={item.name} style={{border:"1px solid rgba(221,183,128,.65)",borderRadius:"18px",background:"linear-gradient(135deg,#211d37,#16414a)",padding:"21px",color:"#fff",display:"flex",flexDirection:"column",gap:"12px"}}>
+              <h3 style={{fontSize:"1.2rem",color:"#ffe1ac",margin:0}}>{item.name}</h3>
+              <p style={{lineHeight:1.55,flex:1,margin:0}}>{item.detail}</p>
+              <a href={item.url} style={{display:"block",borderRadius:"40px",padding:"11px 14px",textDecoration:"none",fontWeight:800,color:"#211724",background:"#ffe1ac",textAlign:"center"}}>{item.action} ↗</a>
+            </article>
+          ))}
+        </div>
+      </section>
       <section id="book-experiences" aria-label="Book an experience with Jess" style={{maxWidth:"1180px",margin:"22px auto",padding:"0 18px"}}>
         <div style={{background:"linear-gradient(130deg,#201b37,#153e47)",color:"#fff",border:"1px solid #b9a5cc",borderRadius:"22px",padding:"clamp(20px,4vw,36px)"}}>
           <p style={{fontFamily:"sans-serif",fontWeight:750,letterSpacing:".16em",fontSize:".77rem",color:"#f6d5a4"}}>ISLAND ROOTS HOMESTEAD · WORK WITH REV. DR. JESS</p>

@@ -280,6 +280,7 @@ export default function Home() {
           </div>
           <h2>Technology × <span className="color-pop pop-yellow">Consciousness</span> × Creativity</h2>
           <p>CEO, Aspire Agency Global Inc. | Founder | Public Speaker | Author</p>
+          <p>Neurodivergent · INFJ polymath · Consciousness channel</p>
           <p className="hero-lede">Creative <span className="color-pop pop-blue">worlds</span>, conscious exploration and meaningful human experiences.</p>
           <p className="hero-highlight">Building EARTH SCHOOL—where <span className="color-pop pop-pink">awareness</span>, simulation theory and the art of being human become part of the game.</p>
 
@@ -386,7 +387,7 @@ export default function Home() {
             <h2 id="credentials-spotlight-title">Meet Jess.<br /><em>Experience meets <span className="color-pop pop-blue">imagination.</span></em></h2>
           </div>
           <div className="credentials-spotlight-story">
-            <p>Rev. Dr. Jessica Simmonds is an entrepreneur, author, public speaker, educator, ordained interfaith minister and creator of EARTH SCHOOL. Her work spans spiritual counselling, hypnotherapy, creative education, human development and immersive experiences.</p>
+            <p>Rev. Dr. Jessica Simmonds is an entrepreneur, author, public speaker, educator, ordained interfaith minister and creator of EARTH SCHOOL. A neurodivergent INFJ polymath and consciousness channel, she connects art, philosophy, spiritual exploration and technology through her writing, teaching and the worlds she creates. Her work spans spiritual counselling, hypnotherapy, creative education, human development and immersive experiences.</p>
             <p>Almost three decades of entrepreneurship. Over 25 years of teaching. A lifelong curiosity about consciousness and what it means to be human.</p>
             <a className="my-story-link" href="/my-story">Read my full story <span aria-hidden="true">↗</span></a>
           </div>
@@ -650,8 +651,9 @@ export default function Home() {
           Rev. Dr. Jessica Simmonds is a lifelong entrepreneur with almost three decades of
           experience, an author, educator and teacher, an ordained Spiritual-Interfaith Minister,
           the creator of EARTH SCHOOL, and a mother of four. She holds a doctorate in philosophy
-          of metaphysics. Her work bridges technology, consciousness, creativity and real-world
-          transformation.
+          of metaphysics. As a neurodivergent INFJ polymath and consciousness channel, she brings
+          her curiosity across disciplines into work that bridges technology, consciousness,
+          creativity and real-world transformation.
         </p>
         <div className="resume-grid">
           <details className="resume-card">

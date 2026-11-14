@@ -5,7 +5,7 @@ import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "My Story — Rev. Dr. Jess | Jess Good Vibes Only",
-  description: "A life that never followed a script: 24 countries, creativity, spiritual exploration, finding peace, and the extraordinary journey of channeling EARTH SCHOOL.",
+  description: "Meet Rev. Dr. Jessica Simmonds: neurodivergent INFJ polymath, consciousness channel, author, educator and creator of EARTH SCHOOL.",
   alternates: { canonical: "https://jessgoodvibesonly.vercel.app/my-story" },
   openGraph: {
     type: "article",
@@ -41,6 +41,7 @@ export default function MyStoryPage() {
             <div className={styles.intro}>
               <p>I&apos;ve often thought that if someone made a movie about my life, people would probably think the writers had gone a little too far.</p>
               <p>But here we are.</p>
+              <p>I&apos;m Jess—a neurodivergent INFJ polymath, consciousness channel, author, educator and the creator of EARTH SCHOOL. My work connects art, philosophy, spiritual exploration and technology through a lifelong curiosity about being human.</p>
             </div>
           </div>
           <figure className={styles.portrait}>
@@ -129,6 +130,7 @@ export default function MyStoryPage() {
             <p><strong>And I found peace.</strong></p>
             <p>Talk about a plot twist.</p>
             <p>So many pieces of my life began fitting together differently. My sensitivity. My curiosity. My creativity. The way my attention moves between seemingly unrelated subjects and somehow finds connections.</p>
+            <p>The words <strong>INFJ polymath</strong> helped me put language to that curiosity: exploring many disciplines, looking for meaning, and bringing ideas together through something I can create and share.</p>
             <p>And then came something I never expected.</p>
           </section>
 

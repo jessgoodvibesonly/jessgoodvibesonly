@@ -3,11 +3,14 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
-// All sixteen original artwork photographs from Jess's JESS ART Drive folder.
-// Neutral filenames keep the presentation free of invented artwork titles.
-const artworks = Array.from({ length: 16 }, (_, index) => ({
-  src: `/art/gallery-${String(index + 1).padStart(2, "0")}.jpg`,
-}));
+const artworks = [
+  { src: "/art/jess-self-portrait.webp", title: "Self-portrait", alt: "Jessica Simmonds’s yellow mixed-media self-portrait with fabric flowers and handwritten messages" },
+  ...Array.from({ length: 16 }, (_, index) => ({
+    src: `/art/gallery-${String(index + 1).padStart(2, "0")}.jpg`,
+    title: `Artwork ${index + 1}`,
+    alt: `Original artwork by Jess Simmonds, image ${index + 1}`,
+  })),
+];
 
 export default function ArtworkGallery() {
   const [active, setActive] = useState<number | null>(null);
@@ -41,18 +44,19 @@ export default function ArtworkGallery() {
             type="button"
             className="original-art-thumb"
             onClick={() => setActive(index)}
-            aria-label={`Enlarge artwork ${index + 1}`}
+            aria-label={`Enlarge ${artwork.title}`}
           >
             <span className="original-art-thumb-image">
               <Image
                 src={artwork.src}
-                alt={`Original artwork by Jess Simmonds, image ${index + 1}`}
+                alt={artwork.alt}
                 fill
                 sizes="(max-width: 600px) 43vw, (max-width: 1000px) 28vw, 200px"
                 style={{ objectFit: "contain" }}
               />
               <span className="original-art-zoom-hint" aria-hidden="true">↗</span>
             </span>
+            {index === 0 && <span className="original-art-thumb-title">Self-portrait</span>}
           </button>
         ))}
       </div>
@@ -62,7 +66,7 @@ export default function ArtworkGallery() {
             className="original-art-dialog"
             role="dialog"
             aria-modal="true"
-            aria-label={`Expanded artwork ${active + 1}`}
+            aria-label={artworks[active].title}
             onClick={(event) => event.stopPropagation()}
           >
             <button
@@ -78,7 +82,7 @@ export default function ArtworkGallery() {
               <Image
                 key={artworks[active].src}
                 src={artworks[active].src}
-                alt={`Original artwork by Jess Simmonds, image ${active + 1}`}
+                alt={artworks[active].alt}
                 fill
                 sizes="95vw"
                 quality={85}

@@ -8,17 +8,9 @@ export const metadata: Metadata = {
     "The Nice laundromat story, practical ChatGPT coaching, and a free 30-minute conversation with Rev. Dr. Jess Simmonds.",
 };
 
-const requestCallUrl =
-  "mailto:jessgoodvibesonly@gmail.com?subject=" +
-  encodeURIComponent("Free 30-minute call with Jess") +
-  "&body=" +
-  encodeURIComponent(
-    "Hi Jess,\n\nI’d like to request a free 30-minute call. I’m interested in:\n\nA few times that work for me (with time zone):\n\nThank you!",
-  );
+const bookingUrl = "https://calendly.com/aspiritualwarriorspath/free-30-minute-1-1-with-rev-dr-jess";
 
 export default function BringingTheLightToAI() {
-  const bookingUrl = process.env.FREE_DISCOVERY_CALL_URL?.trim();
-
   return (
     <main className={styles.page}>
       <nav className={styles.nav} aria-label="Explore Jess’s work">
@@ -30,7 +22,7 @@ export default function BringingTheLightToAI() {
         <p className={styles.eyebrow}>Rev. Dr. Jess Simmonds</p>
         <h1>Bringing the <em>Light</em> to AI</h1>
         <p>Learn to use ChatGPT to make something that sounds, feels, and works like you.</p>
-        <a className={styles.button} href="#free-call">Free 30-minute call</a>
+        <a className={styles.button} href={bookingUrl}>Book a free 30-minute call</a>
       </header>
 
       <section className={styles.story} aria-labelledby="nice-story">
@@ -52,10 +44,10 @@ export default function BringingTheLightToAI() {
       </section>
 
       <section className={styles.offer} id="free-call" aria-labelledby="call-title">
-        <h2 id="call-title">Spend 30 minutes with me, one-on-one.</h2>
-        <p>Bring a ChatGPT question, a creative project, or something you’re working through in life. We’ll choose one focus, spend time on it together, and end with a next step you can take. The call is free. If you’d like ongoing spiritual support, we can talk about The Inner Circle.</p>
-        <a className={styles.button} href={bookingUrl || requestCallUrl}>
-          {bookingUrl ? "Book a free 30-minute call" : "Request a free 30-minute call by email"}
+        <h2 id="call-title">Free 30-minute 1:1 with Rev. Dr. Jess</h2>
+        <p>Bring a question about relationships, purpose, or a change you’re navigating, or bring a creative project you’d like to explore with ChatGPT. We’ll spend 30 minutes together on Zoom and find a next step you can take. If you’d like ongoing spiritual guidance, we can talk about The Inner Circle.</p>
+        <a className={styles.button} href={bookingUrl}>
+          Book a free 30-minute call
         </a>
       </section>
 

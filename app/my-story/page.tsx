@@ -42,6 +42,7 @@ export default function MyStoryPage() {
               <p>I&apos;ve often thought that if someone made a movie about my life, people would probably think the writers had gone a little too far.</p>
               <p>But here we are.</p>
               <p>I&apos;m Jess—a neurodivergent INFJ polymath, consciousness channel, author, educator and the creator of EARTH SCHOOL. My work connects art, philosophy, spiritual exploration and technology through a lifelong curiosity about being human.</p>
+              <p><a className={styles.cyan} href="#what-spirituality-means-to-me">What spirituality means to me <span aria-hidden="true">↓</span></a></p>
             </div>
           </div>
           <figure className={styles.portrait}>
@@ -153,6 +154,16 @@ export default function MyStoryPage() {
             <p>So I began learning to build it using Unreal Editor for Fortnite, AI, and every bit of creative determination I could find.</p>
             <p>Today, EARTH SCHOOL is becoming an interactive world where players can explore these ideas through experiences rather than simply listening to someone explain them.</p>
             <div className={[styles.statement, styles.statementCyan].join(" ")}>A <span className={styles.cyan}>NEW GENRE</span> IN GAMING.</div>
+          </section>
+
+          <section className={styles.chapter} aria-labelledby="what-spirituality-means-to-me">
+            <h2 id="what-spirituality-means-to-me">What <span className={styles.cyan}>spirituality</span> means to me</h2>
+            <p>Spirituality is how we make room for what gives life meaning. It’s the attention we bring to ourselves, the care we show each other, and the joy of creating something together.</p>
+            <p>I feel it in meditation. I feel it when someone plays a song they made and the whole room gets quiet. I feel it around a table when a story makes us laugh so hard we forget we were strangers. I feel it when someone is having a hard day and another person stays long enough to really listen.</p>
+            <p>Art lets us share what we haven’t found words for. Community gives us people to share it with. Celebration is how we take time to enjoy being alive together. I see all three as spiritual practices. So is making room for grief, repairing a relationship, or asking a better question about someone whose experience is different from yours.</p>
+            <p>As an interfaith spiritual guide, I want to create spaces where people can bring their own beliefs, questions, creativity, and sense of humour. That’s part of why I’m building EARTH SCHOOL. I want people to hear a voice that stays with them, discover someone’s art, follow a clue with a stranger, and feel what happens when curiosity becomes connection.</p>
+            <p>A question I come back to in my work is <strong>When do you feel most alive, and who gets to share that with you?</strong></p>
+            <p className={styles.signature}>Peace, Love, Light &amp; Unity,<br />Rev Dr Jess Simmonds ☮️</p>
           </section>
 
           <div className={styles.sceneBreak} aria-hidden="true">✦ ✦ ✦</div>

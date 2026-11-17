@@ -294,6 +294,7 @@ export default function Home() {
             >
               Book a Synergy Call ↗
             </a>
+            <a className="hero-text-link" href="/bringing-the-light-to-ai">Bringing the Light to AI ↗</a>
             <a className="hero-text-link" href="#earth-school">Discover EARTH SCHOOL ↓</a>
           </div>
           <nav className="social-shortcuts" aria-label="Follow Jess and EARTH SCHOOL">
@@ -342,6 +343,7 @@ export default function Home() {
           <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(min(100%,230px),1fr))",gap:"14px",marginTop:"22px"}}>
             {[
               {tag:"LIVE ZOOM · SAT NOV 14 · 2 PM ATLANTIC",name:"EARTH SCHOOL · The Art of Being Human",price:"$33 CAD · 90 minutes",note:"Introduction to intuition, consciousness, neuroscience, simulation theory, meditation and live Q&A.",url:"https://buy.stripe.com/bJecN5fvubuI5zU46t4AU0c",cta:"Register for Zoom"},
+              {tag:"ONE-TO-ONE · 30 MINUTES",name:"Free Call with Jess",price:"Free",note:"Bring a ChatGPT question, a creative project, or something you’re working through in life.",url:"/bringing-the-light-to-ai#free-call",cta:"Explore the Free Call"},
               {tag:"ONE-TO-ONE · 15 MINUTES",name:"Introductory Call",price:"$33 CAD",note:"A short introductory conversation. Contact Jess to arrange yours.",url:"mailto:jessgoodvibesonly@gmail.com?subject=15-minute%20introductory%20call%20%E2%80%94%20%2433",cta:"Enquire About Intro"},
               {tag:"ONE-TO-ONE · 45 MINUTES",name:"Intuitive Clarity Reading",price:"$111 CAD",note:"Personal intuitive guidance and perspective.",url:bookingUrl,cta:"Book a Reading"},
               {tag:"IN PERSON · SAT NOV 28",name:"Men’s EARTH SCHOOL Day",price:"$333 CAD",note:"Charlottetown · Limited to 10 places.",url:"/earth-school-mens-day",cta:"View & Book Men’s Day"},

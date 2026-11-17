@@ -25,6 +25,7 @@ export default function InnerCircle() {
         <h1 style={{fontSize:"clamp(3.1rem,9vw,6.3rem)",lineHeight:1.08,margin:"18px 0",fontWeight:400}}>THE INNER CIRCLE</h1>
         <p style={{fontStyle:"italic",fontSize:"clamp(1.2rem,3vw,1.65rem)",color:"#e9d1de"}}>The art of remembering who you are.</p>
         <p style={{maxWidth:690,margin:"28px auto",lineHeight:1.85,fontSize:18}}>A private one-to-one mentorship with Rev. Dr. Jess Simmonds — THE HIGH PRIESTjESS — bringing together four video calls each month, personal two-way voice transmissions, ongoing messages and grounded practices that you can carry into everyday life.</p>
+        <Link href="/bringing-the-light-to-ai#free-call" style={{color:"#e8cd9c",fontSize:17,textUnderlineOffset:4}}>Start with a free 30-minute call</Link>
         <div style={{border:"1px solid #be9876",borderRadius:20,background:"#ffffff0b",maxWidth:445,margin:"35px auto 0",padding:"30px 25px"}}>
           <p style={{fontFamily:"sans-serif",fontSize:12,letterSpacing:3,color:"#e8cd9c"}}>THE INNER CIRCLE · PRIVATE MEMBERSHIP</p>
           <div style={{fontSize:34,margin:"12px 0"}}>One membership. Personal guidance.</div>

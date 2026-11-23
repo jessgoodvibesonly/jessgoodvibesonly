@@ -30,6 +30,7 @@ export default function ReadingsPage() {
           <h2 style={{fontFamily:"Georgia,serif",fontSize:"clamp(2rem,4vw,3rem)",margin:"12px 0"}}>Step beyond the ordinary.</h2>
           <p style={{fontSize:23,fontWeight:700,margin:"18px 0"}}>$111 CAD</p>
           <p>45-minute private Zoom reading · worldwide</p>
+          <p style={{fontSize:16,lineHeight:1.8}}><strong>Let’s get creative.</strong> Readings are $111 CAD, and creative exchanges are welcome: art, handmade goods, products, skills, or something thoughtful of your own. If money is a barrier, reach out. No one is turned away for lack of funds. <a href="mailto:jessgoodvibesonly@gmail.com?subject=Creative%20exchange%20for%20a%20reading">Talk to Jess about a creative exchange</a> before using the paid booking.</p>
           <p style={{fontSize:14,color:"#e0d4c8"}}>Select a time on Calendly and review the $111 CAD payment details before confirming. In-person appointments in Charlottetown can be requested separately.</p>
           <a href={bookingUrl} target="_blank" rel="noopener noreferrer" style={{display:"inline-block",marginTop:16,background:"#e6bf89",color:"#111820",fontWeight:800,textDecoration:"none",padding:"15px 24px",borderRadius:5}}>BOOK MY INTUITIVE READING ↗</a>
           <p style={{marginTop:22,fontSize:14}}>Prefer an in-person session? <a href="mailto:jessgoodvibesonly@gmail.com?subject=Charlottetown%20private%20reading">Email Jess to enquire</a>.</p>

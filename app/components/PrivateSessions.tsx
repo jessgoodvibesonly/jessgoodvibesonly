@@ -33,13 +33,15 @@ export function PrivateSessions() {
         <article className="service-card">
           <div className="service-card-marker" aria-hidden="true"><span>01</span></div>
           <p className="service-label">A private space for what&apos;s next</p>
-          <h3>Intuitive <span className="color-pop pop-pink">Clarity</span> Reading</h3>
+          <h3>Psychic Reading <span className="color-pop pop-pink">with Jess</span></h3>
           <p className="service-description"><strong>What if one conversation could change the way you see everything?</strong> Step beyond the ordinary with Rev. Dr. Jess ☮️. Explore relationships, life transitions, personal growth, spiritual questions, purpose or whatever is calling for clarity. Come curious. Leave with fresh perspectives.</p>
           <ul className="service-details" aria-label="Reading details"><li>Private Zoom</li><li>45 minutes</li><li>$111 CAD</li></ul>
           <p className="service-description"><strong>Let’s get creative.</strong> Readings are $111 CAD, and creative exchanges are welcome: art, handmade goods, products, skills, or something thoughtful of your own. If money is a barrier, reach out. No one is turned away for lack of funds.</p>
           <a className="service-support" href="mailto:jessgoodvibesonly@gmail.com?subject=Creative%20exchange%20for%20a%20reading">Talk to Jess about a creative exchange</a>
-          <a className="btn service-booking-button" href={bookingUrl} target="_blank" rel="noopener noreferrer" aria-label="Choose a time for your 45-minute Intuitive Clarity Reading on Calendly (opens in a new tab)">Book Your Reading <span aria-hidden="true">↗</span></a>
+          <a className="btn service-booking-button" href={bookingUrl} target="_blank" rel="noopener noreferrer" aria-label="Choose a time for your 45-minute Intuitive Clarity Reading on Calendly (opens in a new tab)">Book a 45-minute reading · CA$111 <span aria-hidden="true">↗</span></a>
           <p className="service-support">Choose your date and time on Calendly, then enter your details and complete the $111 CAD payment to confirm your reading. For an in-person appointment in Charlottetown or booking help, email jessgoodvibesonly@gmail.com.</p>
+          <p className="service-support"><a href="https://earth-school-the-multiverse.vercel.app/bitcoin/">Arrange a Bitcoin payment with Jess</a></p>
+          <p className="service-support">Planning a ceremony on Prince Edward Island? <a href="/interfaith-ceremonies">Explore Island Roots Homestead ceremony enquiries.</a></p>
         </article>
 
         <article className="service-card">

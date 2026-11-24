@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jessgoodvibesonly.vercel.app/sitemap.xml

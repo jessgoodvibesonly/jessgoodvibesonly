@@ -24,7 +24,7 @@
   font-size: 0.92rem;
 }
 
-.nav a, .learn a, .textLink {
+.nav a, .story a, .learn a, .textLink {
   color: #a7eced;
   text-underline-offset: 0.2em;
 }

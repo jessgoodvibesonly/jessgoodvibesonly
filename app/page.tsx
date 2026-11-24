@@ -325,7 +325,7 @@ export default function Home() {
             {name:"EARTH SCHOOL · The Game",detail:"Enter the world of Echo Point Island, transmissions and discovery.",url:"#earth-school",action:"Explore the Game"},
             {name:"EARTH SCHOOL · The Magic Shop",detail:"Discover our curated favourites and a little everyday magic.",url:"https://earthschoolmagicshop.vercel.app",action:"Visit the Magic Shop"},
             {name:"EARTH SCHOOL · Island Roots Homestead",detail:"Classes, workshops, retreats and private sessions. View current pricing and register.",url:"#book-experiences",action:"See Offerings & Register"},
-            {name:"Weddings & Ceremonies",detail:"Personal, meaningful ceremonies and 2027 wedding enquiries.",url:"/interfaith-ceremonies",action:"Explore Ceremonies"}
+            {name:"Weddings & Ceremonies",detail:"Wedding enquiries for February 2027 onward are welcome; dates are subject to appointment approval.",url:"/interfaith-ceremonies",action:"Explore Ceremonies"}
           ].map(item=>(
             <article key={item.name} style={{border:"1px solid rgba(221,183,128,.65)",borderRadius:"18px",background:"linear-gradient(135deg,#211d37,#16414a)",padding:"21px",color:"#fff",display:"flex",flexDirection:"column",gap:"12px"}}>
               <h3 style={{fontSize:"1.2rem",color:"#ffe1ac",margin:0}}>{item.name}</h3>
@@ -335,6 +335,14 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <section id="heartmath" className="glass section" aria-labelledby="heartmath-title">
+        <p className="chapter-label">THE MAGIC SHOP · COMMUNITY OFFER</p>
+        <h2 id="heartmath-title">HeartMath — <span className="color-pop pop-pink">coherence you can feel.</span></h2>
+        <p>Tools for reducing stress and coming back to your heart — the same practices woven through EARTH SCHOOL. My players and community get <strong>10% off HeartMath’s Technology products</strong> through my link, and it supports the work here too.</p>
+        <div className="cta-row"><a className="btn" href="https://www.heartmath.com/earthschool" target="_blank" rel="sponsored noopener noreferrer">Explore HeartMath — 10% off</a><a className="btn secondary" href="https://earthschoolmagicshop.vercel.app/#community-offers">More Magic Shop offers</a></div>
+        <p style={{fontSize:"0.9rem",lineHeight:1.7,marginTop:18}}>HeartMath Affiliate Program: I earn a commission on eligible purchases through this link. This offer is separate from my HeartMath Practitioner credential.</p>
+      </section>
       <section id="book-experiences" aria-label="Book an experience with Jess" style={{maxWidth:"1180px",margin:"22px auto",padding:"0 18px"}}>
         <div style={{background:"linear-gradient(130deg,#201b37,#153e47)",color:"#fff",border:"1px solid #b9a5cc",borderRadius:"22px",padding:"clamp(20px,4vw,36px)"}}>
           <p style={{fontFamily:"sans-serif",fontWeight:750,letterSpacing:".16em",fontSize:".77rem",color:"#f6d5a4"}}>ISLAND ROOTS HOMESTEAD · WORK WITH REV. DR. JESS</p>
@@ -342,7 +350,6 @@ export default function Home() {
           <p style={{maxWidth:"65ch",lineHeight:1.7}}>Intuition, consciousness, metaphysics, meditation and the art of being human. Select an experience and book directly, or contact Jess with questions.</p>
           <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(min(100%,230px),1fr))",gap:"14px",marginTop:"22px"}}>
             {[
-              {tag:"LIVE ZOOM · SAT NOV 14 · 2 PM ATLANTIC",name:"EARTH SCHOOL · The Art of Being Human",price:"$33 CAD · 90 minutes",note:"Introduction to intuition, consciousness, neuroscience, simulation theory, meditation and live Q&A.",url:"https://buy.stripe.com/bJecN5fvubuI5zU46t4AU0c",cta:"Register for Zoom"},
               {tag:"ONE-TO-ONE · 30 MINUTES",name:"Free Call with Jess",price:"Free",note:"Bring a ChatGPT question, a creative project, or something you’re working through in life.",url:"/bringing-the-light-to-ai#free-call",cta:"Explore the Free Call"},
               {tag:"ONE-TO-ONE · 15 MINUTES",name:"Introductory Call",price:"$33 CAD",note:"A short introductory conversation. Contact Jess to arrange yours.",url:"mailto:jessgoodvibesonly@gmail.com?subject=15-minute%20introductory%20call%20%E2%80%94%20%2433",cta:"Enquire About Intro"},
               {tag:"ONE-TO-ONE · 45 MINUTES",name:"Intuitive Clarity Reading",price:"$111 CAD",note:"Personal intuitive guidance and perspective.",url:bookingUrl,cta:"Book a Reading"},
@@ -375,8 +382,8 @@ export default function Home() {
           <article style={{border:"1px solid rgba(221,183,128,.65)",borderRadius:"20px",padding:"22px",background:"linear-gradient(130deg,rgba(31,73,83,.85),rgba(27,30,61,.94))",color:"#fff3e4",boxShadow:"0 8px 30px #0002"}}>
             <p style={{fontSize:"0.75rem",letterSpacing:"0.13em",fontFamily:"sans-serif",color:"#ffdda3",margin:"0 0 8px"}}>PRIVATE MONTHLY MENTORSHIP</p>
             <h2 style={{fontSize:"clamp(1.35rem,2vw,1.7rem)",margin:"0 0 8px",color:"inherit"}}>EARTH SCHOOL · The Inner Circle</h2>
-            <p style={{fontSize:"1.2rem",fontWeight:700,margin:"8px 0",color:"#ffe1ac"}}>Personal guidance · Monthly subscription</p>
-            <p style={{fontSize:"0.95rem",lineHeight:1.6}}>Four private video calls, two-way voice transmissions and practical support. Pricing at checkout.</p>
+            <p style={{fontSize:"1.2rem",fontWeight:700,margin:"8px 0",color:"#ffe1ac"}}>CA$33 / month · Personal guidance</p>
+            <p style={{fontSize:"0.95rem",lineHeight:1.6}}>Four private video calls, two-way voice transmissions and messages between sessions within agreed communication hours, plus practical support.</p>
             <a href="/inner-circle" style={{display:"inline-block",marginTop:"10px",padding:"12px 18px",borderRadius:"99px",background:"#f5d39c",color:"#211724",fontWeight:700,textDecoration:"none"}}>Explore Membership ↗</a>
           </article>
         </div>
@@ -490,7 +497,7 @@ export default function Home() {
         <p className="mens-day-ad-edition">THE FIRST <span className="color-pop pop-cyan">MEN’S DAY</span></p>
         <h3 id="mens-day-title"><span>EARTH SCHOOL</span>Men’s Day · The Art of Being Human</h3>
         <p><strong>WHAT IF REALITY ISN’T QUITE WHAT YOU THINK IT IS?</strong> Step inside an extraordinary exploration of simulation theory, neuroscience, consciousness, the Seven Hermetic Principles and the Art of Conscious Programming — plus PRACTICE: grounding, movement, boundaries and preparing the biological space suit for change — with Rev. Dr. Jess ☮️.</p>
-        <p><strong>10 AM–7 PM · $333 CAD per person · 10 places</strong><br />Food and refreshments included. Venue details to follow.</p>
+        <p><strong>10 AM–7 PM · $333 CAD per person · 10 places</strong><br />Food and refreshments included. Charlottetown · venue to be confirmed. <a href="mailto:jessgoodvibesonly@gmail.com?subject=EARTH%20SCHOOL%20Day%20%E2%80%94%20venue%20enquiry">Ask Jess about the venue</a>.</p>
         <div className="cta-row"><a className="btn" href="/earth-school-mens-day">Discover the men’s experience ↗</a></div>
       </section>
 
@@ -499,7 +506,7 @@ export default function Home() {
         <p className="mens-day-ad-edition">THE <span className="color-pop pop-pink">WOMEN’S DAY</span></p>
         <h3 id="womens-day-title"><span>EARTH SCHOOL</span>Women’s Day · The Art of Becoming</h3>
         <p><strong>WHAT IF YOU ARE SO MUCH MORE THAN YOU’VE BEEN TAUGHT TO BE?</strong> Discover the fascinating connections between simulation theory, intuition, neuroscience, metaphysics, ancient wisdom and conscious choice — with practical activations and the 1,000-watt lesson on preparing your biological space suit to hold a new chapter — with Rev. Dr. Jess ☮️.</p>
-        <p><strong>10 AM–7 PM · $333 CAD per person · 10 places</strong><br />Food and refreshments included. Venue details to follow.</p>
+        <p><strong>10 AM–7 PM · $333 CAD per person · 10 places</strong><br />Food and refreshments included. Charlottetown · venue to be confirmed. <a href="mailto:jessgoodvibesonly@gmail.com?subject=EARTH%20SCHOOL%20Day%20%E2%80%94%20venue%20enquiry">Ask Jess about the venue</a>.</p>
         <div className="cta-row"><a className="btn" href="/earth-school-womens-day">Discover the women’s experience ↗</a></div>
       </section>
 
@@ -508,8 +515,8 @@ export default function Home() {
         <p className="chapter-label">EARTH SCHOOL · MONTHLY SPIRITUAL MENTORSHIP</p>
         <h2 id="inner-circle-title">THE INNER CIRCLE</h2>
         <p style={{fontSize:"1.3rem",fontStyle:"italic"}}>The art of remembering who you are.</p>
-        <p className="section-text">Join THE HIGH PRIESTjESS for private monthly consciousness mentorship: four one-to-one video calls, two-way voice transmissions, ongoing messages and personalized real-world practices. All levels of awareness welcome.</p>
-        <p style={{fontSize:"1.2rem",fontWeight:700,margin:"1.2rem auto"}}>Monthly subscription · Price shown in Stripe checkout</p>
+        <p className="section-text">Join THE HIGH PRIESTjESS for private monthly consciousness mentorship: four one-to-one video calls, two-way voice transmissions and ongoing messages between sessions within agreed communication hours, and personalized real-world practices. All levels of awareness welcome.</p>
+        <p style={{fontSize:"1.2rem",fontWeight:700,margin:"1.2rem auto"}}>CA$33 / month · Monthly subscription</p>
         <p>The Inner Circle is your private monthly mentorship · Separate from one-time readings</p>
         <div className="cta-row"><a className="btn" href="/inner-circle">Explore the Inner Circle ↗</a><a className="btn secondary" href="https://buy.stripe.com/28EcN51EEdCQe6q7iF4AU08" target="_blank" rel="noopener noreferrer">Join Now · Secure Checkout ↗</a></div>
       </section>
@@ -776,6 +783,14 @@ export default function Home() {
             Spiritual Work & Writings
           </a>
         </div>
+
+        <nav aria-label="Explore the EARTH SCHOOL Multiverse" style={{display:"flex",justifyContent:"center",gap:"16px 24px",flexWrap:"wrap",margin:"24px auto",fontSize:"1rem"}}>
+          <a href="https://earth-school-the-multiverse.vercel.app/">The Multiverse</a>
+          <a href="https://earth-school-neo-nova.jessgoodvibesonly.chatgpt.site">NEO&amp;NOVA <small>ai</small></a>
+          <a href="/bringing-the-light-to-ai">Bringing the Light to AI</a>
+          <a href="/inner-circle">The Inner Circle</a>
+          <a href="https://earthschoolmagicshop.vercel.app/">The Magic Shop</a>
+        </nav>
         <nav className="footer-social-links" aria-label="Follow on social media">
           {socialLinks.map((social) => (
             <a key={social.label} href={social.url} target="_blank" rel="noopener noreferrer">

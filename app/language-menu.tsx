@@ -8,16 +8,15 @@ export default function LanguageMenu() {
   const path = usePathname() || "/";
   const page = "https://jessgoodvibesonly.vercel.app" + path;
   return (
-    <details translate="no" style={{ position: "fixed", bottom: 12, left: 12, zIndex: 9999, background: "#171323", color: "white", borderRadius: 12, padding: "8px 12px", font: "15px system-ui" }}>
-      <summary style={{cursor: "pointer"}}>🌐 Language</summary>
-      <nav aria-label="Language">
+    <nav aria-label="Language" translate="no" style={{display:"flex",flexWrap:"wrap",alignItems:"center",justifyContent:"center",gap:"4px 12px",padding:"8px 12px",background:"#181127",color:"#fff",borderBottom:"1px solid #b896ee",font:"15px/1.4 system-ui"}}>
+        <strong>🌐 Translate</strong>
         {languages.map(([code, label]) => (
-          <a key={code} lang={code} style={{display: "block", color: "white", padding: 5}}
+          <a key={code} lang={code} style={{display: "block", color: "white", textDecoration: "underline", padding: 4}}
             href={code === "en" ? page : "https://translate.google.com/translate?" + new URLSearchParams({sl: "en", tl: code, u: page})}>
             {label}
           </a>
         ))}
       </nav>
-    </details>
+    
   );
 }

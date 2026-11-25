@@ -2825,3 +2825,14 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--photo-cyan);outlin
 .ceremony-offerings{background:linear-gradient(110deg,#0b0815,#131026 65%,#05070b);border-top:1px solid #7d57b655;border-bottom:1px solid #41d9d04d}.ceremony-cards article{background:linear-gradient(150deg,#1a1530,#0c0a18);border:1px solid #835ab2;color:#f7f4ff;box-shadow:0 10px 35px #0008}.ceremony-cards article:nth-child(2){border-color:#36e7d8}.ceremony-cards article:nth-child(3){border-color:#f06abf}.ceremony-cards h3{color:#fefbff}.ceremony-cards strong{color:#84fff1}.ceremony-cards small{color:#c8c4d9}.ceremony-cards a{background:#70f6e9;color:#140b1e;border-radius:30px}
 .ceremony-gathering{color:#eeeaf7}.ceremony-gathering>div{border-left-color:#f674d9}.ceremony-gathering>div+div{border-left-color:#6cf9e8}.ceremony-cta{background:radial-gradient(circle at 70% 10%,#432b70,#0c0717 70%);border-top:1px solid #9a58cd}.ceremony-cta .ceremony-kicker{color:#7af8e8!important}.ceremony-cta .ceremony-legal{color:#bdb4d5}.ceremony-footer{background:#050507;color:#dbd6ef;border-top:1px solid #885bb444}.ceremony-footer a{color:#7bfff0}
 @media(max-width:750px){.ceremony-mark strong{font-size:16px}.ceremony-nav nav a{font-size:11px}.ceremony-hero h1{font-size:clamp(42px,11vw,65px)}}
+
+/* Keep booking reachable as the navigation and translated labels grow. */
+.site-header .site-nav { box-sizing: border-box; max-width: 100%; }
+.site-header .desktop-nav { min-width: 0; flex-wrap: wrap; justify-content: flex-end; row-gap: .5rem; }
+.site-header .nav-booking-button { white-space: nowrap; }
+@media (max-width: 1120px) {
+  .site-header .desktop-nav { display: flex; margin-left: auto; }
+  .site-header .desktop-nav > .nav-link { display: none; }
+  .site-header .site-nav { gap: .5rem; flex-wrap: wrap; }
+  .site-header .desktop-nav .nav-booking-button { padding: .55rem .75rem; }
+}

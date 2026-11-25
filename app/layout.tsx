@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}<LanguageMenu /></body>
+      <body><LanguageMenu />{children}</body>
     </html>
   );
 }

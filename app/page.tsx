@@ -279,13 +279,15 @@ export default function Home() {
             <div><p className="hero-name">Rev. Dr. Jessica Simmonds</p><h1>Jess <span className="color-pop pop-cyan">Good</span><br />Vibes <span className="color-pop pop-pink">Only</span><span className="hero-period">.</span></h1></div>
           </div>
           <h2>Technology × <span className="color-pop pop-yellow">Consciousness</span> × Creativity</h2>
-          <p>CEO, Aspire Agency Global Inc. | Founder | Public Speaker | Author</p>
+          <p>Charlottetown educator, published author, Women in Games Ambassador and CEO of Aspire Agency Global Inc.</p>
           <p>Neurodivergent · INFJ polymath · Consciousness channel</p>
           <p className="hero-lede">Creative <span className="color-pop pop-blue">worlds</span>, conscious exploration and meaningful human experiences.</p>
           <p className="hero-highlight">Building EARTH SCHOOL—where <span className="color-pop pop-pink">awareness</span>, simulation theory and the art of being human become part of the game.</p>
 
 
           <div className="cta-row">
+            <a className="btn" href="https://neonova-ai-training.jessgoodvibesonly.chatgpt.site/">Learn AI with Jess</a>
+            <a className="btn secondary" href="/interfaith-ceremonies">Explore PEI Wedding Packages</a>
             <a
               className="btn secondary"
               href="https://calendly.com/aspiritualwarriorspath/synergy-call-aspire-x-earth-school-x-partnerships"

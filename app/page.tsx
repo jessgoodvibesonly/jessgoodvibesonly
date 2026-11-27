@@ -142,7 +142,7 @@ const speakingTopics = [
 ];
 
 const entrepreneurialExperience = [
-  "CEO & Founder, Aspire Agency Global Inc.",
+  "Founder & Creator, EARTH SCHOOL",
   "Founder, Paramita Academy of Makeup (international education brand)",
   "Makeup artist trained in London, England (since 1999) with professional experience across film, television, editorial, bridal, and artistry",
   "Built and led education-based businesses for over two decades",
@@ -279,7 +279,7 @@ export default function Home() {
             <div><p className="hero-name">Rev. Dr. Jessica Simmonds</p><h1>Jess <span className="color-pop pop-cyan">Good</span><br />Vibes <span className="color-pop pop-pink">Only</span><span className="hero-period">.</span></h1></div>
           </div>
           <h2>Technology × <span className="color-pop pop-yellow">Consciousness</span> × Creativity</h2>
-          <p>Charlottetown educator, published author, Women in Games Ambassador and CEO of Aspire Agency Global Inc.</p>
+          <p>Charlottetown educator, published author, lifelong entrepreneur, Women in Games Ambassador, AI educator, and founder and creator of EARTH SCHOOL.</p>
           <p>Neurodivergent · INFJ polymath · Consciousness channel</p>
           <p className="hero-lede">Creative <span className="color-pop pop-blue">worlds</span>, conscious exploration and meaningful human experiences.</p>
           <p className="hero-highlight">Building EARTH SCHOOL—where <span className="color-pop pop-pink">awareness</span>, simulation theory and the art of being human become part of the game.</p>
